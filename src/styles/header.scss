@@ -1,7 +1,7 @@
 header {
   height:  85px;;
   color: #fff;
-  background-color: #353535;
+  background-color: #4a4a4a;
 
   .grid {
     display: flex;
@@ -32,11 +32,7 @@ header {
     width: 0;
     height: 2px;
     background: #fff;
-    transition: width .3s;
-  }
-
-  .menu a:hover::after {
-    width: 100%;
+    pointer-events: none;
   }
 
   .menu a.active {
@@ -49,5 +45,12 @@ header {
 
   .menu {
     list-style: none;
+  }
+}
+
+@media all and (max-width: 480px) {
+  header .menu {
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }

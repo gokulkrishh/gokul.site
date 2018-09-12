@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  margin: 45px 0 50px;
+  margin: 35px 0 50px;
 
   .avatar {
     width: 100px;
@@ -15,11 +15,15 @@
 
   h1 {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   p {
     margin: 0;
+  }
+
+  > div {
+    margin-top: 10px;
   }
 
   p a {
@@ -29,7 +33,7 @@
 
   .social a {
     border: 0;
-    margin: 10px 5px;
+    margin: 8px 5px;
 
     &:first-child {
       margin-left: 0;
@@ -108,11 +112,13 @@
   .about .avatar {
     width: 70px;
     height: 70px;
+    margin: 15px 0;
   }
 
   .about {
     flex-direction: column;
     margin-bottom: -30px;
+    margin-top: 20px;
   }
 
   .about img {
@@ -121,6 +127,7 @@
 
   .about div {
     text-align: center;
+    margin: 0;
   }
 
   .about div h1 {

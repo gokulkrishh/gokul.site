@@ -206,14 +206,6 @@
     "languages": "shell"
   },
   {
-    "name": "Set Default Browser",
-    "url": "https://github.com/gokulkrishh/set-default-browser",
-    "stars": 2,
-    "forks": 2,
-    "desc": "Set a browser as default browser via cli",
-    "languages": "node, npm, cli"
-  },
-  {
     "name": "Dev Hints",
     "url": "https://github.com/rstacruz/cheatsheets",
     "stars": 4270,
