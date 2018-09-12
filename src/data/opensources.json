@@ -8,30 +8,12 @@
     "languages": "html, css, javascript, pwa"
   },
   {
-    "name": "Angular",
-    "url": "https://github.com/angular/angular.jsp",
-    "stars": 59077,
-    "forks": 28977,
-    "contribution": true,
-    "desc": "AngularJS - HTML enhanced for web apps! ",
-    "languages": "angularjs"
-  },
-  {
     "name": "Awesome Meta and Manifest",
     "url": "https://github.com/gokulkrishh/awesome-meta-and-manifest",
     "stars": 75,
     "forks": 10,
     "desc": "⚡ Awesome collection of meta tags & manifest properties available for building PWAs.",
     "languages": "html, metatags"
-  },
-  {
-    "name": "html5 boilerplate",
-    "url": "https://github.com/h5bp/html5-boilerplate",
-    "stars": 41275,
-    "forks": 9796,
-    "contribution": true,
-    "desc": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
-    "languages": "html, css, javascript"
   },
   {
     "name": "VSCode Night Mode Extension",
@@ -119,15 +101,6 @@
     "stars": 7,
     "forks": 2,
     "desc": "Read about latest PWA's, Browser updates, new API's and its improvements in your inbox",
-    "languages": "html, css, javascript, jekyll"
-  },
-  {
-    "name": "Lighthouse",
-    "url": "https://github.com/GoogleChrome/lighthouse",
-    "stars": 14000,
-    "forks": 4400,
-    "contribution": true,
-    "desc": "Auditing, performance metrics, and best practices for Progressive Web Apps ",
     "languages": "html, css, javascript, jekyll"
   },
   {
