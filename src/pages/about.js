@@ -18,8 +18,7 @@ export default () => (
         <h1>About</h1>
         <ul>
           <li>
-            I currently work as <b>Senior Consultant</b> at <b>ThoughtWorks</b>{" "}
-            in
+            I currently work as <b>Senior Consultant</b> at <b>ThoughtWorks</b> in
             <b>India, Bangalore</b>.
           </li>
           <li>
