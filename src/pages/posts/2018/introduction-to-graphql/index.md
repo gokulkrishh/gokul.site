@@ -21,7 +21,7 @@ title: "Introduction to GraphQL"
 - [Execution](https://graphql.org/learn/execution/) - After being validated, a GraphQL query is executed by a GraphQL server which returns a result that mirrors the shape of the requested query, typically as JSON.
 - [Introspection](https://graphql.org/learn/introspection/) - It's often useful to ask a GraphQL schema for information about what queries it supports.
 
-## 🐣 Steps to run demo
+## 🐣 Steps to run the demo
 
 ##### 1. Clone the repo
 
@@ -58,11 +58,11 @@ yarn or npm start
 
 ### 1. Variables, Arguments & Types
 
-Like any other programming language, GraphQL has `variables`, `arguments`. Lets see some examples.
+Like any other programming language, GraphQL has `variables`, `arguments`. Let's see some examples.
 
 #### [Types](https://graphql.org/graphql-js/type/)
 
-The most basic components of a GraphQL schema are object types, which just represent a kind of object you can fetch from your service, and what fields it has. If you are a web developer, you can relate this with [flow](https://github.com/facebook/flow) or [typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html).
+The most basic components of a GraphQL schema are object types, which just represent a kind of object you can fetch from your service, and what fields it has. If you are a web developer, you can relate this to [flow](https://github.com/facebook/flow) or [typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html).
 
 ##### **Example**:
 
@@ -72,7 +72,7 @@ type Person {
 }
 ```
 
-- `String!` - `name` property is a non-nullable string. Meaning you will always give a value for this property.
+- `String!` - `name` property is a non-nullable string. Meaning you will always give a value to this property.
 - [More types](https://graphql.org/graphql-js/type/).
 
 #### [Arguments](https://graphql.org/learn/queries/#arguments)
@@ -286,7 +286,7 @@ const createUser = args => {
 }
 ```
 
-#### Update a existing user details: (PUT API 😁)
+#### Update existing user details: (PUT API 😁)
 
 **variables**:
 
@@ -392,13 +392,13 @@ If are wondering how to write test cases for GraphQL. Here is an example for you
 
 ### 5. 🐷 Limitations of GraphQL
 
-- **Specific Response Structure** may required - In GraphQL the response matches the shape of the query, so if you need to respond in a very specific structure, you'll have to add a transformation layer to reshape the response.
+- **Specific Response Structure** may be required - In GraphQL the response matches the shape of the query, so if you need to respond in a very specific structure, you'll have to add a transformation layer to reshape the response.
 
 - **Handling File Upload** - There is nothing about file upload in the GraphQL specification and mutations doesn’t accept files in the arguments.
 
-- **Cache at Network Level** - Because of the commonly way GraphQL is used over HTTP (A POST in a single endpoint), cache at network level becomes hard. A way to solve it is to use Persisted Queries.
+- **Cache at Network Level** - Because of the common way GraphQL is used over HTTP (A POST in a single endpoint), cache at network level becomes hard. A way to solve it is to use Persisted Queries.
 
-- **Rate Limiting** - Limiting the API call's to particular query is problem in GraphQL. Github recently introducted GraphQL with different approach to solve this issue. Take a [look here](https://developer.github.com/v4/guides/resource-limitations/).
+- **Rate Limiting** - Limiting the API call's to the particular query is the problem in GraphQL. Github recently introduced GraphQL with the different approach to solving this issue. Take a [look here](https://developer.github.com/v4/guides/resource-limitations/).
 
 ### 6. 🏆 References
 
