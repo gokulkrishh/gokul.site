@@ -5,3 +5,8 @@ code.language-text {
   font-family: inherit !important;
   text-shadow: none !important;
 }
+
+pre[class*="language-"] {
+  width: 80%;
+  margin: 0 20px;
+}
