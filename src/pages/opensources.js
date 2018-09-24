@@ -79,7 +79,7 @@ export default class OpenSource extends React.Component {
           <div className="title">
             <h1>Open Sources</h1>
             <p>
-              <span className="contributed" /> Contributions
+              <span className="contributed" /> OSS Contributions
             </p>
           </div>
           <div className="cards">{this.renderRepos()}</div>

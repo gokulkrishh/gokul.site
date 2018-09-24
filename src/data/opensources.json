@@ -76,16 +76,53 @@
     "url": "https://github.com/code-kotis/barcode-scanner",
     "stars": 445,
     "forks": 120,
-    "desc": "📠 A simple, fast and useful progressive web application ",
+    "contribution": true,
+    "desc": "📠 A simple, fast and useful progressive web application",
     "languages": "html, css, javascript, webworkers, pwa"
+  },
+  {
+    "name": "Tools I Use",
+    "url": "https://github.com/gokulkrishh/Tools-I-use",
+    "stars": 11,
+    "forks": 2,
+    "desc": "A collection of tools and applications I use for Frontend Development",
+    "languages": "browsers, ide's, terminals etc"
   },
   {
     "name": "PWA Codelabs",
     "url": "https://github.com/code-kotis/pwa-codelabs",
     "stars": 30,
     "forks": 19,
+    "contribution": true,
     "desc": "Learn how to build your first progressive web application",
     "languages": "html, css, javascript, pwa"
+  },
+  {
+    "name": "Awesome WPOS",
+    "url": "https://github.com/davidsonfellipe/awesome-wpo",
+    "stars": 6369,
+    "forks": 489,
+    "contribution": true,
+    "desc": "📝 A curated list of Web Performance Optimization. Everyone can contribute here!",
+    "languages": "web, webperf, performance"
+  },
+  {
+    "name": "Gulp Webserver",
+    "url": "https://github.com/schickling/gulp-webserver",
+    "stars": 351,
+    "forks": 78,
+    "contribution": true,
+    "desc": "Streaming gulp plugin to run a local webserver with LiveReload ",
+    "languages": "javascript, gulp"
+  },
+  {
+    "name": "App Manifest",
+    "url": "https://github.com/tomitm/appmanifest",
+    "stars": 91,
+    "forks": 7,
+    "contribution": true,
+    "desc": "Web App Manifest Generator",
+    "languages": "html, javascript, pwa"
   },
   {
     "name": "React Floating Label",
@@ -96,10 +133,27 @@
     "languages": "html, css, javascript, react, material design"
   },
   {
-    "name": "PWA Tips, A bi-montly newsletter",
+    "name": "ES6 Cheetsheets",
+    "url": "https://github.com/gokulkrishh/ES6-Cheetsheets",
+    "stars": 15,
+    "forks": 5,
+    "desc": "A minimal documentation of ES6 features with cheetsheets & examples.",
+    "languages": "javascript, es6"
+  },
+  {
+    "name": "Hamburger Menu",
+    "url": "https://github.com/gokulkrishh/hamburger-menu",
+    "stars": 11,
+    "forks": 2,
+    "desc": " 🍔 Auditing of hamburger menu to result in 60fps animation",
+    "languages": "html, css, javascript"
+  },
+  {
+    "name": "PWA Tips - A bi-montly newsletter",
     "url": "https://pwa.tips/",
     "stars": 7,
     "forks": 2,
+    "contribution": true,
     "desc": "Read about latest PWA's, Browser updates, new API's and its improvements in your inbox",
     "languages": "html, css, javascript, jekyll"
   },
@@ -193,7 +247,7 @@
     "stars": 415,
     "forks": 85,
     "contribution": true,
-    "desc": "Collection of cheat sheets(HTML, CSS, JS, Git, Gulp, etc.,) for your frontend development needs & reference",
+    "desc": "Collection of cheat sheets(HTML, CSS, JS, Git, Gulp, etc.,) for your frontend development reference",
     "languages": "html, css, javascript, git, gulp, accessibility"
   }
 ]
