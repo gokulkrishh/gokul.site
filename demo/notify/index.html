@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Notify.js</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <style>
+    .demo-container {
+      margin: 0 auto;
+      margin-top: 200px;
+      margin-left: 100px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="demo-container">
+    <h3>Click to see more notification</h3>
+    <button id="showSuccessNotification">Success</button>
+    <button id="showErrorNotification">Error</button>
+    
+    <h1>Contribute to notify.js</h1>
+
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/gokulkrishh/notify.js" data-icon="octicon-star" data-style="mega" data-count-href="/gokulkrishh/notify.js/stargazers" data-count-api="/repos/gokulkrishh/notify.js#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star gokulkrishh/notify.js on GitHub">Star</a>
+
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/gokulkrishh/notify.js/fork" data-icon="octicon-git-branch" data-style="mega" data-count-href="/gokulkrishh/notify.js/network" data-count-api="/repos/gokulkrishh/notify.js#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork gokulkrishh/notify.js on GitHub">Fork</a>
+
+  </div>
+  
+  <!-- Script -->
+  <script src="notify.js"></script>
+  <script>
+  // USAGE
+  //notify.show(user message, status, time);
+
+  //Example for success message
+  notify.show('Success message', 'success', 5000);
+
+  //Example for error message
+  notify.show('Error message', 'error', 3000);
+
+  var successBtn = document.getElementById('showSuccessNotification');
+  var errorBtn = document.getElementById('showErrorNotification');
+
+  successBtn.addEventListener('click', function () {
+    notify.show('I am success message', 'success');
+  }, false);
+
+  errorBtn.addEventListener('click', function () {
+    notify.show('I am success message', 'error');
+  }, false);
+
+
+  </script>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

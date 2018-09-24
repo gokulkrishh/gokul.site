@@ -1,0 +1,11 @@
+body {
+  background: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, img, button {
+  margin: 50px auto;
+  color: #444;
+  text-align: center;
+  display: block;
+}
