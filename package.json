@@ -6,8 +6,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && npm run copy && gh-pages -b master -d public",
-    "copy": "cpy ./demo/ ./public --parents"
+    "deploy": "gatsby build && gh-pages -b master -d public"
   },
   "dependencies": {
     "gatsby": "^1.9.277",
@@ -34,7 +33,6 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "cpy-cli": "^2.0.0",
     "eslint": "^5.5.0",
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^1.2.0",
