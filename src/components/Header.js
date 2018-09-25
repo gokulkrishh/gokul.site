@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "gatsby-link";
+import {Link} from "gatsby";
 
 export default class Header extends React.Component {
   render() {
@@ -9,17 +9,17 @@ export default class Header extends React.Component {
           <h1 />
           <ul className="menu">
             <li>
-              <Link to="/" exact activeClassName="active">
+              <Link to="/" activeClassName="active">
                 Blog
               </Link>
             </li>
             <li>
-              <Link to="/opensources" activeClassName="active">
+              <Link to="/opensources/" activeClassName="active">
                 Open Sources
               </Link>
             </li>
             <li>
-              <Link to="/about" activeClassName="active">
+              <Link to="/about/" activeClassName="active">
                 About
               </Link>
             </li>

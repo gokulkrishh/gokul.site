@@ -49,7 +49,6 @@ module.exports = {
         icon: "images/icons/android-chrome-512x512.png", // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-postcss-sass`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-fonts`,
