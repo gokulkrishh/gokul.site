@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.search-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  height: 100px;
+  display: block;
+  margin: 80px auto 20px;
+}
+
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.search-input {
+  width: 280px;
+  height: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #c6c6c6;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  width: 110px;
+  height: 35px;
+  border: none;
+  font-size: 16px;
+  color: #757575;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  border: 1px solid #c6c6c6;
+  color: #000;
+}
+
+.search-input:focus,
+.btn:focus {
+  outline: none;
+  border: 1px solid #c6c6c6;
+}
+
+.search-result {
+  margin: 50px auto;
+  width: 260px;
+  text-align: center;
+  min-height: 220px;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+}
+
+.search-result .no-result {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.user {
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.14);
+  margin: 10px auto 20px;
+}
+
+.userimg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.username {
+  margin: 10px;
+}
+
+.url {
+  cursor: pointer;
+  color: #1a0dab;
+  text-decoration: none;
+}

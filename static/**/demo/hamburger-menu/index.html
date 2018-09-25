@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Gokulakrishnan Kalaikovan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="theme-color" content="#FFB300" />
+  <title>Hamburger Menu</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="manifest" href="./manifest.json">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,medium&amp;lang=en" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <!-- svg hamburger icon -->
+      <div class="menu__icon">
+        <svg width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </div>
+      <h1>Hamburger Menu</h1>
+    </div>
+  </header>
+
+  <!-- menu  -->
+  <nav class="menu">
+    <div class="menu__header">
+    </div>
+    <ul class="menu__list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Contact Us</a></li>
+    <ul>
+  </nav>
+
+  <!-- overlay  -->
+  <div class="menu__overlay"></div>
+
+  <div class="main-container">
+    <div class="avatar"></div>
+    <div class="sample">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="sample-container"></div>
+  </div>
+
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
