@@ -103,7 +103,9 @@ Prettier is an opinionated code formatter. That's all.
 
 <b>Dev (B)</b>: Ohhh, wow this is awesome. <b>No more manual formatting</b> and <b>No need to discuss style in code review anymore</b> 😋.
 
-<b>Dev (A)</b>: Yep, it took me just 10 mins. Also prettier is suppourted in <b>most of the IDE's</b>.
+<b>Dev (A)</b>: Yep, it took me just 10 mins. Also prettier is supported in <b>most of the IDE's</b>.
+
+<b>Dev (A)</b>: I have it in [my vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and it formats file on save.
 
 #### 🎁 Popular open sources using prettier
 
