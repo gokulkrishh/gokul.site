@@ -48,10 +48,10 @@ h5 {
 
 a {
   color: #3367d6;
-  text-decoration: none;
-  text-decoration: underline;
   display: inline-block;
   font-weight: 500;
+  text-decoration: #3367d6 solid underline;
+  text-underline-position: under;
 
   &:hover {
     color: #2663e4;
