@@ -1,4 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gokulakrishnan Kalaikovan | Web Developer, GDE for Web Technologies]]></title><description><![CDATA[My personal blog using gatsby 😍]]></description><link>https://gokulkrishh.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 08 Oct 2018 15:55:25 GMT</lastBuildDate><item><title><![CDATA[Prettier - Opinionated Code Formatter]]></title><description><![CDATA[What is prettier? Prettier is an opinionated code formatter. That’s all. ✅ Language support 👉🏻 Life without Prettier Dev (A) : Hey, can…]]></description><link>https://gokulkrishh.github.io/2018/why-you-need-prettier/</link><guid isPermaLink="false">https://gokulkrishh.github.io/2018/why-you-need-prettier/</guid><pubDate>Fri, 05 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is prettier?&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gokulakrishnan Kalaikovan | Web Developer, GDE for Web Technologies]]></title><description><![CDATA[My personal blog using gatsby 😍]]></description><link>https://gokulkrishh.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 16 Oct 2018 14:57:58 GMT</lastBuildDate><item><title><![CDATA[Add danger.js to your OSS in 5 mins]]></title><description><![CDATA[What is danger.js anyway? DangerJS  runs during your CI process, and helps your team to automate certain manual code review tasks like: Is…]]></description><link>https://gokulkrishh.github.io/2018/add-dangerjs-to-your-project/</link><guid isPermaLink="false">https://gokulkrishh.github.io/2018/add-dangerjs-to-your-project/</guid><pubDate>Wed, 17 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is danger.js anyway?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://danger.systems/js/&quot;&gt;DangerJS&lt;/a&gt; runs during your CI process, and helps your team to automate certain manual code review tasks like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is there a &lt;code class=&quot;language-text&quot;&gt;new library&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;module installed&lt;/code&gt;?&lt;/li&gt;
+&lt;li&gt;Does this &lt;code class=&quot;language-text&quot;&gt;PR changes&lt;/code&gt; are added to &lt;code class=&quot;language-text&quot;&gt;changelog file&lt;/code&gt;?&lt;/li&gt;
+&lt;li&gt;Is &lt;code class=&quot;language-text&quot;&gt;.lockfile&lt;/code&gt; kept up to date?&lt;/li&gt;
+&lt;li&gt;Will this change &lt;code class=&quot;language-text&quot;&gt;increase my bundle size&lt;/code&gt;?&lt;/li&gt;
+&lt;li&gt;So on and on.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-20&quot;&gt;Example:&lt;/b&gt;&lt;/p&gt;
+&lt;center&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 39.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABCUlEQVQoz51R27KDIAzk/z/ytPWoFbkIKDetbgOtfW+Z2YEkm91omJoshDLQxlVIbTD7CB/zVyg9dvZgxpCglOBCox8ERqmx7/uXOOr9eOxgSmncmga9dBAmECKOAz+dgxqZ1hMu1xuC959CcVvX9e36qM7ne9u2z/vFe8W1rwieIisRNyKVk3NG23ZIKWMUAs7NMMbAhwDOx2p23m3XVcGUUo2Z9wED5xX3gcPTpDGmKloEQ4xYKJfzCmNtRamf+fKFZZCuv5OxA7NuwbVp8d/d0bQ9hlHSti2RI9zi6+Ym62i6BE41oSbKLZiXUHltP8BR/He5oaOlsuPXDbyXYOl3WCURSFwF4AlmfG11a3+/IQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;DangerJS in React&quot; title=&quot;&quot; src=&quot;/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-fb8a0.png&quot; srcset=&quot;/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-1a291.png 148w,
+/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-2bc4a.png 295w,
+/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-fb8a0.png 590w,
+/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-526de.png 885w,
+/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-fa2eb.png 1180w,
+/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-08f6a.png 1770w,
+/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-029df.png 1800w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;i class=&quot;m-top-15&quot;&gt;React using danger.js&lt;/i&gt;
+&lt;/center&gt;
+&lt;h4&gt;Integrating Danger.js in Github &amp;#x26; Travis&lt;/h4&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-10 m-top-10&quot;&gt;Step 1:&lt;/b&gt; Add &lt;code class=&quot;language-text&quot;&gt;dangerjs&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;your devDependencies&lt;/code&gt; in package.json file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;yarn add danger -D&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-10 m-top-10&quot;&gt;Step 2:&lt;/b&gt; Create &lt;code class=&quot;language-text&quot;&gt;dangerfile.js&lt;/code&gt; file in your project.&lt;/p&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-20&quot;&gt;Example:&lt;/b&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Import the feedback functions&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; message&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; warn&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fail&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; markdown &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;danger&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Add a message to the table&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;You have added 2 more modules to the app&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//  Adds a warning to the table&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;warn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;You have not included a CHANGELOG entry.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Declares a blocking&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;fail&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`ESLint has failed with &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;fails&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; fails.`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Show markdown under the table:&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;## New module Danger&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; dangerYarnInfo&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-10 m-top-10&quot;&gt;Step 3 (Optional):&lt;/b&gt; Create an &lt;code class=&quot;language-text&quot;&gt;github account&lt;/code&gt; for &lt;code class=&quot;language-text&quot;&gt;your bot&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-10 m-top-10&quot;&gt;Step 4:&lt;/b&gt; Create a &lt;a href=&quot;https://github.com/settings/tokens/new&quot;&gt;New personal access token&lt;/a&gt; in &lt;code class=&quot;language-text&quot;&gt;github&lt;/code&gt; for &lt;code class=&quot;language-text&quot;&gt;read &amp;amp; write&lt;/code&gt; access for your bot.&lt;/p&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-20&quot;&gt;Example:&lt;/b&gt;&lt;/p&gt;
+&lt;center&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 57.14285714285714%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABcUlEQVQoz5WT546DMBCEef/HO+l0UpQooTdjimluzK0NKT+Skw7pw2YNo9lCkKYZ4iRFFCeeNMuRpPtzVdX47xUIMaLvh51hgBACw+DoMYoBSkpoJaHUczVa+fiyrFhX6XF7rQ2CPCdH5NA59c6iGGEY4ZY2OMcM14ThQus5qnFNuecUMsR5A845uq4Hb1s0DffCQVExZHmJKMnQk1tjN0hlIA086nXVgLY726eUf24M35cMX6cEJ3LBpw3NaAlzYD18sqiFxaJIjeS27T1BzVqUVeOZVwUySC6J7YACd6x9+nIf451gURS+dq6Wy7JgmibM8/xgWg2xYZYbxGIJQ3v7uctd3/uCui757h5ddjEH62ZiQcUntEJimA3ErD+nvK4rpVuhpU5prR/p1HUDxhpUZUWd7Mg5New4v7/zVtAdutkLaVzyvICUVEdrvVhdMy/snLrYq9DHlN3NzZL7W8Zx9EFjzCG2U5JLV9+/nN35BakTVI93b8SYAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Github Settings Page&quot; title=&quot;&quot; src=&quot;/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-fb8a0.png&quot; srcset=&quot;/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-1a291.png 148w,
+/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-2bc4a.png 295w,
+/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-fb8a0.png 590w,
+/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-526de.png 885w,
+/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-fa2eb.png 1180w,
+/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-ba3b9.png 1498w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;i class=&quot;m-top-15&quot;&gt;Github Settings Page&lt;/i&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-10 m-top-10&quot;&gt;Step 5 (Final Step):&lt;/b&gt; &lt;code class=&quot;language-text&quot;&gt;Hooking danger.js&lt;/code&gt; in &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis CI&lt;/a&gt;&lt;/p&gt;
+&lt;ul class=&quot;m-left-10&quot;&gt;
+  &lt;li&gt;Copy the &lt;b&gt;generated personal token&lt;/b&gt; from your github or your bot account you created.&lt;/li&gt;
+  &lt;li&gt;Go to your &lt;b&gt;project settings&lt;/b&gt; in &lt;b&gt;Travis CI&lt;/b&gt;.&lt;/li&gt;
+  &lt;li&gt;Create a &lt;b&gt;new environment variable&lt;/b&gt; called &lt;b&gt;DANGER_GITHUB_API_TOKEN&lt;/b&gt; and the value is &lt;b&gt;your personal token&lt;/b&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-20&quot;&gt;Example:&lt;/b&gt;&lt;/p&gt;
+&lt;center&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 49.73890339425588%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAAxklEQVQoz6WSawqDMBCEc/97FbxEwfaHlNpoXr6j02xgRUNbqAY+xZlhsgmKQhsUxuBhLO5KQ7UtZj9hmo4hnLVomybg0IW3cw4mbGCDzpC2/U7hvNYaws8zxnHEmOzkvY9Eb8M2k3qUF/Tgdqau64iUMnoU7vs+MgzDCmusxyN/MtNJl2XBHE6SQnrqiaqqQCil1rvg4LeiXwi+VIImovVvya7w6hrksoIsn+i6bjfdEcQly1C+ZJyMhLNL3PIcbfiZufAsb+YeECLR5YmxAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Travis Settings Page&quot; title=&quot;&quot; src=&quot;/static/travis-ci.org-00330b45b1127e03029f6669232485ed-fb8a0.png&quot; srcset=&quot;/static/travis-ci.org-00330b45b1127e03029f6669232485ed-1a291.png 148w,
+/static/travis-ci.org-00330b45b1127e03029f6669232485ed-2bc4a.png 295w,
+/static/travis-ci.org-00330b45b1127e03029f6669232485ed-fb8a0.png 590w,
+/static/travis-ci.org-00330b45b1127e03029f6669232485ed-526de.png 885w,
+/static/travis-ci.org-00330b45b1127e03029f6669232485ed-fa2eb.png 1180w,
+/static/travis-ci.org-00330b45b1127e03029f6669232485ed-78ae1.png 1532w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;i class=&quot;m-top-15&quot;&gt;Travis Settings Page&lt;/i&gt;
+&lt;/center&gt;
+&lt;p&gt;After this step, you should be seeing &lt;code class=&quot;language-text&quot;&gt;bot&lt;/code&gt; account adding &lt;code class=&quot;language-text&quot;&gt;comments&lt;/code&gt; to your every PR as per your &lt;code class=&quot;language-text&quot;&gt;dangerfile.js&lt;/code&gt; config.&lt;/p&gt;
+&lt;p&gt;&lt;b class=&quot;m-left-20&quot;&gt;Example:&lt;/b&gt; &lt;a href=&quot;https://github.com/code-kotis/barcode-scanner/pull/57&quot; target=&quot;_blank&quot;&gt;QR Code Scanner&lt;/a&gt;&lt;/p&gt;
+&lt;center&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 105%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAACnklEQVQ4y5VUiXKjMAzl//9up5OmCZAmkATCfRvM8VYSkGm6abf1zEPCGOlZlxFEKZyzh/P1Bu8W4eqHAtb9IMbFC5DmJVTXo1YdqqZ9iiQrkVcNjEa1qBsFlqrtoFiu+oK206jqRvRhHDEMM/oPstM9OjpnjHSA1ygHB/phEL3vewHvFWWJw/sRtyCkn8hB2xK6RZ8lL3ZmsAdejutib1qwD+84nhzSTez2Jk6OiyzLkeeMAkmSIopjhGEkOss4TjBNk7Algx2msYHvB4Qb6rqWn8uyQlGUFI5GGK1sGqXkas/WzFDnGNozfErCgdidiJ1t26TbcF1HcCY4zun+7pIeRcQsSWYQY2bZU3iMJYS4XC7Y7y1Ylo3N1sLuSNmOW3iJIrRww4beFW5ph0ukKFEdtNYP4Hgb/BgpESzXREjWelCpDFB6RKsnkIAeQPooe9OzK3MMOaMc0HHCl0sTG8/zKDmpvE/TKJXwGcKQa4zrri1i5FlGsYklPrcgoAyGSNIUAUmOref7WMuMSWCB6CtDLtayVpTdSsoiI6RUJgwu5rXoV2gJy/AU/E0YNq2GR212OLrUatyCobQd738Gt98zVATFncKPmg4WZY0304Z1OMkBPUwim/bxx2dOVkdMbmHYIysq7Mjg686EaR8Rp/l9IDTfGPrHYE2TgqdETgy3VIfbnYWTe72zqX9g7MEgJyTJKSHUapvtHps3E3vrgDDOfnTVp1fmqzFDviqDk8Mz8uMc/A4PBtWSZY7hy+YNf15eKTFHZOTgHsOvmK3xFcN6MUgfOOVsgFldaOqkZLyguP6P1QxySo6bZRAbc0EOMnF5g2UvU3je/wrcXVL4NO4Uj7qmlxsZw9LLvwGvkqY4T/AkoBnqXXFNqfQqjb+MjlWVJx9X5gAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Code Kotis - QR Code Scanner&quot; title=&quot;&quot; src=&quot;/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-fb8a0.png&quot; srcset=&quot;/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-1a291.png 148w,
+/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-2bc4a.png 295w,
+/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-fb8a0.png 590w,
+/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-526de.png 885w,
+/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-fa2eb.png 1180w,
+/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-4f5a6.png 1400w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;i class=&quot;m-top-15&quot;&gt;&lt;a href=&quot;qrcodescan.in&quot; target=&quot;_blank&quot;&gt;QR Code Scanner&lt;/a&gt;&lt;/i&gt;
+&lt;/center&gt;
+&lt;h5&gt;Hot Tips:&lt;/h5&gt;
+&lt;p&gt;You can test your changes locally using following terminal command.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;yarn danger pr &amp;lt;your-pr-link&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;References:&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/facebook/react/pull/11865/files&quot;&gt;ReactJS&lt;/a&gt; dangerfile.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://danger.systems/js/tutorials.html&quot;&gt;Tutorials&lt;/a&gt; for other app such as node app, node libraries etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://danger.systems/js/guides/getting_started.html#setting-up-danger-to-run-on-your-ci&quot;&gt;More tutorials&lt;/a&gt; on adding danger.js to other CI’s&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thank you for reading my post till the end. If you like my post &lt;code class=&quot;language-text&quot;&gt;share it&lt;/code&gt; 😇.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prettier - Opinionated Code Formatter]]></title><description><![CDATA[What is prettier? Prettier is an opinionated code formatter. That’s all. ✅ Language support 👉🏻 Life without Prettier Dev (A) : Hey, can…]]></description><link>https://gokulkrishh.github.io/2018/why-you-need-prettier/</link><guid isPermaLink="false">https://gokulkrishh.github.io/2018/why-you-need-prettier/</guid><pubDate>Fri, 05 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is prettier?&lt;/h2&gt;
 &lt;p&gt;Prettier is an opinionated code formatter. That’s all.&lt;/p&gt;
 &lt;h3&gt;✅ Language support&lt;/h3&gt;
 &lt;ol class=&quot;disc&quot;&gt;
