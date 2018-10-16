@@ -1,6 +1,6 @@
 ---
 path: "/blog/2018/add-dangerjs-to-your-project"
-date: "2018-10-17"
+date: "2018-10-16"
 title: "Add danger.js to your OSS in 5 mins"
 readtime: "5 mins"
 ---
