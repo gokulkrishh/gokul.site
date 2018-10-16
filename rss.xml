@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gokulakrishnan Kalaikovan | Web Developer, GDE for Web Technologies]]></title><description><![CDATA[My personal blog using gatsby 😍]]></description><link>https://gokulkrishh.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 16 Oct 2018 14:57:58 GMT</lastBuildDate><item><title><![CDATA[Add danger.js to your OSS in 5 mins]]></title><description><![CDATA[What is danger.js anyway? DangerJS  runs during your CI process, and helps your team to automate certain manual code review tasks like: Is…]]></description><link>https://gokulkrishh.github.io/2018/add-dangerjs-to-your-project/</link><guid isPermaLink="false">https://gokulkrishh.github.io/2018/add-dangerjs-to-your-project/</guid><pubDate>Wed, 17 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is danger.js anyway?&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gokulakrishnan Kalaikovan | Web Developer, GDE for Web Technologies]]></title><description><![CDATA[My personal blog using gatsby 😍]]></description><link>https://gokulkrishh.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 16 Oct 2018 15:00:25 GMT</lastBuildDate><item><title><![CDATA[Add danger.js to your OSS in 5 mins]]></title><description><![CDATA[What is danger.js anyway? DangerJS  runs during your CI process, and helps your team to automate certain manual code review tasks like: Is…]]></description><link>https://gokulkrishh.github.io/2018/add-dangerjs-to-your-project/</link><guid isPermaLink="false">https://gokulkrishh.github.io/2018/add-dangerjs-to-your-project/</guid><pubDate>Tue, 16 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is danger.js anyway?&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://danger.systems/js/&quot;&gt;DangerJS&lt;/a&gt; runs during your CI process, and helps your team to automate certain manual code review tasks like:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Is there a &lt;code class=&quot;language-text&quot;&gt;new library&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;module installed&lt;/code&gt;?&lt;/li&gt;
@@ -11,14 +11,14 @@
 &lt;center&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 39.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABCUlEQVQoz51R27KDIAzk/z/ytPWoFbkIKDetbgOtfW+Z2YEkm91omJoshDLQxlVIbTD7CB/zVyg9dvZgxpCglOBCox8ERqmx7/uXOOr9eOxgSmncmga9dBAmECKOAz+dgxqZ1hMu1xuC959CcVvX9e36qM7ne9u2z/vFe8W1rwieIisRNyKVk3NG23ZIKWMUAs7NMMbAhwDOx2p23m3XVcGUUo2Z9wED5xX3gcPTpDGmKloEQ4xYKJfzCmNtRamf+fKFZZCuv5OxA7NuwbVp8d/d0bQ9hlHSti2RI9zi6+Ym62i6BE41oSbKLZiXUHltP8BR/He5oaOlsuPXDbyXYOl3WCURSFwF4AlmfG11a3+/IQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;DangerJS in React&quot; title=&quot;&quot; src=&quot;/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-fb8a0.png&quot; srcset=&quot;/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-1a291.png 148w,
-/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-2bc4a.png 295w,
-/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-fb8a0.png 590w,
-/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-526de.png 885w,
-/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-fa2eb.png 1180w,
-/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-08f6a.png 1770w,
-/static/github.com_facebook_react_pull_13695-d181b4ebafb44ae9f94b25e7b3aecf17-029df.png 1800w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 39.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAAA5klEQVQY041Q23KFIAzk/z+ydaioXCXcAiiek+r0uWcnkwmb7AJhdg/aeucDhXE+FSy1/xupVEiFeQ/aGGncKrUy+/UxxhjMOsc5X23QgAbwul4fgvTMuX2aeIzpYciv94PyeY4H53kexzH+cHdJeIvHfVetlSao6L3Ps2i1Ka1DjPSpnItUivgnz0KQGBHJhf32pKLYNpVLIZfWe2sNK1KLaggBIBCPBWnA7Tu9aVm3GCODmCY+/4iVz8umjIMQM4ZUQsoeYi5V0j6tJ5YOzoNYZIjp65sLadj1+YruJZE5WIseHL7eyBbOoDx6+kwAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;DangerJS in React&quot; title=&quot;&quot; src=&quot;/static/github.com_facebook_react_pull_13695-15ff828df33fb814c34268d983dcd6e5-fb8a0.png&quot; srcset=&quot;/static/github.com_facebook_react_pull_13695-15ff828df33fb814c34268d983dcd6e5-1a291.png 148w,
+/static/github.com_facebook_react_pull_13695-15ff828df33fb814c34268d983dcd6e5-2bc4a.png 295w,
+/static/github.com_facebook_react_pull_13695-15ff828df33fb814c34268d983dcd6e5-fb8a0.png 590w,
+/static/github.com_facebook_react_pull_13695-15ff828df33fb814c34268d983dcd6e5-526de.png 885w,
+/static/github.com_facebook_react_pull_13695-15ff828df33fb814c34268d983dcd6e5-fa2eb.png 1180w,
+/static/github.com_facebook_react_pull_13695-15ff828df33fb814c34268d983dcd6e5-08f6a.png 1770w,
+/static/github.com_facebook_react_pull_13695-15ff828df33fb814c34268d983dcd6e5-029df.png 1800w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
@@ -49,13 +49,13 @@
 &lt;center&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 57.14285714285714%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABcUlEQVQoz5WT546DMBCEef/HO+l0UpQooTdjimluzK0NKT+Skw7pw2YNo9lCkKYZ4iRFFCeeNMuRpPtzVdX47xUIMaLvh51hgBACw+DoMYoBSkpoJaHUczVa+fiyrFhX6XF7rQ2CPCdH5NA59c6iGGEY4ZY2OMcM14ThQus5qnFNuecUMsR5A845uq4Hb1s0DffCQVExZHmJKMnQk1tjN0hlIA086nXVgLY726eUf24M35cMX6cEJ3LBpw3NaAlzYD18sqiFxaJIjeS27T1BzVqUVeOZVwUySC6J7YACd6x9+nIf451gURS+dq6Wy7JgmibM8/xgWg2xYZYbxGIJQ3v7uctd3/uCui757h5ddjEH62ZiQcUntEJimA3ErD+nvK4rpVuhpU5prR/p1HUDxhpUZUWd7Mg5New4v7/zVtAdutkLaVzyvICUVEdrvVhdMy/snLrYq9DHlN3NzZL7W8Zx9EFjzCG2U5JLV9+/nN35BakTVI93b8SYAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Github Settings Page&quot; title=&quot;&quot; src=&quot;/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-fb8a0.png&quot; srcset=&quot;/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-1a291.png 148w,
-/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-2bc4a.png 295w,
-/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-fb8a0.png 590w,
-/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-526de.png 885w,
-/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-fa2eb.png 1180w,
-/static/github-token-5eff0cafb42ebce2e00f0fd224ec1e49-ba3b9.png 1498w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 57.14285714285714%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABRElEQVQoz41Si27DIAzM///epE1ataohQMIzD0LIA8gu7VRpWlvNOhuDdMY6u2CMU8aqihJKOa9xJRWVSu3/sMKNYz8MwOAccrhzA851XbZtvccYEdcQ5nlZAJwxxqJpGkoZ55wxRkhVElIyc67MBZHqM1EXZpGfSk1rY63tur5tW2MMShRCat4IQvngfEp53eIa9zXtt7hdk5gO5Pyn7Y/SvH/xt096Iqqdduuz9emO1ic9xrD98PK1QL7aQVamk8oKZcOCb/aYD6TfeCpYIwQUrutmnufJ+wkWjjDNaVpyWPMYkg8pLOkBue976DAv8+BuUjtz6GJNPwGq9Z1b3BTHEB+QobyUqus6TAL3lJLWRhsjpcQjetm27WnbcHyIITWNAB9KHGRtFAqYFsN8tSRwjA7bNY4eeYxJKXODEBJb8YL8DfPJenw7QrJBAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Github Settings Page&quot; title=&quot;&quot; src=&quot;/static/github-token-6b0e8af6636a1e8456a0df0c357e1cbc-fb8a0.png&quot; srcset=&quot;/static/github-token-6b0e8af6636a1e8456a0df0c357e1cbc-1a291.png 148w,
+/static/github-token-6b0e8af6636a1e8456a0df0c357e1cbc-2bc4a.png 295w,
+/static/github-token-6b0e8af6636a1e8456a0df0c357e1cbc-fb8a0.png 590w,
+/static/github-token-6b0e8af6636a1e8456a0df0c357e1cbc-526de.png 885w,
+/static/github-token-6b0e8af6636a1e8456a0df0c357e1cbc-fa2eb.png 1180w,
+/static/github-token-6b0e8af6636a1e8456a0df0c357e1cbc-ba3b9.png 1498w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
@@ -71,13 +71,13 @@
 &lt;center&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 49.73890339425588%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAAxklEQVQoz6WSawqDMBCEc/97FbxEwfaHlNpoXr6j02xgRUNbqAY+xZlhsgmKQhsUxuBhLO5KQ7UtZj9hmo4hnLVomybg0IW3cw4mbGCDzpC2/U7hvNYaws8zxnHEmOzkvY9Eb8M2k3qUF/Tgdqau64iUMnoU7vs+MgzDCmusxyN/MtNJl2XBHE6SQnrqiaqqQCil1rvg4LeiXwi+VIImovVvya7w6hrksoIsn+i6bjfdEcQly1C+ZJyMhLNL3PIcbfiZufAsb+YeECLR5YmxAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Travis Settings Page&quot; title=&quot;&quot; src=&quot;/static/travis-ci.org-00330b45b1127e03029f6669232485ed-fb8a0.png&quot; srcset=&quot;/static/travis-ci.org-00330b45b1127e03029f6669232485ed-1a291.png 148w,
-/static/travis-ci.org-00330b45b1127e03029f6669232485ed-2bc4a.png 295w,
-/static/travis-ci.org-00330b45b1127e03029f6669232485ed-fb8a0.png 590w,
-/static/travis-ci.org-00330b45b1127e03029f6669232485ed-526de.png 885w,
-/static/travis-ci.org-00330b45b1127e03029f6669232485ed-fa2eb.png 1180w,
-/static/travis-ci.org-00330b45b1127e03029f6669232485ed-78ae1.png 1532w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 49.73890339425588%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAAArklEQVQoz52P6wrCMAyF8/4PJvgQ/piCCqNrl/TmbK1nLZOBoM6PEkIu56R0Zr4wX0VO42hCyCndf4acSHAOL3rvrJWKXZA3WhGRmSnnPDUdeKbZN1WmCsotNqaFOp7mZciMC7qilII8JmKMtxWx0vL5bMisGy8TiD4+ggGCz6C1MQZ/wAnr3ldIrGCtHVlKyVugg9hu0KrvQwhlI7Tb73ulkOHUzcvHrgvel794AjOuSbWamiXPAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Travis Settings Page&quot; title=&quot;&quot; src=&quot;/static/travis-ci.org-5d1c9cd4444590a3cdca6e8e97e6dda0-fb8a0.png&quot; srcset=&quot;/static/travis-ci.org-5d1c9cd4444590a3cdca6e8e97e6dda0-1a291.png 148w,
+/static/travis-ci.org-5d1c9cd4444590a3cdca6e8e97e6dda0-2bc4a.png 295w,
+/static/travis-ci.org-5d1c9cd4444590a3cdca6e8e97e6dda0-fb8a0.png 590w,
+/static/travis-ci.org-5d1c9cd4444590a3cdca6e8e97e6dda0-526de.png 885w,
+/static/travis-ci.org-5d1c9cd4444590a3cdca6e8e97e6dda0-fa2eb.png 1180w,
+/static/travis-ci.org-5d1c9cd4444590a3cdca6e8e97e6dda0-78ae1.png 1532w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
@@ -88,13 +88,13 @@
 &lt;center&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 105%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAACnklEQVQ4y5VUiXKjMAzl//9up5OmCZAmkATCfRvM8VYSkGm6abf1zEPCGOlZlxFEKZyzh/P1Bu8W4eqHAtb9IMbFC5DmJVTXo1YdqqZ9iiQrkVcNjEa1qBsFlqrtoFiu+oK206jqRvRhHDEMM/oPstM9OjpnjHSA1ygHB/phEL3vewHvFWWJw/sRtyCkn8hB2xK6RZ8lL3ZmsAdejutib1qwD+84nhzSTez2Jk6OiyzLkeeMAkmSIopjhGEkOss4TjBNk7Algx2msYHvB4Qb6rqWn8uyQlGUFI5GGK1sGqXkas/WzFDnGNozfErCgdidiJ1t26TbcF1HcCY4zun+7pIeRcQsSWYQY2bZU3iMJYS4XC7Y7y1Ylo3N1sLuSNmOW3iJIrRww4beFW5ph0ukKFEdtNYP4Hgb/BgpESzXREjWelCpDFB6RKsnkIAeQPooe9OzK3MMOaMc0HHCl0sTG8/zKDmpvE/TKJXwGcKQa4zrri1i5FlGsYklPrcgoAyGSNIUAUmOref7WMuMSWCB6CtDLtayVpTdSsoiI6RUJgwu5rXoV2gJy/AU/E0YNq2GR212OLrUatyCobQd738Gt98zVATFncKPmg4WZY0304Z1OMkBPUwim/bxx2dOVkdMbmHYIysq7Mjg686EaR8Rp/l9IDTfGPrHYE2TgqdETgy3VIfbnYWTe72zqX9g7MEgJyTJKSHUapvtHps3E3vrgDDOfnTVp1fmqzFDviqDk8Mz8uMc/A4PBtWSZY7hy+YNf15eKTFHZOTgHsOvmK3xFcN6MUgfOOVsgFldaOqkZLyguP6P1QxySo6bZRAbc0EOMnF5g2UvU3je/wrcXVL4NO4Uj7qmlxsZw9LLvwGvkqY4T/AkoBnqXXFNqfQqjb+MjlWVJx9X5gAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Code Kotis - QR Code Scanner&quot; title=&quot;&quot; src=&quot;/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-fb8a0.png&quot; srcset=&quot;/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-1a291.png 148w,
-/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-2bc4a.png 295w,
-/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-fb8a0.png 590w,
-/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-526de.png 885w,
-/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-fa2eb.png 1180w,
-/static/github.com_code-kotis-f72dff81ecb7b2b952e1601f311a8c12-4f5a6.png 1400w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 105%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAIAAADJt1n/AAAACXBIWXMAAAsSAAALEgHS3X78AAACPklEQVQ4y41Ui5KjIBD0/z/vai+bxFeMJqICCooIol5jUlupy1btTrWIMj0vBoKGdfmNFGVNalZWtKyasqYVZXdSt2LQZlbavIOLXg5joCczjnrU0zQZrQ0+/QSjscbYQWHFuGV1y+JH9xyNnYFgWZd13Zb910Pm2QFudn0/pJesrhtr7eQF1mARYrcNlCXAg1lR3KIoTqB7zcMoPodRnhfCixRStm3HGG8ow4RSxli7+wPZmW3RpKpJRZRSnRBwKGWvxtG7MhaDRj67t1fxZGfFYu6kYkmawm2cJGmSFEVe5PkNT34tiuv+eYVzzlvAvzl3zj3Dvt3LcxjHcXI4xueMlnwiO4pmLJmuW3Nj2ofhZd5H+8z5tU6zW43btFm0XSa7WrcBmODzm7BR5122d4ErQqquE0/tdYXyF7A5AbYLe2x6LoVAISnj2Bu6F7ZpaJbl4GM33017z0hlQJOoQci+E7LtBIBSj9p3DgDT1qezvMEFWBknSxqeZsWtrNGhVYPizK+AgnoDiAHacJxmNOopTOI0U5NBzaD9IzwZ5YftTg6nMP48RWFy4Z18ePuZrPQkBy16dTzHn+coK+44NL/13I+6lQrkv8fwcAzPUUp59/uwfUlARsBhfEkuaMvycZJ/Jj8Khpw/Dsc/H4cozWDotzlrY6ELAhzeSdPKAZUfv7s9PAdGd+jJ+ssADQBg5q8OOz8a4PHzP+Bc4qAq3C390GuH6PabZNu+2m/d1m+BJVBqSnlTK1KWneuU/QfAZ7VN/VQTVAAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Code Kotis - QR Code Scanner&quot; title=&quot;&quot; src=&quot;/static/github.com_code-kotis-1ad59b1ba922871d233e8003cc7f3eef-fb8a0.png&quot; srcset=&quot;/static/github.com_code-kotis-1ad59b1ba922871d233e8003cc7f3eef-1a291.png 148w,
+/static/github.com_code-kotis-1ad59b1ba922871d233e8003cc7f3eef-2bc4a.png 295w,
+/static/github.com_code-kotis-1ad59b1ba922871d233e8003cc7f3eef-fb8a0.png 590w,
+/static/github.com_code-kotis-1ad59b1ba922871d233e8003cc7f3eef-526de.png 885w,
+/static/github.com_code-kotis-1ad59b1ba922871d233e8003cc7f3eef-fa2eb.png 1180w,
+/static/github.com_code-kotis-1ad59b1ba922871d233e8003cc7f3eef-4f5a6.png 1400w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
