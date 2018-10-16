@@ -95,6 +95,24 @@
   }
 }
 
+.m-left-10 {
+  margin-left: 10px;
+}
+
+.m-top-10 {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.m-top-15 {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.m-left-20 {
+  margin-left: 20px;
+}
+
 @media all and (max-width: 640px) and (min-width: 480px) {
   .posts .post {
     h3 a {
