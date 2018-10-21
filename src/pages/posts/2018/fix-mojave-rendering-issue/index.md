@@ -2,6 +2,7 @@
 path: "/blog/2018/fix-mojave-rendering-issue"
 date: "2018-10-21"
 title: "Fix Mojave Rendering Issue"
+readtime: "2 mins"
 ---
 
 <center>
