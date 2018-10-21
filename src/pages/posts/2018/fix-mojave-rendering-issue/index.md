@@ -27,24 +27,24 @@ Open the before/after screenshot below in two tabs to see the difference.
 ### Before
 
 <center>
-  <img src="./before-vscode.png" alt="Before fix in VS Code" />
+  <img src="./beforevscode.png" alt="Before fix in VS Code" />
   <i>VS Code Editor</i>
 </center>
 
 <center>
-  <img src="./before-github.png" alt="Before fix in github" />
+  <img src="./beforegithub.png" alt="Before fix in github" />
   <i>Github</i>
 </center>
 
 ### After fix
 
 <center>
-  <img src="./after-vscode.png" alt="After fix in VS Code" />
+  <img src="./aftervscode.png" alt="After fix in VS Code" />
   <i>VS Code Editor</i>
 </center>
 
 <center>
-  <img src="./after-github.png" alt="After fix in github" />
+  <img src="./aftergithub.png" alt="After fix in github" />
   <i>Github</i>
 </center>
 
