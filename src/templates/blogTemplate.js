@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { DiscussionEmbed } from 'disqus-react';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
@@ -11,6 +12,11 @@ export default function Template({
 }) {
 	const { markdownRemark } = data; // data.markdownRemark holds our post data
 	const { frontmatter, html } = markdownRemark;
+	const disqusShortname = 'gokulkrishh';
+	const disqusConfig = {
+		identifier: frontmatter.id,
+		title: frontmatter.title
+	};
 	return (
 		<Layout>
 			<Header />
@@ -22,6 +28,7 @@ export default function Template({
 						{frontmatter.readtime ? <time>&middot; {frontmatter.readtime}</time> : null}
 						<div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
 					</div>
+					<DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 				</div>
 				<Bio />
 			</div>

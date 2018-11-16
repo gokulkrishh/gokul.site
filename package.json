@@ -11,6 +11,7 @@
     "copy": "cpy ./demo ./public/static --parents"
   },
   "dependencies": {
+    "disqus-react": "^1.0.5",
     "gatsby": "^2.0.8",
     "gatsby-plugin-catch-links": "^2.0.3",
     "gatsby-plugin-feed": "^2.0.5",
