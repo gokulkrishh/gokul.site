@@ -1,67 +1,88 @@
-import React from "react";
-import Helmet from "react-helmet"
-import {Link} from "gatsby";
-import get from "lodash/get";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { Link } from 'gatsby';
+import get from 'lodash/get';
 
-import Layout from "../components/Layout";
-import Header from "../components/Header";
-import Bio from "../components/Bio";
-import Footer from "../components/Footer";
+import Layout from '../components/Layout';
+import Header from '../components/Header';
+import Bio from '../components/Bio';
+import Footer from '../components/Footer';
 
 export default class index extends React.Component {
-  render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const posts = get(this, "props.data.allMarkdownRemark.edges");
+	render() {
+		const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+		const posts = get(this, 'props.data.allMarkdownRemark.group');
+		const sortPostByYear = {};
+		posts.forEach(post => {
+			const year = post.fieldValue.split('-')[0];
+			if (!sortPostByYear[year]) sortPostByYear[year] = [{ node: post.edges[0].node }];
+			else {
+				sortPostByYear[year].push({ node: post.edges[0].node });
+			}
+		});
 
-    return (
-      <Layout>
-        <Helmet>
-          <title>{siteTitle}</title>
-        </Helmet>
-        <Header />
-        <div className="grid">
-          <Bio />
-          <div className="posts">
-            {posts.map(({ node }) => {
-              const title = get(node, "frontmatter.title") || node.fields.slug;
-              return (
-                <div className="post" key={node.fields.slug}>
-                  <h3>
-                    <Link to={`blog${node.fields.slug}`}>{title}</Link>
-                  </h3>
-                  <time>{node.frontmatter.date}</time>
-                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        <Footer />
-      </Layout>
-    );
-  }
+		return (
+			<Layout>
+				<Helmet>
+					<title>{siteTitle}</title>
+				</Helmet>
+				<Header />
+				<div className="grid">
+					<Bio />
+					<div className="posts">
+						{Object.keys(sortPostByYear)
+							.reverse()
+							.map(year => {
+								const postsByYear = sortPostByYear[year];
+								return (
+									<div className="post__year" key={postsByYear}>
+										<h2>{year}</h2>
+										{postsByYear.reverse().map(({ node }) => {
+											const title = get(node, 'frontmatter.title') || node.fields.slug;
+											return (
+												<div className="post" key={node.fields.slug}>
+													<h3>
+														<Link to={`blog${node.fields.slug}`}>{title}</Link>
+													</h3>
+													<time>{node.frontmatter.date}</time>
+													<p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+												</div>
+											);
+										})}
+									</div>
+								);
+							})}
+					</div>
+				</div>
+				<Footer />
+			</Layout>
+		);
+	}
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "DD MMMM, YYYY")
-            title
-          }
-        }
-      }
-    }
-  }
+	query IndexQuery {
+		site {
+			siteMetadata {
+				title
+			}
+		}
+		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+			group(field: frontmatter___date) {
+				fieldValue
+				edges {
+					node {
+						excerpt(pruneLength: 200)
+						fields {
+							slug
+						}
+						frontmatter {
+							date(formatString: "DD MMMM")
+							title
+						}
+					}
+				}
+			}
+		}
+	}
 `;
