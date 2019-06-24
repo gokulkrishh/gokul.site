@@ -41,47 +41,11 @@ export default () => (
 					</li>
 				</ul>
 
-				<h2>Talks</h2>
-				<ul>
-					<li>
-						<span>21 July 2018</span> &raquo;
-						<a href="#">State of the Web in 2018, Bangalore</a>
-					</li>
-					<li>
-						<span>14 Oct 2017</span> &raquo;
-						<a href="https://docs.google.com/presentation/d/1XiUHf4YErRX0tJd5PEEBrr4qHzKPM3mr-fFIRdyb8pQ/edit?usp=sharing" target="_blank">
-							Do's and Don'ts in Progressive Web Applications - Solve for India, Chennai
-						</a>
-					</li>
-					<li>
-						<span>28 Apr 2017</span> &raquo;
-						<a href="https://pwa.tips/codelabs" target="_blank">
-							Progressive Web Application - Google Developers Roadshow, Pune
-						</a>
-					</li>
-					<li>
-						<span>23 Jan 2017</span> &raquo;
-						<a href="https://docs.google.com/presentation/d/1OixGz72qcJOpb3NC2BDINOHB_7PGp5LsrmyrXsDXDp4/edit?usp=sharing" target="_blank">
-							ReactJS and Create-React-App
-						</a>
-					</li>
-					<li>
-						<span>21 Nov 2016</span> &raquo;
-						<a href="https://docs.google.com/presentation/d/1COtqAkSMDiz6avZ-_olqFR66ooLVpHE9folNQCji7r0/edit?usp=sharing" target="_blank">
-							Progressive Web Application, Bangalore
-						</a>
-					</li>
-					<li>
-						<span>22 Nov 2016</span> &raquo;
-						<a href="https://docs.google.com/presentation/d/1lBTU4_haLt6MT68F-Aw-kRkkaSMaFCS7KlgYmYCEQsE/edit?usp=sharing" target="_blank">
-							Angular 2 Introduction, Bangalore
-						</a>
-					</li>
-					<li>
-						<span>22 Oct 2016</span> &raquo;
-						<a href="https://github.com/code-kotis/pwa-codelabs">PWA Codelabs Google DevFest, Bangalore</a>
-					</li>
-				</ul>
+				<h2>
+					<a href="https://git.io/my-talks" target="_blank">
+						My Talks
+					</a>
+				</h2>
 			</div>
 		</div>
 		<Footer />
