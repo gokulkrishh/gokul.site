@@ -1,5 +1,59 @@
 [
   {
+    "name": "This Week In Web",
+    "url": "https://this-week-in-web.com/",
+    "stars": 1,
+    "forks": 0,
+    "contribution": true,
+    "desc": "Get weekly coverage about what's happening in web community ",
+    "languages": "html, css, javascript, gatsbyjs"
+  },
+  {
+    "name": "awesome-web-newsletters",
+    "url": "https://github.com/gokulkrishh/awesome-web-newsletters",
+    "stars": 31,
+    "forks": 5,
+    "contribution": false,
+    "desc": "🔥 List of awesome web related newsletter to subscribe.",
+    "languages": "markdown"
+  },
+  {
+    "name": "teardown",
+    "url": "https://github.com/gokulkrishh/teardown",
+    "stars": 4,
+    "forks": 0,
+    "contribution": false,
+    "desc": "💣 Teardown the published project in surge.sh via command line.",
+    "languages": "javscript, node, npm"
+  },
+  {
+    "name": "habits tracker",
+    "url": "https://github.com/gokulkrishh/habits-tracker",
+    "stars": 4,
+    "forks": 1,
+    "contribution": false,
+    "desc": "A habit tracker app (Made it for myself :P) ",
+    "languages": "html, css, reactjs, pwa"
+  },
+  {
+    "name": "react-hooks-accordion",
+    "url": "https://github.com/gokulkrishh/react-hooks-accordion",
+    "stars": 4,
+    "forks": 0,
+    "contribution": false,
+    "desc": "A simple accordion using react hooks 🤪",
+    "languages": "html, css, reactjs"
+  },
+  {
+    "name": "gatsby-lite-boilerplate",
+    "url": "https://github.com/gokulkrishh/gatsby-lite-boilerplate",
+    "stars": 1,
+    "forks": 0,
+    "contribution": false,
+    "desc": "💅A simple and minimalistic theme to get started with gatsby based blog",
+    "languages": "html, css, reactjs, graphql, gatsbyjs"
+  },
+  {
     "name": "Demo Progressive Web App",
     "url": "https://github.com/gokulkrishh/demo-progressive-web-app",
     "stars": 500,
@@ -10,8 +64,8 @@
   {
     "name": "Awesome Meta and Manifest",
     "url": "https://github.com/gokulkrishh/awesome-meta-and-manifest",
-    "stars": 75,
-    "forks": 10,
+    "stars": 159,
+    "forks": 16,
     "desc": "⚡ Awesome collection of meta tags & manifest properties available for building PWAs.",
     "languages": "html, metatags"
   },
@@ -50,8 +104,8 @@
   {
     "name": "Tensorflow Find Object",
     "url": "https://github.com/gokulkrishh/tensorflow-find-object",
-    "stars": 7,
-    "forks": 0,
+    "stars": 12,
+    "forks": 2,
     "desc": "📸 A simple application to demonstrate TensorflowJS using mobile net model to predict objects via camera API",
     "languages": "html, css, javascript, react, pwa"
   },
@@ -144,7 +198,7 @@
     "name": "Hamburger Menu",
     "url": "https://github.com/gokulkrishh/hamburger-menu",
     "stars": 11,
-    "forks": 2,
+    "forks": 3,
     "desc": " 🍔 Auditing of hamburger menu to result in 60fps animation",
     "languages": "html, css, javascript"
   },
@@ -195,8 +249,8 @@
   {
     "name": "Fuel Price",
     "url": "https://github.com/gokulkrishh/fuel-price",
-    "stars": 15,
-    "forks": 2,
+    "stars": 18,
+    "forks": 4,
     "desc": "⛽ Check fuel prices daily in most of the states in India",
     "languages": "html, css, javascript, pwa, preact"
   },
@@ -212,7 +266,7 @@
     "name": "React Material Snackbar",
     "url": "https://github.com/gokulkrishh/react-material-snackbar",
     "stars": 9,
-    "forks": 6,
+    "forks": 8,
     "desc": "A material design based snackbar react component (2KB gzipped) ",
     "languages": "html, css, javascript, react"
   },
@@ -227,8 +281,8 @@
   {
     "name": "Dotfiles",
     "url": "https://github.com/gokulkrishh/dotfiles",
-    "stars": 21,
-    "forks": 1,
+    "stars": 39,
+    "forks": 7,
     "desc": "My dotfiles (oh my zsh, brew, git, nvm, vscode settings) for your OSX",
     "languages": "shell"
   },
