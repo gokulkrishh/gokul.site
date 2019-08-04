@@ -9,18 +9,17 @@ export default class Bio extends React.Component {
 	render() {
 		return (
 			<div className="about">
-				<picture>
-					<source type="image/webp" srcSet={profilePicWebP} alt="Gokulakrishnan Kalaikovan" />
-					<img className="avatar" src={profilePic} alt="Gokulakrishnan Kalaikovan" />
-				</picture>
 				<div>
-					<h1>Gokulakrishnan Kalaikovan</h1>
+					<h1>Hi, I'm Gokul</h1>
 					<p>
-						<b>Web Developer</b> &
-						<a href="https://developers.google.com/experts/people/gokulakrishnan-kalaikovan" target="_blank">
+						I'm a web developer based in India, Bangalore. I love web, contribute to open source, I talk about web & javascript, and a
+						<a
+							href="https://google-developers.appspot.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
+							target="_blank"
+						>
 							Google Developer Expert
 						</a>
-						based in India, Bangalore.
+						for Web Technologies.
 					</p>
 					<div className="social">
 						<a className="twitter" href="https://twitter.com/gokul_i" target="_blank">
@@ -31,6 +30,10 @@ export default class Bio extends React.Component {
 						</a>
 					</div>
 				</div>
+				<picture>
+					<source type="image/webp" srcSet={profilePicWebP} alt="Gokulakrishnan Kalaikovan" />
+					<img className="avatar" src={profilePic} alt="Gokulakrishnan Kalaikovan" />
+				</picture>
 			</div>
 		);
 	}

@@ -2,7 +2,7 @@ footer {
   width: 100%;
   height: 45px;
   color: #fff;
-  background-color: #4a4a4a;
+  background-color: #2d2d2d;
   overflow: hidden;
   display: flex;
   margin-top: 70px;
@@ -16,6 +16,7 @@ footer {
   a {
     margin: 0 8px;
     color: #fff;
+    text-decoration-color: #fff;
 
     &:hover {
       color: #f1f1f1;
@@ -39,6 +40,7 @@ footer {
     font-size: 17px;
     margin-left: 5px;
     margin-top: 4px;
+    color: red;
   }
 }
 

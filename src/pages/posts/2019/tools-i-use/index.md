@@ -1,6 +1,6 @@
 ---
-path: "/blog/2017/tools-i-use"
-date: "2017-10-08"
+path: "/blog/2019/tools-i-use"
+date: "2019-08-04"
 title: "Tool I use for web development"
 ---
 
