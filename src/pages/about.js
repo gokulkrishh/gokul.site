@@ -66,7 +66,7 @@ export default () => (
 					</li>
 					<li>
 						Other Tools:
-						<a href="http://localhost:8000/blog/2019/tools-i-use/" target="_blank">
+						<a href="/blog/2019/tools-i-use/" target="_blank">
 							Browsers, Terminal & Desktop Apps
 						</a>
 					</li>
