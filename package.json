@@ -6,9 +6,10 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "npm run copy && gatsby build && npm run gh-pages",
+    "deploy": "npm run copy && npm run copy1 && gatsby build",
     "gh-pages": "gh-pages -b master -d public",
-    "copy": "cpy ./demo ./public/static --parents"
+    "copy": "cpy ./demo ./public/static --parents",
+    "copy1": "cpy ./CNAME ./public --parents"
   },
   "dependencies": {
     "disqus-react": "^1.0.5",
