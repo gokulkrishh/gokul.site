@@ -38,7 +38,6 @@ I wrote only 1 article in 2019 😆. In 2020, I am planning to write at least 1 
 
 I also maintain a git repo called [Today I Liked](https://github.com/gokulkrishh/today-i-liked) which has all the articles I read throughout this year.
 
-
 ### Open Source Projects
 
 - [Habits Tracker](https://github.com/gokulkrishh/habits-tracker) - Habits tracker app, I got this idea from [siddharth kp](https://twitter.com/siddharthkp) and took the design from [Aleksey Tsvetkov](https://dribbble.com/tsvetkov).
@@ -56,14 +55,13 @@ More open-source projects can be found [here](https://github.com/gokulkrishh?tab
 
 ### Git streaks
 
-Once my wise [friend](https://twitter.com/gnumanth) and fellow GDE told me that git streaks are just gimmicky and all it does is put stress on you and that he stopped doing it. I wanted to stop as well and take breaks whenever I can and I need to.
+Once my wise friend [Hemanth](https://twitter.com/gnumanth) and fellow GDE told me that git streaks are just gimmicky and all it does is put stress on you and that he stopped doing it. I wanted to stop as well and take breaks whenever I can and I need to.
 
 Hence my streaks look like this.
 
 <p><img style="margin-top: 30px;margin-bottom: 30px;" src="./2019-git-streaks.png" alt="Git Streaks 2019" /></p>
 
 But now looking back I took a lot of breaks 🙄😆 and feel great about it.
-
 
 ### Newsletter
 
@@ -91,7 +89,6 @@ And **USA** is the top readers for our newsletter.
 | May 11  | [Performance Budgeting](https://docs.google.com/presentation/d/1ne7SqVT1CzrVuHIFfSdUuWYkgEYfhnnbOxYgJgcy3bs/edit#slide=id.p)                           | Bangalore, Paypal Office | PaypalJs     |
 | Apr 07  | [Let's Talk Web Performance](https://docs.google.com/presentation/d/1If2_RCcxu9ICHsAQ06t1zUP8bE1wunBWb2Bm9qNimGg/edit#slide=id.p1)                     | Bangalore, Thoughworks   | UnFold UI    |
 
-
 ### Books I read
 
 - [Power Of Habits](https://www.goodreads.com/book/show/12609433-the-power-of-habit) - Why We Do What We Do in Life and Business
@@ -99,8 +96,6 @@ And **USA** is the top readers for our newsletter.
 - [Sapiens](https://www.goodreads.com/book/show/23198201-sapiens) - A Brief History of Humankind
 - [Kathaikal Sollum Pathai](https://www.goodreads.com/book/show/48390649?ac=1&from_search=true&qid=uX3f0O6hDt&rank=1) - A total of 23 short stories in Tamil 😍.
 - [Atomic Habits](https://www.goodreads.com/book/show/40121378-atomic-habits?ac=1&from_search=true&qid=rHk8AhEc0Y&rank=1) - An Easy & Proven Way to Build Good Habits & Break Bad Ones (In Tamil Publication) (Currently Reading 📖)
-
-
 
 ### List of things (Professional) I learned
 
@@ -113,6 +108,6 @@ And **USA** is the top readers for our newsletter.
 
 ### Conclusion
 
-All in all, I feel great this year than the previous year of things I have done and accomplished and I learned a lot both professionally and personally. In 2020 I again have a huge list of things I want to accomplish and things I want to continually do every year.
+All in all, I feel great this year than the previous year. I have accomplished a lot of things and I learned a lot too both professionally & personally. In 2020 I again have a huge list of things I want to accomplish and things I want to continually do every year.
 
 So, thanks for reading, see you next year for the same.
