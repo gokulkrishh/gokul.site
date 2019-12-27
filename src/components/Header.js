@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-export default class Header extends React.Component {
-	render() {
-		return (
-			<header>
-				<div className="grid">
-					<h1 />
+const Header = ({ hideLinks = false }) => {
+	return (
+		<header>
+			<div className="grid">
+				<h1 />
+				{!hideLinks && (
 					<ul className="menu">
 						<li>
 							<Link to="/" activeClassName="active">
@@ -24,8 +24,10 @@ export default class Header extends React.Component {
 							</Link>
 						</li>
 					</ul>
-				</div>
-			</header>
-		);
-	}
-}
+				)}
+			</div>
+		</header>
+	);
+};
+
+export default Header;
