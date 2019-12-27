@@ -6,7 +6,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "npm run copy && npm run copy1 && gatsby build",
+    "deploy": "npm run copy && npm run copy1 && gatsby build && npm run gh-pages",
     "gh-pages": "gh-pages -b master -d public",
     "copy": "cpy ./demo ./public/static --parents",
     "copy1": "cpy ./CNAME ./public --parents"

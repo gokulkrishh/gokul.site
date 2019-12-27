@@ -4,9 +4,9 @@ date: "2019-12-27"
 title: "2019 year end review"
 ---
 
-Last year I wrote a list of things I wanted to achieve in 2019. At every year end I feel like I did not do much this year. So I thought why not I write a blog post every year-end about what I did every year.
+Last year I wrote a list of things I wanted to achieve in 2019. So I thought why not I write a blog post every year-end about what I did throughout the year.
 
-These posts are really helpful to look back on what I did and how much I learned every year etc.
+This post will be really helpful when I look back and think about what I did and how much I learned every year etc.
 
 ## Summary of the year:
 
@@ -55,7 +55,7 @@ More open-source projects can be found [here](https://github.com/gokulkrishh?tab
 
 ### Git streaks
 
-Once my wise friend [Hemanth](https://twitter.com/gnumanth) & a fellow GDE told me that git streaks are just gimmicky and all it does is put stress on you and that he stopped doing it. I wanted to stop as well and take breaks whenever I can and I need to.
+Once my wise friend [Hemanth](https://twitter.com/gnumanth) told me that git streaks are just gimmicky and all it does is put stress on you and that he stopped doing it. I wanted to stop as well and take breaks whenever I can and I need to.
 
 Hence my streaks look like this.
 
