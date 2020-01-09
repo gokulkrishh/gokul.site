@@ -1,6 +1,6 @@
 ---
-path: "/blog/2019/tools-i-use"
-date: "2019-08-04"
+path: "/uses"
+date: "2020-01-09"
 title: "Tool I use for web development"
 ---
 
@@ -19,27 +19,24 @@ I will try to update this post regularly. Most of them are **OSX apps**.
 - [Dracula](https://draculatheme.com/zsh/) theme (slighty customized).
 - Lots of custom & borrowed [aliases](https://github.com/gokulkrishh/dotfiles/blob/master/oh-my-zsh/aliases) (super lazy me 😆).
 
-### ⌨️ Code Editor
+### ⌨️ Code Editor Settings
 
 - [VSCode Editor](https://code.visualstudio.com/Download) - An open source code editor from microsoft.
 - [Cobalt2 Theme](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2) - My current theme now.
 - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) - Editor icons for all type of files.
-- [Consolas](https://www.fonts.com/font/microsoft-corporation/consolas?QueryFontType=Web&src=GoogleWebFonts) - Editor font.
+- [Dank Mono](https://dank.sh/) - Editor font.
+- [Operator Mono](https://www.typography.com/fonts/operator/styles/operatormonoscreensmart) - Terminal font.
 - [User Settings](https://github.com/gokulkrishh/dotfiles/blob/master/vscode/user-settings.json) - Editor preferences.
 
-### 🔧 Editor Plugins
+### 🔧 Code Editor Plugins
 
-Most of the time I try to use fewer extensions & plugins. A few I use in vscode editor are below.
+- [Gist](https://gist.github.com/gokulkrishh/6a8b841f594ff451d66bbcc77307a779) - List of all extenstions and plugins
 
-- [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings) - Once upon a time I used to be a sublime fan 😜.
-- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost) - Calculates the size of imports and requires.
-- [Export Autocomplete](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-exports-autocomplete) - Collects ES6 exports from your project and autocompletes them.
-- [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets) -
-Dead simple React snippets you will actually use.
-- [ES6 Import Formatter](https://marketplace.visualstudio.com/items?itemName=henry-li.vscode-import-formatter) - Sort
-the leading imports/requires for ES6.
+Use the below command in your terminal show extension you use in vscode and share it easily.
+
+```bash
+npx https://gist.github.com/gokulkrishh/9dd54a34ed93701a37811f0eb2e37822
+```
 
 ### 👨‍💻 Desktop Apps (OSX )
 
@@ -47,25 +44,21 @@ the leading imports/requires for ES6.
 - [Licecap](https://www.cockos.com/licecap/) - GIF recorder.
 - [Skitch](https://evernote.com/products/skitch) - To add annotation, shapes etc,.
 - [Sketch](https://www.sketchapp.com/) - My [dribble shots](https://dribbble.com/gokulkrishh).
-- [Virtual Box](https://www.virtualbox.org/wiki/Mac%20OS%20X%20build%20instructions) - To run IE10+ browsers and other windows app.
-- [Kap](https://getkap.co/) - Capture your screen and output it as GIF, Video.
-- [Keycastr](https://github.com/keycastr/keycastr) - KeyCastr, an open-source keystroke visualizer.
-- [Spectacle](https://www.spectacleapp.com/) - Move and resize windows with ease in mac.
 
 ### 🎉 Browsers
 
-- Chrome, Chrome Canary (**my default browser**)
-- Opera
+- Chrome (**my default browser**), Chrome Canary.
+- Opera.
 - Mozilla Firefox, Mozilla Firefox Nighly,
+- Microsoft Edge, Microsoft Edge Canaryy.
 - Safari, Safari Technology Preview & Nightly (SW is supported 😬).
 
 ### 🔩 Browser Extensions
 
 #### Chrome
 
-- [Inbox by Gmail](https://chrome.google.com/webstore/detail/inbox-by-gmail/gkljgfmjocfalijkgoogmfffkhmkbgol) to save links for [pwa.tips](pwa.tips) - A bi-montly newsletter about web related stuffs.
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) - A React debugging tools to the Chrome Developer Tools.
-- [Github Notifier](https://chrome.google.com/webstore/detail/github-notifier/hoapibhhppbolnldjengllkcdbpbbgih) - Github Chrome notifications.
+- [Like on GitHub](https://chrome.google.com/webstore/detail/like-on-github/fbkngleiiccokoifohhjhlagkejlphkj) - Chrome extension to save links that you like on GitHub repository that you specify.
 
 ### 🔥 Dotfiles
 
