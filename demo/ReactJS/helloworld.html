@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hello world in React.js</title>
+</head>
+<body>
+  
+  <script src="http://fb.me/react-0.12.2.js"></script>
+  <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>  
+  <script type="text/jsx">
+    /** @jsx React.DOM */
+
+    var HelloWorld = React.createClass({
+      render: function() {
+        return (<p>Hello, world!</p>);
+      }
+    });
+
+    //Instruct the page to use above component
+    React.render(
+      <HelloWorld />,
+      document.body
+    );
+  </script>
+</body>
+</html>
