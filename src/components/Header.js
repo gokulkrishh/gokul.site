@@ -18,11 +18,11 @@ const Header = ({ hideLinks = false }) => {
 								About
 							</Link>
 						</li>
-						<li>
-							<a href="https://github.com/gokulkrishh" target="_blank">
-								Open Sources
-							</a>
-						</li>
+						{/* <li>
+							<Link to="/book" activeClassName="active">
+								Book
+							</Link>
+						</li> */}
 					</ul>
 				)}
 			</div>

@@ -1,0 +1,231 @@
+.book {
+	font-size: 18px;
+	line-height: 1.6;
+	font-family: var(--font-body);
+	color: var(--color-black);
+	background-color: var(--color-white);
+	--color-black: #000;
+	--color-grey: #f5f5f5;
+	--color-dark-grey: #4a5261;
+	--color-white: #fff;
+	--color-dark-blue: #000055;
+	--color-blue: #2874f0;
+	--color-lighten-blue: #1b1bad;
+	--color-light-orange: #fbe9e7;
+	--color-orange: #ee696b;
+	--color-yellow: #fff5e6;
+	--color-dark-yellow: #ffd392;
+	--color-twitter: #1b95e0;
+
+	--font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-title: "Futura", sans-serif;
+	--font-heading: "Poppins", sans-serif;
+
+	--grid-width: 960px;
+
+	// html {
+	// 	background-color: var(--color-yellow);
+	// }
+
+	.header-section {
+		padding-top: 50px;
+		background-color: var(--color-white);
+	}
+
+	footer {
+		margin-top: 10px;
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	a {
+		color: var(--color-blue);
+	}
+
+	a:hover {
+		opacity: 0.9;
+	}
+
+	ul {
+		padding-left: 40px;
+	}
+
+	h1,
+	h2 {
+		color: var(--color-orange);
+	}
+
+	h1 {
+		font-family: var(--font-title);
+		text-transform: uppercase;
+		margin-top: 10px;
+		line-height: 1.3;
+		font-size: 42px;
+		font-weight: bold;
+	}
+
+	h2 {
+		margin-top: 5px;
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	h3 {
+		font-weight: 500;
+	}
+
+	ul,
+	li {
+		list-style-type: square;
+		line-height: 1.7;
+	}
+
+	button {
+		margin-right: 10px;
+		color: var(--color-white);
+		border: 0;
+		border-radius: 6px;
+		min-width: 180px;
+		height: 49px;
+		font-size: 21px;
+		cursor: pointer;
+		font-weight: 500;
+		padding: 0 15px;
+		background-color: var(--color-blue);
+	}
+
+	.container {
+		width: var(--grid-width);
+		margin: 0 auto;
+	}
+
+	.header-section .container {
+		height: 720px;
+		padding-top: 40px;
+	}
+
+	.header-section img {
+		max-width: 500px;
+		position: absolute;
+		top: 130px;
+		right: 200px;
+	}
+
+	.header-section p {
+		padding-right: 360px;
+	}
+
+	.header-actions {
+		margin-top: 30px;
+	}
+
+	.title-tag {
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-bottom: 5px;
+		background-color: var(--color-dark-yellow);
+		border-radius: 32px;
+		color: var(--color-black);
+		padding: 6px 8px;
+		font-size: 11px;
+		margin-left: -5px;
+		letter-spacing: 1px;
+	}
+
+	section {
+		padding: 15px 20px;
+		background-color: var(--color-grey);
+	}
+
+	.learn-section {
+		margin-top: 20px;
+	}
+
+	.learn-section .container li {
+		line-height: 1.7;
+	}
+
+	.learn-section li {
+		list-style-type: decimal-leading-zero;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.learn-section .container > p {
+		font-size: 20px;
+	}
+
+	.author-section {
+		background-color: var(--color-white);
+	}
+
+	.author-section p {
+		line-height: 2;
+	}
+
+	.avatar {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		margin-right: 30px;
+		border: 2px solid #ffffff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	}
+
+	.author-section ul {
+		padding: 0;
+	}
+
+	.author-section li {
+		list-style-type: decimal;
+		line-height: 2.5;
+		margin-left: 30px;
+		padding-left: 5px;
+	}
+
+	.author-section a img {
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+
+	.content {
+		display: flex;
+	}
+
+	.faq-section .container p {
+		color: var(--color-dark-grey);
+	}
+
+	.faq-section h3 {
+		font-size: 20px;
+	}
+
+	section .twitter img {
+		width: 34px;
+	}
+
+	section .github img {
+		width: 29px;
+		position: relative;
+		top: -2px;
+	}
+
+	footer {
+		background-color: #fff;
+
+		.container {
+			color: #000;
+			font-size: 14px;
+		}
+
+		a {
+			margin: 0 5px;
+		}
+
+		a:hover {
+			background-color: var(--color-blue);
+		}
+	}
+}
