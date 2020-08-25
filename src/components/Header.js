@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
 const Header = ({ hideLinks = false }) => {
 	return (
@@ -14,14 +14,14 @@ const Header = ({ hideLinks = false }) => {
 							</Link>
 						</li>
 						<li>
-							<Link to="/opensources/" activeClassName="active">
-								Open Sources
+							<Link to="/about/" activeClassName="active">
+								About
 							</Link>
 						</li>
 						<li>
-							<Link to="/about/" activeClassName="active">
-								Me
-							</Link>
+							<a href="https://github.com/gokulkrishh" target="_blank">
+								Open Sources
+							</a>
 						</li>
 					</ul>
 				)}
