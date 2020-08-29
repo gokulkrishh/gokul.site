@@ -17,6 +17,7 @@ export default props => {
 				<Helmet>
 					<title>Gokulakrishnan Kalaikovan | Book</title>
 				</Helmet>
+				<div className="hero"></div>
 				<section className="header-section">
 					<div className="container">
 						<span className="title-tag">pre-order started</span>
