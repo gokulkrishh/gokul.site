@@ -32,6 +32,10 @@
 	.header-section {
 		padding-top: 50px;
 		background-color: var(--color-white);
+		display: grid;
+		grid-gap: 1rem 2rem;
+		align-items: center;
+		grid-template-columns: 2fr 1fr;
 	}
 
 	footer {
@@ -46,6 +50,15 @@
 
 	a:hover {
 		opacity: 0.9;
+	}
+
+	section .github img {
+		position: relative;
+		top: 0;
+	}
+
+	.author-section a img {
+		margin-right: 5px;
 	}
 
 	ul {
@@ -101,20 +114,19 @@
 		margin: 0 auto;
 	}
 
+	.header-section {
+		width: var(--grid-width);
+		margin: 0 auto;
+	}
+
 	.header-section .container {
-		height: 720px;
 		padding-top: 40px;
+		width: 580px;
+		margin: initial;
 	}
 
 	.header-section img {
 		max-width: 500px;
-		position: absolute;
-		top: 130px;
-		right: 200px;
-	}
-
-	.header-section p {
-		padding-right: 360px;
 	}
 
 	.header-actions {
@@ -165,15 +177,6 @@
 		line-height: 2;
 	}
 
-	.avatar {
-		width: 200px;
-		height: 200px;
-		border-radius: 50%;
-		margin-right: 30px;
-		border: 2px solid #ffffff;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	}
-
 	.author-section ul {
 		padding: 0;
 	}
@@ -188,6 +191,20 @@
 	.author-section a img {
 		margin-top: 10px;
 		margin-right: 10px;
+	}
+
+	.author-section .about {
+		margin-top: 20px;
+	}
+
+	.author-section h2 {
+		margin-bottom: 0;
+	}
+
+	.author-section .about a {
+		&:hover {
+			background-color: rgb(255, 255, 255);
+		}
 	}
 
 	.content {
@@ -226,6 +243,79 @@
 
 		a:hover {
 			background-color: var(--color-blue);
+		}
+	}
+}
+
+@media all and (max-width: 1340px) and (min-width: 720px) {
+	.book {
+		--grid-width: 90%;
+
+		.header-section {
+			grid-template-columns: 1fr;
+
+			.container {
+				margin: 0 auto;
+			}
+
+			img {
+				max-width: 400px;
+				order: -1;
+				margin: 0 auto;
+			}
+		}
+
+		.header-section .container {
+			width: 90%;
+			margin: initial;
+		}
+	}
+}
+
+@media all and (max-width: 719px) {
+	.book {
+		--grid-width: 95%;
+
+		.header-section {
+			grid-template-columns: 1fr;
+
+			.container {
+				margin: 0 auto;
+			}
+
+			img {
+				max-width: 280px;
+				order: -1;
+				margin: 0 auto;
+			}
+		}
+
+		.header-section .container {
+			width: 100%;
+			margin: initial;
+		}
+
+		h2 {
+			font-size: 25px;
+		}
+
+		h1 {
+			font-size: 30px;
+		}
+
+		p,
+		a,
+		ul,
+		li,
+		.learn-section li,
+		.learn-section .container > p {
+			font-size: 16px;
+		}
+
+		button {
+			min-width: 120px;
+			height: 39px;
+			font-size: 18px;
 		}
 	}
 }

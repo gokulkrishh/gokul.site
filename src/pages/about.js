@@ -13,7 +13,7 @@ export default () => (
 		</Helmet>
 		<Header />
 		<div className="grid">
-			<Bio />
+			{/* <Bio /> */}
 			<div className="about-me">
 				<h2>A little about me:</h2>
 				<p>

@@ -11,8 +11,13 @@ header {
 
 	.menu {
 		display: flex;
-		width: 200px;
+		max-width: 200px;
+		min-width: 140px;
 		justify-content: space-between;
+
+		li {
+			margin: 0 10px;
+		}
 	}
 
 	.menu a {

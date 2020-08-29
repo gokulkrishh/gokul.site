@@ -9,7 +9,7 @@ export default class Bio extends React.Component {
 		return (
 			<div className="about">
 				<div>
-					<h1>Hi, I'm Gokul 👋</h1>
+					<h2>Hi, I'm Gokul 👋</h2>
 					<p>
 						I'm a web developer &{" "}
 						<a

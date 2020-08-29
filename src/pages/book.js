@@ -85,103 +85,15 @@ export default props => {
 					<div className="container">
 						<h2>About the author</h2>
 						<div className="content">
-							<div>
-								<img
-									className="avatar"
-									src={authorImg}
-									alt="Gokulakrishnan Kalaikovan | Author"
-								/>
-							</div>
-							<div>
-								<h3>
-									Hi, I'm Gokul{" "}
-									<span role="img" aria-label="hi">
-										👋
-									</span>{" "}
-								</h3>
-								<p>
-									<span role="img" aria-label="what i do">
-										Gokul is a
-									</span>{" "}
-									Web Developer &{" "}
-									<a
-										href="https://developers.google.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
-										target="_blank"
-										rel="noreferrer"
-									>
-										Google Developer Expert
-									</a>{" "}
-									for web, based in India. He is currently working at{" "}
-									<a
-										href="http://thoughtworks.com/"
-										target="_blank"
-										rel="noreferrer"
-									>
-										ThoughtWorks
-									</a>
-									.{" "}
-									<p>
-										He is an open source contributor, public speaker, maintains
-										and curate's two newsletters{" "}
-										<a
-											href="https://www.this-week-in-web.com/"
-											target="_blank"
-											rel="noreferrer"
-										>
-											this week in web
-										</a>{" "}
-										and{" "}
-										<a
-											href="https://how-it-works.dev/"
-											target="_blank"
-											rel="noreferrer"
-										>
-											how it works
-										</a>{" "}
-										- javascript series. As of now, Gokul is continuing his
-										passion towards web development and helping the fellow web
-										developer's.
-									</p>
-									<a
-										href="https://twitter.com/gokul_i"
-										target="_blank"
-										rel="noreferrer"
-										title="Twitter"
-										className="twitter"
-									>
-										<img src={twitterImg} alt="twitter account" />
-									</a>
-									<a
-										href="https://github.com/gokulkrishh"
-										target="_blank"
-										rel="noreferrer"
-										title="Github"
-										className="github"
-									>
-										<img src={githubImg} alt="github account" />
-									</a>
-								</p>
-							</div>
+							<Bio />
 						</div>
 					</div>
 				</section>
 
 				<section className="faq-section">
 					<div className="container">
-						<h2>Frequently asked questions</h2>
+						<h2>Have questions or feedback?</h2>
 						<div>
-							<h3>Who is this book for?</h3>
-							<p>
-								The primary target audience for this book is beginners to mid
-								level web or UI developers or anybody who wants to learn web
-								security related topics and tips.
-							</p>
-							<h3>Is there a refund policy?</h3>
-							<p>
-								Yes, if you didn't like the book 😭 then yeah, its 100%
-								refundable via gumroad (only within 30 days of purchase).
-							</p>
-							<h3>I have some questions or want to report a correction?</h3>
 							<p>
 								Tweet me{" "}
 								<a
