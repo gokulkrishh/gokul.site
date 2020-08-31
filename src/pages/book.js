@@ -58,20 +58,44 @@ export default props => {
 					<div className="container">
 						<h2>What you'll learn</h2>
 						<ul>
-							<li>How does the web work?</li>
+							<li>
+								<b>How does the web work?</b>
+							</li>
 							<ul>
 								<li>Behind the hood</li>
 								<li>TCP/IP Model</li>
 								<li>HTTP & HTTPS Protocol</li>
 							</ul>
-							<li>What is Web Security?</li>
+							<li>
+								<b>What is Web Security?</b>
+							</li>
 							<ul>
 								<li>Types of web security attacks</li>
+								<li> Brute Force Attack </li>
+								<li> Clickjacking</li>
+								<li>Content Security Policy (CSP) </li>
+								<li>Cross Site Request Forgery (CSRF) </li>
+								<li>Cross Origin Request Sharing (CORS) </li>
+								<li>Cross Site Scripting (XSS) </li>
+								<li>Code Injection </li>
+								<li>Denial of service (DOS) </li>
+								<li>Open Redirect Attack </li>
+								<li>Javascript & 3rd Party Library Vulnerabilities </li>
+								<li>Phishing Attacks </li>
+								<li>Web Sockets Vulnerabilities</li>
 							</ul>
-							<li>Open Web Application Security Project (OWASP)</li>
-							<li>Web Security Vulnerabilities & Its Types</li>
-							<li>Security Tools & Libraries</li>
-							<li>Web Security Checklist</li>
+							<li>
+								<b>Open Web Application Security Project (OWASP)</b>
+							</li>
+							<li>
+								<b>Web Security Vulnerabilities & Its Types</b>
+							</li>
+							<li>
+								<b>Security Tools & Libraries</b>
+							</li>
+							<li>
+								<b>Web Security Checklist</b>
+							</li>
 						</ul>
 						<p>
 							View the full{" "}
