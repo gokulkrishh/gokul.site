@@ -14,6 +14,7 @@
 	--color-lighter-orange: #fff4eb;
 
 	--grid-width: 960px;
+	--font-title: "futura", sans-serif;
 
 	font-size: 18px;
 	line-height: 1.6;
@@ -130,7 +131,7 @@
 
 	.title-tag {
 		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: 500;
 		margin-bottom: 5px;
 		background-color: var(--color-dark-yellow);
 		border-radius: 32px;
@@ -152,10 +153,11 @@
 
 	.learn-section .container li {
 		line-height: 1.7;
+		padding-left: 0;
 	}
 
 	.learn-section li {
-		list-style-type: decimal-leading-zero;
+		list-style-type: decimal;
 		font-size: 18px;
 		font-weight: 400;
 	}
