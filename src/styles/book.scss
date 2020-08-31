@@ -13,7 +13,7 @@
 	--color-twitter: #1b95e0;
 	--color-lighter-orange: #fff4eb;
 
-	--grid-width: 960px;
+	--grid-width: 1080px;
 	--font-title: "futura", sans-serif;
 
 	font-size: 18px;
@@ -217,7 +217,9 @@
 	}
 
 	section .twitter img {
-		width: 34px;
+		width: 38px;
+		height: 41px;
+		margin-right: 0;
 	}
 
 	section .github img {
