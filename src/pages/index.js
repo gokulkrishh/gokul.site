@@ -1,21 +1,23 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { Link } from 'gatsby';
-import get from 'lodash/get';
+import React from "react";
+import Helmet from "react-helmet";
+import { Link } from "gatsby";
+import get from "lodash/get";
 
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import Bio from '../components/Bio';
-import Footer from '../components/Footer';
+import Newsletter from "../components/Newsletter";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import Bio from "../components/Bio";
+import Footer from "../components/Footer";
 
 export default class index extends React.Component {
 	render() {
-		const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-		const posts = get(this, 'props.data.allMarkdownRemark.group');
+		const siteTitle = get(this, "props.data.site.siteMetadata.title");
+		const posts = get(this, "props.data.allMarkdownRemark.group");
 		const sortPostByYear = {};
 		posts.forEach(post => {
-			const year = post.fieldValue.split('-')[0];
-			if (!sortPostByYear[year]) sortPostByYear[year] = [{ node: post.edges[0].node }];
+			const year = post.fieldValue.split("-")[0];
+			if (!sortPostByYear[year])
+				sortPostByYear[year] = [{ node: post.edges[0].node }];
 			else {
 				sortPostByYear[year].push({ node: post.edges[0].node });
 			}
@@ -38,20 +40,24 @@ export default class index extends React.Component {
 									<div className="post__year" key={postsByYear}>
 										<h2>{year}</h2>
 										{postsByYear.reverse().map(({ node }) => {
-											const title = get(node, 'frontmatter.title') || node.fields.slug;
+											const title =
+												get(node, "frontmatter.title") || node.fields.slug;
 											return (
 												<div className="post" key={node.fields.slug}>
 													<h3>
 														<Link to={`blog${node.fields.slug}`}>{title}</Link>
 													</h3>
 													<time>{node.frontmatter.date}</time>
-													<p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+													<p
+														dangerouslySetInnerHTML={{ __html: node.excerpt }}
+													/>
 												</div>
 											);
 										})}
 									</div>
 								);
 							})}
+						<Newsletter />
 					</div>
 				</div>
 				<Footer />
