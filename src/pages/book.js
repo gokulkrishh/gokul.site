@@ -3,12 +3,10 @@ import Helmet from "react-helmet";
 import { Link } from "gatsby";
 
 import Bio from "../components/Bio";
+import Newsletter from "../components/Newsletter";
 import Layout from "../components/Layout";
 import bookImage from "../images/book-cover.png";
 import samplePdf from "../images/(Sample)-Beginners guide to web security.pdf";
-import authorImg from "../components/profile-pic.jpg";
-import githubImg from "../components/github.svg";
-import twitterImg from "../components/twitter.svg";
 
 export default props => {
 	return (
@@ -20,7 +18,7 @@ export default props => {
 				<div className="hero"></div>
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">pre-order started</span>
+						<span className="title-tag">pre-order will start soon</span>
 
 						<h1>
 							Beginner's guide <br></br>to web security
@@ -43,8 +41,8 @@ export default props => {
 
 						<div className="header-actions">
 							<button>Pre-order now</button>
-							or{" "}
-							<a href={samplePdf} download>
+							or{"  "}
+							<a className="download" href={samplePdf} download>
 								{" "}
 								Download a free chapter
 							</a>
@@ -69,26 +67,26 @@ export default props => {
 							<li>
 								<b>What is Web Security?</b>
 							</li>
-							<ul>
-								<li>Types of web security attacks</li>
-								<li> Brute Force Attack </li>
-								<li> Clickjacking</li>
-								<li>Content Security Policy (CSP) </li>
-								<li>Cross Site Request Forgery (CSRF) </li>
-								<li>Cross Origin Request Sharing (CORS) </li>
-								<li>Cross Site Scripting (XSS) </li>
-								<li>Code Injection </li>
-								<li>Denial of service (DOS) </li>
-								<li>Open Redirect Attack </li>
-								<li>Javascript & 3rd Party Library Vulnerabilities </li>
-								<li>Phishing Attacks </li>
-								<li>Web Sockets Vulnerabilities</li>
-							</ul>
 							<li>
 								<b>Open Web Application Security Project (OWASP)</b>
 							</li>
 							<li>
 								<b>Web Security Vulnerabilities & Its Types</b>
+								<ul>
+									<li>Types of web security attacks</li>
+									<li> Brute Force Attack </li>
+									<li> Clickjacking</li>
+									<li>Content Security Policy (CSP) </li>
+									<li>Cross Site Request Forgery (CSRF) </li>
+									<li>Cross Origin Request Sharing (CORS) </li>
+									<li>Cross Site Scripting (XSS) </li>
+									<li>Code Injection </li>
+									<li>Denial of service (DOS) </li>
+									<li>Open Redirect Attack </li>
+									<li>Javascript & 3rd Party Library Vulnerabilities </li>
+									<li>Phishing Attacks </li>
+									<li>Web Sockets Vulnerabilities</li>
+								</ul>
 							</li>
 							<li>
 								<b>Security Tools & Libraries</b>
@@ -117,29 +115,70 @@ export default props => {
 
 				<section className="faq-section">
 					<div className="container">
-						<h2>Have questions or feedback?</h2>
-						<div>
-							<p>
-								Tweet me{" "}
-								<a
-									href="https://twitter.com/gokul_i"
-									target="_blank"
-									rel="noreferrer"
-								>
-									@gokul_i
-								</a>{" "}
-								or{" "}
-								<a
-									href="https://twitter.com/messages/compose?recipient_id=515540454"
-									target="_blank"
-									rel="noreferrer"
-								>
-									<span />
-									DM
-								</a>{" "}
-								me in twitter.
-							</p>
+						<h2>Frequently Asked Questions</h2>
+						<div className="faq-questions">
+							<div>
+								<h4>Who designed the cover?</h4>
+								<p>
+									The design was done by my friend{" "}
+									<a
+										href="https://twitter.com/https://twitter.com/align_all"
+										target="_blank"
+										rel="noreferrer"
+									>
+										Ranjith Ramanan
+									</a>
+									.
+								</p>
+							</div>
+							<div>
+								<h4>Can I get a student discount?</h4>
+								<p>
+									Yes, of course.{" "}
+									<a
+										href="https://twitter.com/messages/compose?recipient_id=515540454"
+										target="_blank"
+										rel="noreferrer"
+									>
+										<span />
+										DM
+									</a>{" "}
+									me in twitter.
+								</p>
+							</div>
 						</div>
+						<div>
+							<div>
+								<h4>I have a feedback or question?</h4>
+								<p>
+									Tweet me{" "}
+									<a
+										href="https://twitter.com/gokul_i"
+										target="_blank"
+										rel="noreferrer"
+									>
+										@gokul_i
+									</a>{" "}
+									or{" "}
+									<a
+										href="https://twitter.com/messages/compose?recipient_id=515540454"
+										target="_blank"
+										rel="noreferrer"
+									>
+										<span />
+										DM
+									</a>{" "}
+									me in twitter.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section className="author-section">
+					<div className="container">
+						<h2>Newletter</h2>
+						<br />
+						<Newsletter />
 					</div>
 				</section>
 				<footer>

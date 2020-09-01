@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
 import Header from "../components/Header";
+import Newsletter from "../components/Newsletter";
 import Bio from "../components/Bio";
 import Footer from "../components/Footer";
 
@@ -34,6 +35,7 @@ export default () => (
 					As of now, I am continuing my passion towards the web and improving
 					myself and helping other fellow web devs.
 				</p>
+				<Newsletter />
 				<h2>My Recent Talks:</h2>
 				<ul>
 					<li>Intro to ReactJS.</li>

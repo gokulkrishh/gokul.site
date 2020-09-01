@@ -53,6 +53,10 @@
 		top: 0;
 	}
 
+	.download {
+		margin-left: 6px;
+	}
+
 	.author-section a img {
 		margin-right: 5px;
 	}
@@ -216,6 +220,22 @@
 		font-size: 20px;
 	}
 
+	.faq-questions {
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+
+		h4 {
+			margin-bottom: 10px;
+			font-size: 19px;
+		}
+
+		p {
+			margin-top: 5px;
+			font-size: 17px;
+		}
+	}
+
 	section .twitter img {
 		width: 38px;
 		height: 41px;
@@ -271,6 +291,15 @@
 	}
 }
 
+@media all and (max-width: 480px) {
+	.book {
+		.download {
+			margin-top: 20px;
+			margin-left: 0;
+		}
+	}
+}
+
 @media all and (max-width: 719px) {
 	.book {
 		--grid-width: 95%;
@@ -292,6 +321,10 @@
 		.header-section .container {
 			width: 100%;
 			margin: initial;
+		}
+
+		.faq-questions {
+			flex-direction: column;
 		}
 
 		h2 {
