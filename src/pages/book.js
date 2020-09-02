@@ -176,7 +176,7 @@ export default props => {
 				</section>
 				<section className="author-section">
 					<div className="container">
-						<h2>Newletter</h2>
+						<h2>Keep yourself updated</h2>
 						<br />
 						<Newsletter />
 					</div>

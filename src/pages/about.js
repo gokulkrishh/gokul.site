@@ -35,7 +35,6 @@ export default () => (
 					As of now, I am continuing my passion towards the web and improving
 					myself and helping other fellow web devs.
 				</p>
-				<Newsletter />
 				<h2>My Recent Talks:</h2>
 				<ul>
 					<li>Intro to ReactJS.</li>
@@ -90,6 +89,7 @@ export default () => (
 					</li>
 				</ul>
 			</div>
+			<Newsletter />
 		</div>
 		<Footer />
 	</Layout>
