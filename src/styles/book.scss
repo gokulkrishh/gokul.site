@@ -195,17 +195,11 @@
 	}
 
 	.author-section .about {
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 
 	.author-section h2 {
 		margin-bottom: 0;
-	}
-
-	.author-section .about a {
-		&:hover {
-			background-color: rgb(255, 255, 255);
-		}
 	}
 
 	.content {
@@ -240,18 +234,23 @@
 		.Newsletter__container p {
 			font-size: 16px;
 		}
+
+		.about h1 {
+			margin-top: 5px;
+			font-size: 28px;
+			font-weight: 700;
+			text-transform: inherit;
+			font-family: inherit;
+			color: var(--color-black);
+		}
 	}
 
-	section .twitter img {
-		width: 38px;
-		height: 41px;
-		margin-right: 0;
+	.about .social a img {
+		margin-top: -1px;
 	}
 
-	section .github img {
-		width: 29px;
-		position: relative;
-		top: -2px;
+	.about .social a .github {
+		margin-right: 8px;
 	}
 
 	footer {

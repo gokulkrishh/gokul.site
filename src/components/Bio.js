@@ -9,18 +9,18 @@ export default class Bio extends React.Component {
 		return (
 			<div className="about">
 				<div>
-					<h2>Hi, I'm Gokul 👋</h2>
+					<h1>Hi, I'm Gokul 👋</h1>
 					<p>
-						I'm a web developer &{" "}
+						I'm a web developer and
 						<a
 							href="https://google-developers.appspot.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
 							target="_blank"
 						>
 							Google Developer Expert (GDE)
 						</a>
-						based out of Bangalore, India. Besides coding, I like gaming (COD
-						mobile mostly these days), running, football, travelling and finally
-						an author in progress.
+						from Bangalore, India. Besides coding, I like gaming (COD mobile
+						mostly these days), running, football, travelling and finally an
+						author in progress.
 					</p>
 					<div className="social">
 						<a
@@ -28,14 +28,14 @@ export default class Bio extends React.Component {
 							href="https://twitter.com/gokul_i"
 							target="_blank"
 						>
-							<img src={Twitter} alt="Twitter" />
+							<img src={Twitter} alt="Twitter" /> Twitter
 						</a>
 						<a
 							className="github"
 							href="https://github.com/gokulkrishh"
 							target="_blank"
 						>
-							<img src={Github} alt="Github" />
+							<img src={Github} alt="Github" /> Github
 						</a>
 					</div>
 				</div>

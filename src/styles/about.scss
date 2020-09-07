@@ -4,23 +4,22 @@
 	align-items: center;
 	margin: 35px 0 50px;
 	line-height: 1.8;
-	font-size: 17px;
-	background-color: #1c212a;
+	font-size: 19px;
 	border-radius: 6px;
-	padding: 10px 20px;
-	color: #fff;
+	padding: 10px 0;
+	color: #1c212a;
 
 	.avatar {
-		width: 150px;
-		height: 150px;
+		width: 170px;
+		height: 170px;
 		border-radius: 50%;
 		border: 2px solid #ffffff;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	}
 
-	h2 {
+	h1 {
 		margin: 0;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 
 	p {
@@ -31,6 +30,7 @@
 	> div {
 		margin-top: 10px;
 		margin-right: 10px;
+		padding-right: 40px;
 	}
 
 	p a {
@@ -39,30 +39,50 @@
 	}
 
 	.social {
-		margin-top: 10px;
+		margin-top: 20px;
+		display: flex;
 	}
 
 	.social a {
 		border: 0;
-		margin: 0 5px;
+		width: 95px;
+		border-radius: 6px;
+		height: 35px;
+		display: flex;
+		align-items: center;
+		padding: 0 8px;
+		text-decoration: none;
+		font-size: 15px;
+		color: #1c212a;
+		background-color: #ccc;
+
+		img {
+			margin-right: 6px;
+			margin-top: -1px;
+			margin-left: 1.5px;
+		}
 
 		&:first-child {
-			margin-left: 0;
+			margin-right: 20px;
+
+			img {
+				margin-right: 5px;
+				margin-left: 2px;
+			}
 		}
 
 		&:hover {
-			background-color: transparent;
-			opacity: 0.6;
+			opacity: 0.9;
 		}
 	}
 
 	.social img {
-		width: 37px;
-		height: 37px;
+		width: 20px;
+		height: 20px;
 	}
 
 	.social .github img {
-		width: 30px;
+		width: 16px;
 	}
 }
 
