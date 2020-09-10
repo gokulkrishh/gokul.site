@@ -42,10 +42,7 @@
 
 	a {
 		color: var(--color-blue);
-	}
-
-	a:hover {
-		opacity: 0.9;
+		text-decoration-color: var(--color-blue);
 	}
 
 	section .github img {
@@ -237,7 +234,7 @@
 
 		.about h1 {
 			margin-top: 5px;
-			font-size: 28px;
+			font-size: 23px;
 			font-weight: 700;
 			text-transform: inherit;
 			font-family: inherit;
@@ -254,7 +251,7 @@
 	}
 
 	footer {
-		background-color: #fff;
+		background-color: var(--color-grey);
 
 		.container {
 			color: #000;
