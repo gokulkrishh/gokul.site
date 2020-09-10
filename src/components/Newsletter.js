@@ -8,7 +8,9 @@ const Newsletter = () => {
 	return (
 		<div className="Newsletter__container">
 			<div className="Newsletter__title">
-				<h4>Join my newsletter</h4>
+				<h4>
+					<span>📩</span>Join my newsletter
+				</h4>
 				<p>
 					Learn about Web, Javascript, Frameworks, Design, and about life with
 					me.
