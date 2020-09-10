@@ -280,7 +280,7 @@
 			}
 
 			img {
-				max-width: 400px;
+				max-width: 430px;
 				order: -1;
 				margin: 0 auto;
 			}
@@ -302,19 +302,28 @@
 	}
 }
 
+@media all and (max-width: 320px) {
+	book {
+		img {
+			margin-left: -30px;
+		}
+	}
+}
+
 @media all and (max-width: 719px) {
 	.book {
 		--grid-width: 95%;
 
 		.header-section {
 			grid-template-columns: 1fr;
+			padding-top: 30px;
 
 			.container {
 				margin: 0 auto;
 			}
 
 			img {
-				max-width: 280px;
+				max-width: 320px;
 				order: -1;
 				margin: 0 auto;
 			}
@@ -323,6 +332,7 @@
 		.header-section .container {
 			width: 100%;
 			margin: initial;
+			padding-top: 0px;
 		}
 
 		.faq-questions {
