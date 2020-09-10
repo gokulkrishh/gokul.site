@@ -53,21 +53,26 @@
 		padding: 0 8px;
 		text-decoration: none;
 		font-size: 15px;
-		color: #1c212a;
-		background-color: #ccc;
+		justify-content: center;
 
 		img {
-			margin-right: 6px;
 			margin-top: -1px;
 			margin-left: 1.5px;
+			margin-right: 7px;
+		}
+
+		&:last-child {
+			color: #fff;
+			background-color: #1c212a;
 		}
 
 		&:first-child {
 			margin-right: 20px;
+			background-color: #1da1f2;
+			color: #fff;
 
 			img {
-				margin-right: 5px;
-				margin-left: 2px;
+				margin-right: 4px;
 			}
 		}
 
@@ -88,7 +93,7 @@
 
 .about-me {
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 
 	ul {
 		list-style: disc;
@@ -133,6 +138,7 @@
 
 	.about > div {
 		margin: 0;
+		padding: 0;
 	}
 
 	.about div {
@@ -143,37 +149,47 @@
 		font-size: 21px;
 	}
 
+	picture {
+		order: -1;
+	}
+
 	.about .avatar {
-		display: none;
+		width: 130px;
+		height: 130px;
 	}
 }
 
 @media all and (max-width: 480px) {
-	.about .avatar {
-		width: 70px;
-		height: 70px;
-		margin: 15px 0;
-	}
-
 	.about {
 		flex-direction: column;
-		margin-top: 20px;
-	}
+		margin-top: 0;
 
-	.about img {
-		margin-bottom: 0;
-	}
+		.social {
+			justify-content: center;
+		}
 
-	.about div {
-		text-align: center;
-		margin: 0;
-	}
+		div {
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
 
-	.about div h1 {
-		font-size: 21px;
-	}
+		img {
+			margin-bottom: 0;
+		}
 
-	.about .avatar {
-		display: none;
+		div h1 {
+			font-size: 21px;
+		}
+
+		picture {
+			order: -1;
+		}
+
+		.avatar {
+			width: 110px;
+			height: 110px;
+			margin: 15px 0;
+		}
 	}
 }

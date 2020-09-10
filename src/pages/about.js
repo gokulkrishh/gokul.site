@@ -16,37 +16,35 @@ export default () => (
 		<div className="grid">
 			{/* <Bio /> */}
 			<div className="about-me">
-				<h2>A little about me:</h2>
+				<h2>About me</h2>
 				<p>
-					I'm glad you made this far to the website. So thank you for that. Now
-					let's talk about me. I started my career as a UI Developer who knows
-					HTML, CSS, little JS & PHP. After moving to my 2nd company, I started
-					working on many javascript frameworks & web technologies. Then I
-					slowly understood that I liked working on the web a lot.
+					I'm glad that you made this far to my website. Now let's talk about
+					me. I started my career as a self-taught UI Developer using HTML, CSS,
+					javascript & PHP. After few months, I got a chance to work on Angular
+					(v1.5) and slowly started working on many other javascript frameworks
+					like ember, backbone, kendo ui, knockoutjs etc,. In the beginning of
+					my career only I understood that I liked working on the web a lot.
 				</p>
 				<p>
 					So I started following my passion and curiosity in the open web,
-					focusing on improving my skills as a web developer. I before even
-					realizing I became an expert in what I was doing and got nominated for
-					Google Developer Expert. Finally, I became a Google Developer Expert
-					(GDE) in Web Technologies.
+					focusing on improving my skills as a web developer. Before even I
+					realized I became an expert in what I was doing and got nominated for
+					Google Developer Expert (GDE). After two discussions with a googler
+					and an existing GDE and a few months of waiting, I became a Google
+					Developer Expert (GDE) in Web Technologies.
 				</p>
 				<p>
 					As of now, I am continuing my passion towards the web and improving
-					myself and helping other fellow web devs.
+					myself and helping other fellow web devs. Besides coding, I like
+					gaming (COD mobile mostly these days), running, football, traveling
+					and finally an author in progress. To know more about my book, follow
+					me in{" "}
+					<a href="https://twitter.com/gokul_i" target="_blank">
+						twitter
+					</a>
+					.
 				</p>
-				<h2>My Recent Talks:</h2>
-				<ul>
-					<li>Intro to ReactJS.</li>
-					<li>Serverless for frontend developer.</li>
-					<li>Performance Budgeting.</li>
-					<li>Lets Talk Web Performance.</li>
-				</ul>
-				More can be found{" "}
-				<a href="https://github.com/gokulkrishh/my-talks" target="_blank">
-					here
-				</a>
-				.<h2>Currently Using:</h2>
+				<h2>Uses</h2>
 				<ul>
 					<li>💻 Computer: Macbook Pro 2018</li>
 					<li>
@@ -72,18 +70,18 @@ export default () => (
 						&{" "}
 						<a href="https://how-it-works.dev" target="_blank">
 							How it works
-						</a>{" "}
+						</a>
 						- Javascript series
 					</li>
 					<li>
-						⚙️ Dotfiles:
+						⚙️
 						<a href="https://github.com/gokulkrishh/dotfiles" target="_blank">
 							My Dotfiles
 						</a>
 					</li>
 					<li>
-						🔩Other Tools:
-						<a href="/blog/2019/tools-i-use/" target="_blank">
+						🔩Other Tools I use:
+						<a href="/uses" target="_blank">
 							Browsers, Terminal & Desktop Apps
 						</a>
 					</li>
