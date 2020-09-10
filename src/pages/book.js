@@ -18,7 +18,7 @@ export default props => {
 				<div className="hero"></div>
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">pre-order will start soon</span>
+						<span className="title-tag">pre-order now</span>
 
 						<h1>
 							Beginner's guide <br></br>to web security
