@@ -42,10 +42,14 @@ export default class index extends React.Component {
 										{postsByYear.reverse().map(({ node }) => {
 											const title =
 												get(node, "frontmatter.title") || node.fields.slug;
+											const link =
+												title === "Tools I use for web development"
+													? "/uses"
+													: `blog${node.fields.slug}`;
 											return (
 												<div className="post" key={node.fields.slug}>
 													<h3>
-														<Link to={`blog${node.fields.slug}`}>{title}</Link>
+														<Link to={link}>{title}</Link>
 													</h3>
 													<time>{node.frontmatter.date}</time>
 													<p

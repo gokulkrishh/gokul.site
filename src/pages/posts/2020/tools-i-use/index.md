@@ -1,7 +1,7 @@
 ---
 path: "/uses"
 date: "2020-01-09"
-title: "Tool I use for web development"
+title: "Tools I use for web development"
 ---
 
 ## Why this post?
