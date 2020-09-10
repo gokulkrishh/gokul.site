@@ -4,23 +4,22 @@
 	align-items: center;
 	margin: 35px 0 50px;
 	line-height: 1.8;
-	font-size: 17px;
-	background-color: #1c212a;
+	font-size: 19px;
 	border-radius: 6px;
-	padding: 10px 20px;
-	color: #fff;
+	padding: 10px 0;
+	color: #1c212a;
 
 	.avatar {
-		width: 150px;
-		height: 150px;
+		width: 170px;
+		height: 170px;
 		border-radius: 50%;
 		border: 2px solid #ffffff;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	}
 
-	h2 {
+	h1 {
 		margin: 0;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 
 	p {
@@ -31,6 +30,7 @@
 	> div {
 		margin-top: 10px;
 		margin-right: 10px;
+		padding-right: 40px;
 	}
 
 	p a {
@@ -39,36 +39,62 @@
 	}
 
 	.social {
-		margin-top: 10px;
+		margin-top: 20px;
+		display: flex;
 	}
 
 	.social a {
 		border: 0;
-		margin: 0 5px;
+		width: 95px;
+		border-radius: 6px;
+		height: 35px;
+		display: flex;
+		align-items: center;
+		padding: 0 8px;
+		text-decoration: none;
+		font-size: 15px;
+		justify-content: center;
+
+		img {
+			margin-top: -1px;
+			margin-left: 1.5px;
+			margin-right: 7px;
+		}
+
+		&:last-child {
+			color: #fff;
+			background-color: #1c212a;
+		}
 
 		&:first-child {
-			margin-left: 0;
+			margin-right: 20px;
+			background-color: #1da1f2;
+			color: #fff;
+
+			img {
+				margin-right: 4px;
+			}
 		}
 
 		&:hover {
-			background-color: transparent;
-			opacity: 0.6;
+			opacity: 0.9;
 		}
 	}
 
 	.social img {
-		width: 37px;
-		height: 37px;
+		width: 20px;
+		height: 20px;
 	}
 
 	.social .github img {
-		width: 30px;
+		width: 16px;
 	}
 }
 
 .about-me {
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
+	line-height: 2;
 
 	ul {
 		list-style: disc;
@@ -86,9 +112,13 @@
 }
 
 @media all and (max-width: 740px) and (min-width: 640px) {
+	.about {
+		font-size: 16px;
+	}
+
 	.about .avatar {
-		width: 110px;
-		height: 110px;
+		width: 130px;
+		height: 130px;
 	}
 }
 
@@ -99,12 +129,17 @@
 		font-size: 16px;
 	}
 
+	.social {
+		justify-content: center;
+	}
+
 	.about img {
 		margin-bottom: 0;
 	}
 
 	.about > div {
 		margin: 0;
+		padding: 0;
 	}
 
 	.about div {
@@ -115,37 +150,47 @@
 		font-size: 21px;
 	}
 
+	picture {
+		order: -1;
+	}
+
 	.about .avatar {
-		display: none;
+		width: 130px;
+		height: 130px;
 	}
 }
 
 @media all and (max-width: 480px) {
-	.about .avatar {
-		width: 70px;
-		height: 70px;
-		margin: 15px 0;
-	}
-
 	.about {
 		flex-direction: column;
-		margin-top: 20px;
-	}
+		margin-top: 0;
 
-	.about img {
-		margin-bottom: 0;
-	}
+		.social {
+			justify-content: center;
+		}
 
-	.about div {
-		text-align: center;
-		margin: 0;
-	}
+		div {
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
 
-	.about div h1 {
-		font-size: 21px;
-	}
+		img {
+			margin-bottom: 0;
+		}
 
-	.about .avatar {
-		display: none;
+		div h1 {
+			font-size: 21px;
+		}
+
+		picture {
+			order: -1;
+		}
+
+		.avatar {
+			width: 110px;
+			height: 110px;
+			margin: 15px 0;
+		}
 	}
 }

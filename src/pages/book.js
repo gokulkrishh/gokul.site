@@ -18,7 +18,7 @@ export default props => {
 				<div className="hero"></div>
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">pre-order will start soon</span>
+						<span className="title-tag">pre-order now</span>
 
 						<h1>
 							Beginner's guide <br></br>to web security
@@ -41,9 +41,8 @@ export default props => {
 
 						<div className="header-actions">
 							<button>Pre-order now</button>
-							or{"  "}
+							or{""}
 							<a className="download" href={samplePdf} download>
-								{" "}
 								Download a free chapter
 							</a>
 						</div>
@@ -120,7 +119,7 @@ export default props => {
 							<div>
 								<h4>Who designed the cover?</h4>
 								<p>
-									The design was done by my friend{" "}
+									The design was done by{" "}
 									<a
 										href="https://twitter.com/https://twitter.com/align_all"
 										target="_blank"
