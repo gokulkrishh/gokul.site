@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import Bio from "../components/Bio";
 import Newsletter from "../components/Newsletter";
 import Layout from "../components/Layout";
-import bookImage from "../images/book-cover.png";
+import bookImage from "../images/book-cover.jpg";
 import samplePdf from "../images/(Sample)-Beginners guide to web security.pdf";
 
 export default props => {
