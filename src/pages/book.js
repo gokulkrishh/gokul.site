@@ -6,7 +6,7 @@ import Bio from "../components/Bio";
 import Newsletter from "../components/Newsletter";
 import Layout from "../components/Layout";
 import bookImage from "../images/book-cover.jpg";
-import samplePdf from "../images/(Sample)-Beginners guide to web security.pdf";
+import samplePdf from "../images/beginners-guide-to-web-security-sample";
 
 export default props => {
 	return (
