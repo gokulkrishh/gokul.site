@@ -37,8 +37,7 @@ export default () => (
 					As of now, I am continuing my passion towards the web and improving
 					myself and helping other fellow web devs. Besides coding, I like
 					gaming (COD mobile mostly these days), running, football, traveling
-					and finally an author in progress. To know more about my book, follow
-					me in{" "}
+					and an author. To know more about my book, follow me in{" "}
 					<a href="https://twitter.com/gokul_i" target="_blank">
 						twitter
 					</a>
