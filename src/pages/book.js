@@ -15,7 +15,7 @@ export default props => {
 			<Layout>
 				<SEO
 					title="Beginner's Guide To Web Security"
-					description="A 100+ page ebook that talks about the basics of web security and various types of web security."
+					description="A 100+ page ebook that talks about the basics of web security, various types of web security attacks and how to avoid/fix them."
 				/>
 				<Helmet>
 					<title>
