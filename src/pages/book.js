@@ -18,7 +18,7 @@ export default props => {
 				<div className="hero"></div>
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">Order now</span>
+						<span className="title-tag">Pre-Order now</span>
 
 						<h1>
 							Beginner's guide <br></br>to web security
@@ -40,7 +40,13 @@ export default props => {
 						</p>
 
 						<div className="header-actions">
-							<button>Pre-order now</button>
+							<a
+								className="gumroad-button"
+								href="https://gum.co/IrcpA"
+								target="_blank"
+							>
+								Pre-order now
+							</a>
 							or{""}
 							<a className="download" href={samplePdf} download>
 								Download a free chapter
@@ -50,7 +56,6 @@ export default props => {
 
 					<img src={bookImage} alt=" Beginner's guide to web security cover" />
 				</section>
-
 				<section className="learn-section">
 					<div className="container">
 						<h2>What you'll learn</h2>
@@ -102,7 +107,6 @@ export default props => {
 						</p>
 					</div>
 				</section>
-
 				<section className="author-section">
 					<div className="container">
 						<h2>About the author</h2>
@@ -111,7 +115,6 @@ export default props => {
 						</div>
 					</div>
 				</section>
-
 				<section className="faq-section">
 					<div className="container">
 						<h2>Frequently Asked Questions</h2>
