@@ -1,8 +1,9 @@
 module.exports = {
 	siteMetadata: {
 		title: `Gokulakrishnan Kalaikovan | Web Developer, GDE for Web Technologies`,
-		siteUrl: `https://gokulkrishh.github.io`,
-		description: `My personal blog using gatsby 😍`
+		siteUrl: `https://gokul.site`,
+		description: `My personal blog using gatsby 😍`,
+		author: `@gokulkrishh`
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,

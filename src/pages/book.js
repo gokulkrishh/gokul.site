@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
 
+import SEO from "../../seo";
 import Bio from "../components/Bio";
 import Newsletter from "../components/Newsletter";
 import Layout from "../components/Layout";
@@ -12,8 +13,14 @@ export default props => {
 	return (
 		<div className="book">
 			<Layout>
+				<SEO
+					title="Beginner's Guide To Web Security"
+					description="A 100+ page ebook that talks about the basics of web security and various types of web security."
+				/>
 				<Helmet>
-					<title>Gokulakrishnan Kalaikovan | Book</title>
+					<title>
+						Gokulakrishnan Kalaikovan | Book | Beginner's Guide To Web Security
+					</title>
 				</Helmet>
 				<div className="hero"></div>
 				<section className="header-section">
@@ -21,7 +28,7 @@ export default props => {
 						<span className="title-tag">Pre-Order now</span>
 
 						<h1>
-							Beginner's guide <br></br>to web security
+							Beginner's Guide <br></br>To Web Security
 						</h1>
 						<p>In this book, you will learn the following.</p>
 
@@ -36,7 +43,7 @@ export default props => {
 						</ul>
 						<p>
 							At the end of this book has tools and web security checklist to
-							getting started with web security.
+							getting started now in your project.
 						</p>
 
 						<div className="header-actions">
