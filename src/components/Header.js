@@ -18,11 +18,11 @@ const Header = ({ hideLinks = false }) => {
 								About
 							</Link>
 						</li>
-						<li>
+						{/* <li>
 							<Link to="/book" activeClassName="active">
 								Book
 							</Link>
-						</li>
+						</li> */}
 					</ul>
 				)}
 			</div>
