@@ -60,6 +60,6 @@ SEO.defaultProps = {
 	title: null,
 	description: null,
 	image: null,
-	siteUrl: "https://gokul.site/",
+	siteUrl: "https://gokul.site",
 	article: false
 };
