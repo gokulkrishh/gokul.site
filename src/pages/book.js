@@ -131,7 +131,7 @@ export default props => {
 								<p>
 									The design was done by{" "}
 									<a
-										href="https://twitter.com/https://twitter.com/align_all"
+										href="https://twitter.com/align_all"
 										target="_blank"
 										rel="noreferrer"
 									>
