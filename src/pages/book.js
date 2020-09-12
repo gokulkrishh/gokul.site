@@ -2,26 +2,33 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
 
+import SEO from "../../seo";
 import Bio from "../components/Bio";
 import Newsletter from "../components/Newsletter";
 import Layout from "../components/Layout";
 import bookImage from "../images/book-cover.jpg";
-import samplePdf from "../images/(Sample)-Beginners guide to web security.pdf";
+import samplePdf from "../images/beginners-guide-to-web-security-sample.pdf";
 
 export default props => {
 	return (
 		<div className="book">
 			<Layout>
+				<SEO
+					title="Beginner's Guide To Web Security"
+					description="A 100+ page ebook that talks about the basics of web security, various types of web security attacks and how to avoid/fix them."
+				/>
 				<Helmet>
-					<title>Gokulakrishnan Kalaikovan | Book</title>
+					<title>
+						Gokulakrishnan Kalaikovan | Book | Beginner's Guide To Web Security
+					</title>
 				</Helmet>
 				<div className="hero"></div>
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">pre-order now</span>
+						<span className="title-tag">Pre-Order now</span>
 
 						<h1>
-							Beginner's guide <br></br>to web security
+							Beginner's Guide <br></br>To Web Security
 						</h1>
 						<p>In this book, you will learn the following.</p>
 
@@ -36,11 +43,17 @@ export default props => {
 						</ul>
 						<p>
 							At the end of this book has tools and web security checklist to
-							getting started with web security.
+							getting started now in your project.
 						</p>
 
 						<div className="header-actions">
-							<button>Pre-order now</button>
+							<a
+								className="gumroad-button"
+								href="https://gum.co/IrcpA"
+								target="_blank"
+							>
+								Pre-order now
+							</a>
 							or{""}
 							<a className="download" href={samplePdf} download>
 								Download a free chapter
@@ -50,7 +63,6 @@ export default props => {
 
 					<img src={bookImage} alt=" Beginner's guide to web security cover" />
 				</section>
-
 				<section className="learn-section">
 					<div className="container">
 						<h2>What you'll learn</h2>
@@ -102,7 +114,6 @@ export default props => {
 						</p>
 					</div>
 				</section>
-
 				<section className="author-section">
 					<div className="container">
 						<h2>About the author</h2>
@@ -111,7 +122,6 @@ export default props => {
 						</div>
 					</div>
 				</section>
-
 				<section className="faq-section">
 					<div className="container">
 						<h2>Frequently Asked Questions</h2>

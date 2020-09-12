@@ -97,7 +97,7 @@
 		line-height: 1.7;
 	}
 
-	button {
+	.gumroad-button {
 		margin-right: 10px;
 		color: var(--color-white);
 		border: 0;
@@ -109,6 +109,8 @@
 		font-weight: 500;
 		padding: 0 15px;
 		background-color: var(--color-blue);
+		line-height: 48px;
+		text-align: center;
 	}
 
 	.container {
@@ -353,7 +355,7 @@
 			font-size: 16px;
 		}
 
-		button {
+		.gumroad-button {
 			min-width: 120px;
 			height: 39px;
 			font-size: 18px;
