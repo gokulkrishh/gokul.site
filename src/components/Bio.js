@@ -20,7 +20,7 @@ export default class Bio extends React.Component {
 						</a>
 						from Bangalore, India. Besides coding, I like gaming (COD mobile
 						mostly these days), running, football, travelling and finally an
-						author in progress.
+						author.
 					</p>
 					<div className="social">
 						<a

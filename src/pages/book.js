@@ -34,16 +34,18 @@ export default props => {
 
 						<ul>
 							<li>How Web Works?</li>
+							<li>TCP/IP Model</li>
+							<li>HTTP, HTTPS, Various types of HTTPS certificates</li>
 							<li>What is Secure Software Development Lifecycle (SSDLC)?</li>
 							<li>What is OWASP?</li>
 							<li>OWASP Top 10 Vulnerabilities</li>
 							<li>Various types of web vulnerabilities</li>
-							<li>Security Tools & Libraries</li>
-							<li>Web Security Checklist</li>
+							<li>How to prevent from web vulnerabilities</li>
+							<li>How to fix the web vulnerabilities</li>
 						</ul>
 						<p>
-							At the end of this book has tools and web security checklist to
-							getting started now in your project.
+							At the end of this book has tools, libraries and web security
+							checklist to getting started on the web security.
 						</p>
 
 						<div className="header-actions">
