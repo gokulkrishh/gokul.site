@@ -25,7 +25,7 @@ export default props => {
 				<div className="hero"></div>
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">Pre-Order now</span>
+						<span className="title-tag">Order now</span>
 
 						<h1>
 							Beginner's Guide <br></br>To Web Security
@@ -54,7 +54,7 @@ export default props => {
 								href="https://gum.co/IrcpA"
 								target="_blank"
 							>
-								Pre-order now
+								Buy on gumroad
 							</a>
 							or{""}
 							<a className="download" href={samplePdf} download>
