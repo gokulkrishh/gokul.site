@@ -6,15 +6,14 @@ import Header from "../components/Header";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import SEO from "../../seo";
-import profileImg from "../components/profile-pic.jpg";
+import bannerImg from "../components/banner.png";
 
 export default props => {
 	const siteTitle = "Gokulakrishnan Kalaikovan";
-	const siteDesc =
-		"Hi, I am Gokul. I am a Web Developer and Google Developer Expert for the web. Come check out how I share my learnings and knowledge via my site.";
+	const siteDesc = `Hi, I am Gokul. I am a Web Developer and GDE for the web. Come check out how I share my learnings and knowledge.`;
 	return (
 		<Layout>
-			<SEO title={siteTitle} description={siteDesc} image={profileImg} />
+			<SEO title={siteTitle} description={siteDesc} image={bannerImg} />
 			<Helmet>
 				<title>Gokulakrishnan Kalaikovan | About</title>
 			</Helmet>
