@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: `Gokulakrishnan Kalaikovan | Web Developer, GDE for Web Technologies`,
+		title: `Gokulakrishnan Kalaikovan`,
 		siteUrl: `https://gokul.site`,
-		description: `My personal blog using gatsby 😍`,
+		description: `Hi, I am Gokul. I am a Web Developer and Google Developer Expert for the web. Come check out how I share my learnings and knowledge via my site.`,
 		author: `@gokulkrishh`
 	},
 	plugins: [

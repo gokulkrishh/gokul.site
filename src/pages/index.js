@@ -8,10 +8,13 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Bio from "../components/Bio";
 import Footer from "../components/Footer";
+import SEO from "../../seo";
+import profileImg from "../components/profile-pic.jpg";
 
 export default class index extends React.Component {
 	render() {
 		const siteTitle = get(this, "props.data.site.siteMetadata.title");
+		const siteDesc = get(this, "props.data.site.siteMetadata.description");
 		const posts = get(this, "props.data.allMarkdownRemark.group");
 		const sortPostByYear = {};
 		posts.forEach(post => {
@@ -25,6 +28,7 @@ export default class index extends React.Component {
 
 		return (
 			<Layout>
+				<SEO title={siteTitle} description={siteDesc} image={profileImg} />
 				<Helmet>
 					<title>{siteTitle}</title>
 				</Helmet>

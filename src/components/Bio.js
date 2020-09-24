@@ -13,7 +13,7 @@ export default class Bio extends React.Component {
 					<p>
 						I'm a web developer and
 						<a
-							href="https://google-developers.appspot.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
+							href="https://developers.google.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
 							target="_blank"
 						>
 							Google Developer Expert (GDE)

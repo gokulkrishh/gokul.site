@@ -4,13 +4,13 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import twitterImg from "./src/images/twitter-image.jpg";
 
-const SEO = ({ title, description, image, siteUrl, article }) => {
+const SEO = ({ title, description, image = "", siteUrl, article }) => {
 	const { pathname } = useLocation();
 
 	const seo = {
 		title: title,
 		description: description,
-		image: twitterImg,
+		image: image || twitterImg,
 		url: `${siteUrl}${pathname}`
 	};
 
@@ -19,6 +19,10 @@ const SEO = ({ title, description, image, siteUrl, article }) => {
 	return (
 		<Helmet title={seo.title} titleTemplate={title.title}>
 			{seo.url && <meta property="og:url" content={seo.url} />}
+			<meta
+				name="google-site-verification"
+				content="LUCSlyRKbS1ghLwiAi-5Yu8FtI2rlQ4tpgYpXF0z_q4"
+			/>
 
 			{(article ? true : null) && <meta property="og:type" content="article" />}
 
