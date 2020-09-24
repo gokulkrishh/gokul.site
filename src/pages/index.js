@@ -14,7 +14,7 @@ import profileImg from "../components/profile-pic.jpg";
 export default class index extends React.Component {
 	render() {
 		const siteTitle = get(this, "props.data.site.siteMetadata.title");
-		const siteDesc = get(this, "props.data.site.siteMetadata.description");
+		const siteDesc = `Hi, I am Gokul. I am a Web Developer and Google Developer Expert for the web. Come check out how I share my learnings and knowledge via my site.`;
 		const posts = get(this, "props.data.allMarkdownRemark.group");
 		const sortPostByYear = {};
 		posts.forEach(post => {
