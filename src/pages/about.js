@@ -47,8 +47,8 @@ export default props => {
 					</p>
 					<p>
 						As of now, I am continuing my passion towards the web and improving
-						the web by build tools for developers and helping other fellow web
-						devs. Besides coding, I like gaming (COD mobile mostly these days),
+						the web by building tools and helping other fellow web developers.
+						Besides coding, I like gaming (COD mobile mostly these days),
 						running, football, traveling and an author, check out my book{" "}
 						<a href="/book">Beginners guide to web security</a>.
 					</p>
