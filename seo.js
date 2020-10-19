@@ -14,6 +14,8 @@ const SEO = ({ title, description, image = "", siteUrl, article }) => {
 		url: `${siteUrl}${pathname}`
 	};
 
+	console.log(siteUrl);
+
 	const twitterUsername = "@gokul_i";
 
 	return (
@@ -32,7 +34,7 @@ const SEO = ({ title, description, image = "", siteUrl, article }) => {
 				<meta property="og:description" content={seo.description} />
 			)}
 
-			{seo.image && <meta property="og:image" content={seo.image} />}
+			{seo.image && <meta property="og:image" content={siteUrl + seo.image} />}
 
 			<meta name="twitter:card" content="summary_large_image" />
 
@@ -46,7 +48,7 @@ const SEO = ({ title, description, image = "", siteUrl, article }) => {
 				<meta name="twitter:description" content={seo.description} />
 			)}
 
-			{seo.image && <meta name="twitter:image" content={seo.image} />}
+			{seo.image && <meta name="twitter:image" content={siteUrl + seo.image} />}
 		</Helmet>
 	);
 };
