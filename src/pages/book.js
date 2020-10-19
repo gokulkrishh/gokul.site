@@ -25,7 +25,7 @@ export default props => {
 				<div className="hero"></div>
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">Order now</span>
+						<span className="title-tag">Order now - 60% off</span>
 
 						<h1>
 							Beginner's Guide <br></br>To Web Security
@@ -49,11 +49,7 @@ export default props => {
 						</p>
 
 						<div className="header-actions">
-							<a
-								className="gumroad-button"
-								href="https://gum.co/IrcpA"
-								target="_blank"
-							>
+							<a className="gumroad-button" href="https://gum.co/IrcpA">
 								Buy on gumroad
 							</a>
 							or{""}

@@ -99,18 +99,20 @@
 
 	.gumroad-button {
 		margin-right: 10px;
-		color: var(--color-white);
+		color: var(--color-white) !important;
 		border: 0;
-		border-radius: 6px;
+		border-radius: 6px !important;
 		min-width: 180px;
 		height: 49px;
 		font-size: 19px;
 		cursor: pointer;
 		font-weight: 500;
 		padding: 0 15px;
-		background-color: var(--color-blue);
+		background-color: var(--color-blue) !important;
 		line-height: 48px;
 		text-align: center;
+		background-image: none !important;
+		text-transform: capitalize;
 	}
 
 	.container {
