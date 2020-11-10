@@ -6,10 +6,9 @@
     "start": "gatsby develop",
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
-    "deploy": "npm run copy && npm run copy1 && gatsby build && npm run gh-pages",
+    "deploy": "npm run copy && gatsby build --prefix-paths && gh-pages -d public",
     "gh-pages": "gh-pages -b master -d public",
-    "copy": "cpy ./demo ./public/static --parents",
-    "copy1": "cpy ./CNAME ./public --parents"
+    "copy": "cpy ./demo ./public/static --parents && cpy ./CNAME ./public --parents"
   },
   "dependencies": {
     "disqus-react": "^1.0.5",
@@ -42,8 +41,8 @@
     "cpy-cli": "^2.0.0",
     "eslint": "^5.5.0",
     "eslint-plugin-react": "^7.11.1",
-    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "gh-pages": "^3.1.0"
   }
 }
