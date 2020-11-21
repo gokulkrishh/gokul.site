@@ -14,7 +14,7 @@ const Header = ({ hideLinks = false }) => {
 						</li>
 						<li>
 							<Link to="/book" activeClassName="active">
-								Books
+								Book
 							</Link>
 						</li>
 						<li>
