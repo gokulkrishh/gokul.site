@@ -26,7 +26,7 @@ export default props => {
 				<Header />
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">Buy now & get 50% limited offer</span>
+						<span className="title-tag">Buy now to get 50% off</span>
 
 						<h2>
 							Beginner's Guide <br></br>To Web Security
@@ -58,7 +58,7 @@ export default props => {
 								Download a free chapter
 							</a>
 						</div>
-						<p>Use the discount code "<span>LOVETHISBOOK</span>" to get 50% off the original price.</p>
+						<p>Use this discount code "<span>LOVETHISBOOK</span>" to get 50% off the original price.</p>
 					</div>
 
 					<img src={bookImage} alt=" Beginner's guide to web security cover" />
