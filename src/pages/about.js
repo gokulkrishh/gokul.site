@@ -24,18 +24,18 @@ export default props => {
 					<h2>Hi, I'm Gokul 👋</h2>
 					<p>
 						I'm glad that you made this far to my website. Now let's talk about
-						me. I started my career as a self-taught UI Developer using HTML,
+						me. I started my career as a self-taught Web Developer by learning HTML,
 						CSS, javascript & PHP. After a few months, I got a chance to work on
-						a Javascript framework and later at some point, I started working on
+						a Javascript framework (Angular v1.5) and later few months down the line, I started working on
 						other javascript frameworks like ember, backbone, kendo ui,
-						knockoutjs etc,. In the beginning of my career only, I understood
+						knockoutjs etc, in different projects. In the beginning of my career only, I understood
 						that I liked working on the web a lot.
 					</p>
 					<p>
 						So I started following my passion and curiosity in the open web,
 						focusing on improving my skills as a web developer. Before even I
 						realized I became an expert in what I was doing and got nominated
-						for Google Developer Expert (GDE). After two discussions with a
+						for Google Developer Expert (GDE). After two round of discussions with a
 						googler and an existing GDE and a few months of waiting, I became a
 						<a
 							href="https://developers.google.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
@@ -69,7 +69,7 @@ export default props => {
 							</a>
 						</li>
 						<li>
-							🎠Editor Theme:
+							🎠 Editor Theme:
 							<a
 								href="https://marketplace.visualstudio.com/items?itemName=thedavej.night-owl-black"
 								target="_blank"
@@ -78,7 +78,7 @@ export default props => {
 							</a>
 						</li>
 						<li>
-							📩Newsletters:
+							📩 Newsletters:
 							<a href="https://this-week-in-web.com" target="_blank">
 								This Week In Web
 							</a>{" "}
@@ -95,7 +95,7 @@ export default props => {
 							</a>
 						</li>
 						<li>
-							🔩Other Tools I use:
+							🔩 Other Tools I use:
 							<a href="/uses" target="_blank">
 								Browsers, Terminal & Desktop Apps
 							</a>
