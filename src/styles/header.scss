@@ -1,12 +1,14 @@
 header {
 	height: 60px;
 	color: #fff;
-	background-color: #1c2129;
+	background-color: #1f1f1f;
+	border-bottom: 1px solid #2f2f2f;
 
 	.grid {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		width: 1080px;
 	}
 
 	.menu {
@@ -14,6 +16,8 @@ header {
 		max-width: 200px;
 		min-width: 140px;
 		justify-content: space-between;
+		padding-left: 0;
+		margin-left: -25px;
 
 		li {
 			margin: 0 10px;

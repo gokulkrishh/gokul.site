@@ -5,7 +5,6 @@ const Header = ({ hideLinks = false }) => {
 	return (
 		<header>
 			<div className="grid">
-				<h1 />
 				{!hideLinks && (
 					<ul className="menu">
 						<li>
@@ -14,18 +13,18 @@ const Header = ({ hideLinks = false }) => {
 							</Link>
 						</li>
 						<li>
+							<Link to="/book" activeClassName="active">
+								Books
+							</Link>
+						</li>
+						<li>
 							<Link to="/about/" activeClassName="active">
 								About
 							</Link>
 						</li>
-						<li>
-							<Link to="/book" activeClassName="active">
-								Book
-							</Link>
-						</li>
 					</ul>
 				)}
-			</div>
+		</div>
 		</header>
 	);
 };

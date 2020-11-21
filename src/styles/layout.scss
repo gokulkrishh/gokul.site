@@ -5,13 +5,13 @@
 html,
 body {
 	margin: 0;
-	color: #3c4043;
-	font-family: "Google Sans", Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-family: "Helvetica","Lato","Open Sans","sans-serif";
 	-webkit-font-smoothing: antialiased;
 	scroll-behavior: smooth;
-	line-height: 1.6;
-	font-size: 17px;
-	font-weight: 400;
+	font-size: 18px;
+  line-height: 1.8;
+	background-color:#1f1f1f;
 }
 
 h1,
@@ -21,19 +21,20 @@ h4,
 h5,
 b,
 strong {
-	font-weight: 500;
+	font-weight: 600;
+	color: inherit;
 }
 
 h1 {
-	font-size: 28px;
+	font-size: 30px;
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 27px;
 }
 
 h3 {
-	font-size: 22px;
+	font-size: 24px;
 }
 
 h4 {
@@ -45,22 +46,23 @@ h5 {
 }
 
 .grid {
-	width: 920px;
+	width: 760px;
 	height: inherit;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 a {
-	color: #5183f5;
+	color: #2196f3;
 	display: inline-block;
 	font-weight: 500;
-	text-decoration: #5183f5 solid underline;
+	text-decoration: solid underline;
 	text-underline-position: under;
 
 	&:hover {
-		color: #2663e4;
-		background-color: rgba(9, 131, 228, 0.2);
+		opacity: 0.9;
+		text-underline-position: under;
+		text-decoration: solid dotted;
 	}
 }
 
@@ -91,6 +93,15 @@ i {
 	font-style: normal;
 }
 
+hr {
+	background-color: #2f2f2f;
+  height: 1px;
+  width: 100%;
+	border: none;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
 .not-found {
 	h1 {
 		margin: 50px 0 0;
@@ -102,9 +113,11 @@ i {
 }
 
 time {
-	font-size: 14px;
-	color: #6f6f6f;
+	font-size: 13px;
+	color: #e91e63;
 	font-weight: 500;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 table {

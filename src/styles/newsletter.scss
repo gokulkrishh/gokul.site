@@ -1,16 +1,16 @@
 .Newsletter__container {
-	background-color: #1c212a;
+	background-color: #171717;
 	max-width: 720px;
 	width: 100%;
 	border-radius: 8px;
 	color: #fff;
 	display: flex;
-	height: 280px;
-	padding: 30px;
+	height: 300px;
+	padding: 15px 25px;
+	margin-top: 70px;
 
 	.Newsletter__confirmation {
 		margin-top: 25px;
-		line-height: 1.5 !important;
 		color: #cddc39;
 		display: none;
 	}
@@ -67,12 +67,12 @@
 
 	input[type="submit"] {
 		color: #fff;
-		background-color: #5183f5;
-		border: 1px solid #5183f5;
+		background-color: #2196f3;
+		border: none;
 		border-radius: 6px;
 		cursor: pointer;
 		width: 110px;
-		height: 42px;
+		height: 39px;
 		font-size: 17px;
 		text-align: center;
 		font-weight: 600;
@@ -86,7 +86,7 @@
 	.email-address {
 		width: 100%;
 		border-radius: 6px;
-		border: 2px solid #4a5261;
+		border: 1px solid #4a5261;
 		outline: none;
 		font-size: 16px;
 

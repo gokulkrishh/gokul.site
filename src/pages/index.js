@@ -35,15 +35,17 @@ export default class index extends React.Component {
 				<Header />
 				<div className="grid">
 					<Bio />
+					<hr />
+					<h2>Posts</h2>
 					<div className="posts">
 						{Object.keys(sortPostByYear)
 							.reverse()
-							.map(year => {
+							.map((year, index) => {
 								const postsByYear = sortPostByYear[year];
 								return (
-									<div className="post__year" key={postsByYear}>
-										<h2>{year}</h2>
-										{postsByYear.reverse().map(({ node }) => {
+									<div className="post__year" key={index}>
+										<h4>{year}</h4>
+										{postsByYear.reverse().map(({ node }, index) => {
 											const title =
 												get(node, "frontmatter.title") || node.fields.slug;
 											const link =
@@ -51,10 +53,10 @@ export default class index extends React.Component {
 													? "/uses"
 													: `blog${node.fields.slug}`;
 											return (
-												<div className="post" key={node.fields.slug}>
-													<h3>
+												<div className="post" key={index}>
+													<h4>
 														<Link to={link}>{title}</Link>
-													</h3>
+													</h4>
 													<time>{node.frontmatter.date}</time>
 													<p
 														dangerouslySetInnerHTML={{ __html: node.excerpt }}

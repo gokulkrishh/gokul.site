@@ -3,15 +3,13 @@
 	display: flex;
 	align-items: center;
 	margin: 35px 0 50px;
-	line-height: 1.8;
-	font-size: 19px;
 	border-radius: 6px;
 	padding: 10px 0;
-	color: #1c212a;
+	color: #fff;
 
 	.avatar {
-		width: 170px;
-		height: 170px;
+		width: 120px;
+		height: 120px;
 		border-radius: 50%;
 		border: 2px solid #ffffff;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -24,17 +22,14 @@
 
 	p {
 		margin: 0;
-		line-height: 1.9;
 	}
 
 	> div {
 		margin-top: 10px;
-		margin-right: 10px;
-		padding-right: 40px;
+		margin-left: 30px;
 	}
 
 	p a {
-		margin: 0 6px;
 		font-weight: 500;
 	}
 
@@ -54,16 +49,20 @@
 		text-decoration: none;
 		font-size: 15px;
 		justify-content: center;
+		font-weight: 500;
 
 		img {
 			margin-top: -1px;
-			margin-left: 1.5px;
 			margin-right: 7px;
 		}
 
 		&:last-child {
 			color: #fff;
-			background-color: #1c212a;
+			background-color: #000;
+
+			img {
+				margin-left: -1	px;
+			}
 		}
 
 		&:first-child {
@@ -72,7 +71,7 @@
 			color: #fff;
 
 			img {
-				margin-right: 4px;
+				margin-left: 0px;
 			}
 		}
 
@@ -94,7 +93,6 @@
 .about-me {
 	width: 100%;
 	margin-bottom: 50px;
-	line-height: 2;
 
 	ul {
 		list-style: disc;

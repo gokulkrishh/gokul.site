@@ -8,19 +8,23 @@ export default class Bio extends React.Component {
 	render() {
 		return (
 			<div className="about">
+					<img
+						className="avatar"
+						src={profilePic}
+						alt="Gokulakrishnan Kalaikovan"
+					/>
 				<div>
 					<h1>Hi, I'm Gokul 👋</h1>
 					<p>
-						I'm a web developer and
+						I'm a web developer and {" "}
 						<a
 							href="https://developers.google.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
 							target="_blank"
 						>
 							Google Developer Expert (GDE)
 						</a>
-						from Bangalore, India. Besides coding, I like gaming (COD mobile
-						mostly these days), running, football, travelling and finally an
-						author.
+						{" "} in India. Besides coding, I like gaming (COD mobile
+						mostly these days), running, football, travelling and finally an {" "}<a href="/book">author</a>.
 					</p>
 					<div className="social">
 						<a
@@ -40,11 +44,7 @@ export default class Bio extends React.Component {
 					</div>
 				</div>
 				<picture>
-					<img
-						className="avatar"
-						src={profilePic}
-						alt="Gokulakrishnan Kalaikovan"
-					/>
+
 				</picture>
 			</div>
 		);
