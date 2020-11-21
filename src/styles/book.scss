@@ -1,5 +1,6 @@
 .book {
-	--color-black: #000;
+	--color-black: #1f1f1f;
+	--color-black-border: #2f2f2f;
 	--color-grey: #f5f5f5;
 	--color-dark-grey: #4a5261;
 	--color-white: #fff;
@@ -18,15 +19,12 @@
 
 	font-size: 18px;
 	line-height: 1.6;
-	color: var(--color-black);
+	color: var(--color-white);
 
-	html {
-		background-color: var(--color-lighter-orange);
-	}
 
 	.header-section {
 		padding-top: 50px;
-		background-color: var(--color-white);
+		background-color: var(--color-black);
 		display: grid;
 		grid-gap: 1rem 2rem;
 		align-items: center;
@@ -35,6 +33,17 @@
 		img {
 			border-radius: 5px;
 			box-shadow: 8px 9px 13px rgba(0, 0, 0, 0.5);
+		}
+
+		p:last-child {
+			font-style: italic;
+			margin-bottom: 0;
+			font-size: 16px;
+
+			span {
+				color: #9C27B0;
+  			font-size: 14px;
+			}
 		}
 	}
 
@@ -91,6 +100,13 @@
 		font-weight: 500;
 	}
 
+	.Newsletter__container {
+		margin-top: 10px;
+		margin-bottom: 25px;
+		height: 280px;
+
+	}
+
 	ul,
 	li {
 		list-style-type: square;
@@ -141,7 +157,7 @@
 
 	.title-tag {
 		text-transform: uppercase;
-		font-weight: 500;
+		font-weight: 600;
 		margin-bottom: 5px;
 		background-color: var(--color-dark-yellow);
 		border-radius: 32px;
@@ -154,7 +170,8 @@
 
 	section {
 		padding: 15px 20px;
-		background-color: var(--color-grey);
+		background-color: var(--color-dark);
+		border-top: 1px solid var(--color-black-border);
 	}
 
 	.learn-section {
@@ -177,7 +194,7 @@
 	}
 
 	.author-section {
-		background-color: var(--color-white);
+		background-color: var(--color-dark);
 	}
 
 	.author-section p {
@@ -213,7 +230,7 @@
 	}
 
 	.faq-section .container p {
-		color: var(--color-dark-grey);
+		color: var(--color-white);
 	}
 
 	.faq-section h3 {
@@ -260,10 +277,10 @@
 	}
 
 	footer {
-		background-color: var(--color-grey);
+		background-color: var(--color-dark);
 
 		.container {
-			color: #000;
+			color: var(--color-white);
 			font-size: 14px;
 		}
 
