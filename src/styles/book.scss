@@ -23,7 +23,7 @@
 
 
 	.header-section {
-		padding-top: 50px;
+		padding-top: 20px;
 		background-color: var(--color-black);
 		display: grid;
 		grid-gap: 1rem 2rem;
@@ -77,32 +77,29 @@
 		padding-left: 40px;
 	}
 
-	h1,
 	h2 {
-		color: var(--color-orange);
-	}
-
-	h1 {
 		font-family: var(--font-title);
 		text-transform: uppercase;
 		margin-top: 10px;
 		line-height: 1.3;
 		font-size: 42px;
 		font-weight: bold;
-	}
-
-	h2 {
-		margin-top: 5px;
-		font-size: 28px;
-		font-weight: 700;
+		color: var(--color-orange);
 	}
 
 	h3 {
-		font-weight: 500;
+		margin-top: 5px;
+		font-size: 28px;
+		font-weight: 700;
+		color: var(--color-orange);
+	}
+
+	h4 {
+		font-weight: 600;
 	}
 
 	.Newsletter__container {
-		margin-top: 10px;
+		margin-top: -10px;
 		margin-bottom: 25px;
 		height: 280px;
 
@@ -114,9 +111,12 @@
 		line-height: 1.7;
 	}
 
-	.menu, .menu li {
-		list-style-type: none !important;
+	.menu {
 		padding-left: 0 !important;
+	}
+
+	.menu li {
+		list-style-type: none !important;
 	}
 
 	.gumroad-button {
@@ -128,7 +128,7 @@
 		height: 49px;
 		font-size: 19px;
 		cursor: pointer;
-		font-weight: 500;
+		font-weight: 600;
 		padding: 0 15px;
 		background-color: var(--color-blue) !important;
 		line-height: 48px;
@@ -223,10 +223,6 @@
 		margin-right: 10px;
 	}
 
-	.author-section .about {
-		margin-top: 10px;
-	}
-
 	.author-section h2 {
 		margin-bottom: 0;
 	}
@@ -264,13 +260,15 @@
 			font-size: 16px;
 		}
 
-		.about h1 {
+		.about {
 			margin-top: 5px;
+		}
+
+		.about h1 {
 			font-size: 23px;
 			font-weight: 700;
 			text-transform: inherit;
 			font-family: inherit;
-			color: var(--color-black);
 		}
 	}
 

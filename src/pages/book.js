@@ -28,9 +28,9 @@ export default props => {
 					<div className="container">
 						<span className="title-tag">Order now & get 50% off</span>
 
-						<h1>
+						<h2>
 							Beginner's Guide <br></br>To Web Security
-						</h1>
+						</h2>
 						<p>In this book, you will learn the following.</p>
 
 						<ul>
@@ -58,14 +58,14 @@ export default props => {
 								Download a free chapter
 							</a>
 						</div>
-						<p>Use the discount code "<span>LOVETHISBOOK</span>" to get 50% off the listed price.</p>
+						<p>Use the discount code "<span>LOVETHISBOOK</span>" to get 50% off the original price.</p>
 					</div>
 
 					<img src={bookImage} alt=" Beginner's guide to web security cover" />
 				</section>
 				<section className="learn-section">
 					<div className="container">
-						<h2>What you'll learn</h2>
+						<h3>What you'll learn</h3>
 						<ul>
 							<li>
 								<b>How does the web work?</b>
@@ -116,7 +116,7 @@ export default props => {
 				</section>
 				<section className="author-section">
 					<div className="container">
-						<h2>About the author</h2>
+						<h3>About the author</h3>
 						<div className="content">
 							<Bio />
 						</div>
@@ -124,7 +124,7 @@ export default props => {
 				</section>
 				<section className="faq-section">
 					<div className="container">
-						<h2>Frequently Asked Questions</h2>
+						<h3>Frequently Asked Questions</h3>
 						<div className="faq-questions">
 							<div>
 								<h4>Who designed the cover?</h4>
@@ -185,7 +185,7 @@ export default props => {
 				</section>
 				<section className="author-section">
 					<div className="container">
-						<h2>Keep yourself updated</h2>
+						<h3>Keep yourself updated</h3>
 						<br />
 						<Newsletter />
 					</div>
