@@ -28,6 +28,11 @@ const Header = ({ hideLinks = false }) => {
                 About
               </Link>
             </li>
+            <li>
+              <Link to="/uses/" activeClassName="active">
+                Uses
+              </Link>
+            </li>
             <li className="theme-switcher">
               <ThemeToggler>
                 {({ theme, toggleTheme }) => {

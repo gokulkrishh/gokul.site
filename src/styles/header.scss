@@ -1,8 +1,8 @@
 header {
   height: 60px;
-  color: #fff;
-  background-color: #1f1f1f;
-  border-bottom: 1px solid #2f2f2f;
+  color: var(--color-white);
+  background-color: var(--color-primary-black);
+  border-bottom: 1px solid var(--color-secondary-line);
 
   .grid {
     display: flex;
@@ -48,13 +48,13 @@ header {
       left: -1px;
       width: 17px;
       height: 17px;
-      background: #fff;
+      background: var(--color-white);
       border-radius: 90px;
       transition: 0.3s;
     }
 
     input:checked + label {
-      background-color: tomato;
+      background-color: var(--color-primary-link);
     }
 
     input:checked + label:after {
@@ -81,7 +81,7 @@ header {
   }
 
   .menu a {
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -97,7 +97,7 @@ header {
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: var(--color-white);
     pointer-events: none;
   }
 

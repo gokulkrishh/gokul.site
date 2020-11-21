@@ -1,5 +1,5 @@
 ---
-path: "/blog/2014/chrome-devtools"
+path: "/blog/2014/Chrome-DevTools"
 date: "2014-09-12"
 title: "Chrome DevTools"
 ---

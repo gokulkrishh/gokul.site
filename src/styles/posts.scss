@@ -38,7 +38,7 @@
 
   &__title,
   .post__year-title {
-    color: tomato;
+    color: var(--color-primary-post-title);
   }
 
   .post {
@@ -55,7 +55,7 @@
       font-size: 25px;
 
       &:hover {
-        color: #2196f3;
+        color: var(--color-primary-link);
         text-decoration: underline;
       }
     }
@@ -78,7 +78,6 @@
   }
 }
 
-
 .post-form-example {
   height: 300px;
   display: flex;
@@ -87,20 +86,21 @@
   border: 1px solid;
   padding: 30px 0;
 
-  span, label {
+  span,
+  label {
     font-weight: 500;
     margin: 10px 0;
   }
 
-  input[type=text],
-  input[type=email] {
+  input[type="text"],
+  input[type="email"] {
     width: 280px;
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     width: 80px;
     height: 40px;
     font-size: 16px;
@@ -155,4 +155,8 @@
   .posts .post a {
     font-size: 17px;
   }
+}
+
+.discuss-container {
+  margin-top: 30px;
 }

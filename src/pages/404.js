@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
 import Header from "../components/Header";
@@ -13,7 +13,7 @@ const NotFoundPage = () => (
     </Helmet>
     <Header />
     <div className="grid">
-      <h1>NOT FOUND :(</h1>
+      <h2>NOT FOUND :(</h2>
       <a href="/">Go back to homepage</a>
     </div>
     <Footer />
