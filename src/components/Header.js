@@ -5,6 +5,7 @@ const Header = ({ hideLinks = false }) => {
 	return (
 		<header>
 			<div className="grid">
+			<h1>gokul.site</h1>
 				{!hideLinks && (
 					<ul className="menu">
 						<li>

@@ -14,7 +14,7 @@
 	--color-twitter: #1b95e0;
 	--color-lighter-orange: #fff4eb;
 
-	--grid-width: 1080px;
+	--grid-width: 960px;
 	--font-title: "futura", sans-serif;
 
 	font-size: 18px;
@@ -46,6 +46,7 @@
 			}
 		}
 	}
+
 
 	footer {
 		margin-top: 10px;
@@ -111,6 +112,11 @@
 	li {
 		list-style-type: square;
 		line-height: 1.7;
+	}
+
+	.menu, .menu li {
+		list-style-type: none !important;
+		padding-left: 0 !important;
 	}
 
 	.gumroad-button {

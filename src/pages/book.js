@@ -8,6 +8,7 @@ import Newsletter from "../components/Newsletter";
 import Layout from "../components/Layout";
 import bookImage from "../images/book-cover.jpg";
 import samplePdf from "../images/beginners-guide-to-web-security-sample.pdf";
+import Header from "../components/Header";
 
 export default props => {
 	return (
@@ -22,7 +23,7 @@ export default props => {
 						Gokulakrishnan Kalaikovan | Book | Beginner's Guide To Web Security
 					</title>
 				</Helmet>
-				<div className="hero"></div>
+				<Header />
 				<section className="header-section">
 					<div className="container">
 						<span className="title-tag">Order now & get 50% off</span>
