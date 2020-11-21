@@ -37,7 +37,7 @@ export default class index extends React.Component {
 					<Bio />
 					<hr />
 					<div className="posts">
-					<h2 className="posts__title">Posts</h2>
+					<h2 className="posts__title">All Posts</h2>
 						{Object.keys(sortPostByYear)
 							.reverse()
 							.map((year, index) => {
