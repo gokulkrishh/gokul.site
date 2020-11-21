@@ -26,7 +26,7 @@ export default props => {
 				<Header />
 				<section className="header-section">
 					<div className="container">
-						<span className="title-tag">Order now & get 50% off</span>
+						<span className="title-tag">Buy now & get 50% off</span>
 
 						<h2>
 							Beginner's Guide <br></br>To Web Security
