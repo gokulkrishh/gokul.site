@@ -55,7 +55,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-google-fonts`,
 			options: {
-				fonts: [`Google Sans\:300,400,500`]
+				fonts: [`Lato\:300,400,500`]
 			}
 		},
 		{
@@ -66,6 +66,7 @@ module.exports = {
 		},
 		`gatsby-plugin-feed`,
 		`gatsby-plugin-no-sourcemaps`,
-		`gatsby-plugin-sharp`
+		`gatsby-plugin-sharp`,
+		`gatsby-plugin-dark-mode`
 	]
 };

@@ -129,7 +129,7 @@ Browser support for <a target="_blank" href="http://caniuse.com/#search=async" t
 #### Chrome DevTools Profiling
 
 Use `Heap Profiler` to find memory leak. Open chrome devTools and go to profiles tab and select take heap snapshot.
-If you don't know about chrome DevTools, read my <a target="_blank" href="https://gokulkrishh.github.io/2014/09/12/Chrome-DevTools/" title="Chrome DevTools"> previous post</a>.
+If you don't know about chrome DevTools, read my <a target="_blank" href="https://gokul.site/blog/2014/09/12/chrome-devtools/" title="Chrome DevTools"> previous post</a>.
 
 <i>Screenshot for Chrome DevTools Profiler</i>
 
