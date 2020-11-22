@@ -150,6 +150,7 @@
   .header-section {
     width: var(--grid-width);
     margin: 0 auto;
+    border: 0;
   }
 
   .header-section .container {
@@ -172,7 +173,7 @@
     margin-bottom: 5px;
     background-color: var(--color-dark-yellow);
     border-radius: 32px;
-    color: var(--color-black);
+    color: var(--color-dark-black);
     padding: 6px 8px;
     font-size: 11px;
     margin-left: -5px;
@@ -286,8 +287,6 @@
   }
 
   footer {
-    background-color: var(--color-primary-footer);
-
     .container {
       color: var(--color-secondary-footer);
       font-size: 14px;

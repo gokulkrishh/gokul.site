@@ -29,7 +29,7 @@ export default (props) => {
         <Header />
         <section className="header-section">
           <div className="container">
-            <span className="title-tag">Buy now to get 50% off</span>
+            <span className="title-tag">Order now and Get 50% off</span>
 
             <h2>
               Beginner's Guide <br></br>To Web Security

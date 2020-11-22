@@ -7,12 +7,13 @@
 
   --color-primary-black: #1f1f1f;
   --color-white: #fff;
+  --color-dark-black: #000;
 
   .light {
     --color-primary: #3c4043;
     --color-bg-primary: #fff;
     --color-primary-link: #5183f5;
-    --color-secondary-line: #2f2f2f;
+    --color-secondary-line: #ccc;
     --color-primary-time: #6f6f6f;
     --color-primary-bg-newsletter: #1c212a;
     --color-secondary-bg-newsletter: #cddc39;
@@ -23,6 +24,7 @@
     --color-primary-header-section: #fff;
     --color-primary-bg-section: #f5f5f5;
     --color-primary-faq-section: #4a5261;
+    --color-secondary-footer: #000;
   }
 
   .dark {
@@ -41,6 +43,7 @@
     --color-primary-faq-section: #fff;
     --color-primary-faq: #000;
     --color-primary-bg-section: #1f1f1f;
+    --color-secondary-footer: #fff;
   }
 }
 

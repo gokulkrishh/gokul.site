@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
 export default class Footer extends React.Component {
   render() {
@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
       <footer>
         <div className="grid">
           <p>
-            <i>&copy;</i> Gokulakrishnan Kalaikovan
+            <i>&copy;</i> <span>Gokulakrishnan Kalaikovan</span>
           </p>
           <p className="built">
             Made with
