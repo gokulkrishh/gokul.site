@@ -66,6 +66,5 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-no-sourcemaps`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-dark-mode`,
   ],
 };
