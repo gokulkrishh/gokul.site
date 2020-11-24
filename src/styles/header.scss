@@ -8,7 +8,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1080px;
   }
 
   h1 {
@@ -20,63 +19,15 @@ header {
     }
   }
 
-  .theme-switcher {
-    display: flex;
-    align-items: center;
-
-    input[type="checkbox"] {
-      height: 0;
-      width: 0;
-      visibility: hidden;
-    }
-
-    label {
-      cursor: pointer;
-      text-indent: -9999px;
-      width: 36px;
-      height: 19px;
-      background: grey;
-      display: block;
-      border-radius: 100px;
-      position: relative;
-    }
-
-    label:after {
-      content: "";
-      position: absolute;
-      top: 1px;
-      left: -1px;
-      width: 17px;
-      height: 17px;
-      background: var(--color-white);
-      border-radius: 90px;
-      transition: 0.3s;
-    }
-
-    input:checked + label {
-      background-color: var(--color-primary-link);
-    }
-
-    input:checked + label:after {
-      left: initial;
-      right: -1px;
-    }
-
-    label:active:after {
-      width: 36px;
-    }
-  }
-
   .menu {
     display: flex;
-    max-width: 200px;
     min-width: 140px;
     justify-content: space-between;
     padding-left: 0;
 
     li {
       margin: 0 10px;
-      padding-left: 10px;
+      padding-left: 8px;
     }
   }
 
@@ -96,13 +47,13 @@ header {
     content: "";
     display: block;
     width: 0;
-    height: 2px;
-    background: var(--color-white);
+    height: 1px;
+    background: var(--color-tomato);
     pointer-events: none;
   }
 
   .menu a.active {
-    font-weight: 500;
+    color: tomato;
   }
 
   .menu a.active::after {
@@ -115,13 +66,19 @@ header {
 }
 
 @media all and (max-width: 480px) {
+  header .grid {
+    width: 100%;
+  }
+
   header .menu {
     margin: 0 auto;
     justify-content: space-between;
     padding: 0;
+    margin-right: 0;
 
     li {
       font-size: 15px;
+      padding-left: 0;
     }
   }
 }
