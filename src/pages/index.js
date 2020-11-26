@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
 import get from "lodash/get";
+import { graphql } from "gatsby";
 
 import Newsletter from "../components/Newsletter";
 import Layout from "../components/Layout";

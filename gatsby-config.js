@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Gokulakrishnan Kalaikovan",
+        name: "Gokul's - Blog",
         short_name: "Gokul's - Blog",
         start_url: "/",
         background_color: "#212121",
@@ -50,7 +50,6 @@ module.exports = {
         icon: "images/icons/android-chrome-512x512.png", // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -64,7 +63,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-feed`,
-    `gatsby-plugin-no-sourcemaps`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
   ],
