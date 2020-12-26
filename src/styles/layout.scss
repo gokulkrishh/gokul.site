@@ -5,26 +5,27 @@
 :root {
   --font-family: "Helvetica", "Lato", "Open Sans", "sans-serif";
 
-  --color-primary-black: #1f1f1f;
+  --color-primary-black: #111111;
   --color-white: #fff;
   --color-dark-black: #000;
   --color-primary: #fff;
-  --color-bg-primary: #1f1f1f;
+  --color-bg-primary: #111111;
   --color-primary-link: #2196f3;
   --color-secondary-line: #2f2f2f;
-  --color-primary-time: #e91e63;
+  --color-primary-time: #ff518d;
   --color-primary-bg-newsletter: #171717;
   --color-secondary-bg-newsletter: #cddc39;
   --color-secondary-color-newsletter: #4a5261;
-  --color-primary-post-title: tomato;
+  --color-primary-post-title: #df9609;
   --color-primary-footer: #1c2129;
   --color-black-border: #2f2f2f;
   --color-primary-header-section: #000;
   --color-primary-faq-section: #fff;
   --color-primary-faq: #000;
-  --color-primary-bg-section: #1f1f1f;
+  --color-primary-bg-section: #111111;
   --color-secondary-footer: #fff;
   --color-tomato: tomato;
+  --color-link-active: #df9609;
 }
 
 html,
@@ -71,7 +72,7 @@ h5 {
 }
 
 .grid {
-  width: 760px;
+  width: 960px;
   height: inherit;
   margin: 0 auto;
   padding: 0 15px;
@@ -129,7 +130,7 @@ hr {
   }
 
   > .grid {
-    height: 800px;
+    height: 960px;
   }
 }
 
