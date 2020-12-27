@@ -7,6 +7,8 @@ import Header from "../components/Header";
 import Bio from "../components/Bio";
 import Footer from "../components/Footer";
 import Newsletter from "../components/Newsletter";
+import bannerImg from "../components/banner.png";
+import SEO from "../../seo";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -18,9 +20,15 @@ export default function Template({
     identifier: frontmatter.id,
     title: frontmatter.title,
   };
+
   return (
     <Layout>
       <Header />
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description || ""}
+        image={bannerImg}
+      />
       <div className="grid">
         <div className="blog-post-container">
           <div className="blog-post">
@@ -60,6 +68,7 @@ export const pageQuery = graphql`
         path
         title
         readtime
+        description
       }
     }
   }

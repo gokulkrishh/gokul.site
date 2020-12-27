@@ -2,6 +2,7 @@
 path: "/blog/2020/year-in-review"
 date: "2020-12-27"
 title: "2020: The Year in review"
+description: "So many things happened in the year 2020 and I want to retrospect to understand what I did better and what I could do better in 2021 and my area of improvements."
 ---
 
 

@@ -2,6 +2,7 @@
 path: "/uses"
 date: "2020-11-22"
 title: "Tools I use for web development"
+description: "As a web developer, what softwares and tools, utilities I use in 2020"
 ---
 
 ## Why this post?
