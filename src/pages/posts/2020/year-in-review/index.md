@@ -71,7 +71,7 @@ And I want to thank the people who bought my book.
 
 **Stats:**
 
-So far I have made around ~200$ and it's not about money which encourages me to do this but it is an incentive for me to keep going.
+So far I have made around ~200$ and it's not just about the money but it is an incentive for me to keep going.
 
 #### 5. Physical activities
 
