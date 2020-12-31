@@ -31,6 +31,7 @@
 
   p a {
     font-weight: 500;
+    font-size: 17px;
   }
 
   .social {
@@ -40,9 +41,9 @@
 
   .social a {
     border: 0;
-    width: 95px;
-    border-radius: 6px;
-    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    height: 33px;
     display: flex;
     align-items: center;
     padding: 0 8px;
@@ -50,13 +51,14 @@
     font-size: 15px;
     justify-content: center;
     font-weight: 500;
+    margin-right: 20px;
 
     img {
       margin-top: -1px;
       margin-right: 7px;
     }
 
-    &:last-child {
+    &.github {
       color: #fff;
       background-color: #000;
 
@@ -65,9 +67,17 @@
       }
     }
 
-    &:first-child {
-      margin-right: 20px;
+    &.twitter {
       background-color: #1da1f2;
+      color: #fff;
+
+      img {
+        margin-left: 0px;
+      }
+    }
+
+    &.youtube {
+      background-color: #181818;
       color: #fff;
 
       img {

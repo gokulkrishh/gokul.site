@@ -373,21 +373,30 @@
       font-size: 30px;
     }
 
-    p,
-    a,
-    ul,
-    li,
-    .learn-section li,
-    .learn-section .container > p {
-      font-size: 16px;
-    }
-
     .gumroad-button {
       min-width: 120px;
       height: 39px;
       line-height: 39px;
       font-size: 18px;
       line-height: 38px !important;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  header .grid {
+    width: 100%;
+  }
+
+  header .menu {
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 0;
+
+    li {
+      font-size: 15px;
+      padding-left: 0;
     }
   }
 }
