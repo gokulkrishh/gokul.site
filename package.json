@@ -7,7 +7,7 @@
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
     "copy": "cpy ./demo ./public/static --parents && cpy ./CNAME ./public --parents",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
+    "deploy": "gatsby build --prefix-paths && npm run copy && gh-pages -d public -b gh-pages"
   },
   "dependencies": {
     "disqus-react": "^1.0.5",
