@@ -38,7 +38,8 @@
 
     img {
       border-radius: 5px;
-      box-shadow: 8px 9px 13px rgba(0, 0, 0, 0.5);
+      margin-left: -110px;
+      margin-top: -280px;
     }
 
     p:last-child {
@@ -160,7 +161,7 @@
   }
 
   .header-section img {
-    max-width: 450px;
+    max-width: 600px;
   }
 
   .header-actions {

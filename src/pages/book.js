@@ -5,7 +5,7 @@ import SEO from "../../seo";
 import Bio from "../components/Bio";
 import Newsletter from "../components/Newsletter";
 import Layout from "../components/Layout";
-import bookImage from "../images/book-cover.jpg";
+import bookImage from "../images/book.png";
 import samplePdf from "../images/beginners-guide-to-web-security-sample.pdf";
 import Header from "../components/Header";
 
