@@ -131,29 +131,9 @@
   margin-left: 20px;
 }
 
-@media all and (max-width: 640px) and (min-width: 480px) {
-  .posts .post {
-    h3 a {
-      font-size: 18px;
-    }
-
-    time {
-      font-size: 13px;
-    }
-
-    p {
-      font-size: 14px;
-    }
-  }
-}
-
 @media all and (max-width: 480px) {
   .blog-post-container .title {
     font-size: 23px;
-  }
-
-  .posts .post a {
-    font-size: 17px;
   }
 }
 

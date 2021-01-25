@@ -116,15 +116,26 @@
   }
 }
 
+@media all and (max-width: 920px) and (min-width: 740px) {
+  .about .avatar {
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+    background-size: 220px;
+  }
+}
+
 @media all and (max-width: 740px) and (min-width: 640px) {
   .about {
     font-size: 16px;
   }
 
   .about .avatar {
-    min-width: 130px;
-    max-width: 130px;
-    height: 130px;
+    min-width: 120px;
+    max-width: 120px;
+    height: 120px;
+    background-size: 200px;
+    background-position: -38px -6px;
   }
 }
 
