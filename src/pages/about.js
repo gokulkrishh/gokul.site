@@ -39,7 +39,7 @@ export default (props) => {
             for Google Developer Expert (GDE). After two rounds of discussion
             with a Googler and an existing GDE and a few months of waiting, I
             became a
-            <a
+            {" "}<a
               href="https://developers.google.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
               target="_blank"
             >
@@ -63,7 +63,7 @@ export default (props) => {
           </p>
           <h2>Uses</h2>
           <ul>
-            <li>💻 Computer: Macbook Pro 2018</li>
+            <li>💻 Computer: Macbook Pro 2020 (M1 Chip)</li>
             <li>
               📝 Editor:
               <a href="https://code.visualstudio.com/" target="_blank">

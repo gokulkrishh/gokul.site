@@ -3,26 +3,26 @@
 }
 
 :root {
-  --font-family: "Helvetica", "Lato", "Open Sans", "sans-serif";
+  --font-family: "Inter",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 
-  --color-primary-black: #111111;
+  --color-primary-black: #131415;
   --color-white: #fff;
   --color-dark-black: #000;
   --color-primary: #fff;
-  --color-bg-primary: #111111;
+  --color-bg-primary: #131415;
   --color-primary-link: #2196f3;
   --color-secondary-line: #2f2f2f;
   --color-primary-time: #ff518d;
-  --color-primary-bg-newsletter: #171717;
+  --color-primary-bg-newsletter: #1a1a1a;
   --color-secondary-bg-newsletter: #cddc39;
   --color-secondary-color-newsletter: #4a5261;
-  --color-primary-post-title: #df9609;
+  --color-primary-post-title: #f7ac1d;
   --color-primary-footer: #1c2129;
   --color-black-border: #2f2f2f;
   --color-primary-header-section: #000;
   --color-primary-faq-section: #fff;
   --color-primary-faq: #000;
-  --color-primary-bg-section: #111111;
+  --color-primary-bg-section: #131415;
   --color-secondary-footer: #fff;
   --color-tomato: tomato;
   --color-link-active: #df9609;
@@ -113,6 +113,10 @@ li {
 
 i {
   font-style: normal;
+}
+
+b {
+  font-weight: 700;
 }
 
 hr {

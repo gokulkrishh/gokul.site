@@ -35,7 +35,7 @@ export default class index extends React.Component {
         <Header />
         <div className="grid">
           <Bio />
-          <hr />
+
           <div className="posts">
             <h2 className="posts__title">All Posts</h2>
             {Object.keys(sortPostByYear)

@@ -9,45 +9,39 @@ export default class Bio extends React.Component {
   render() {
     return (
       <div className="about">
-        <img
+        <div
           className="avatar"
-          src={profilePic}
           alt="Gokulakrishnan Kalaikovan"
         />
         <div>
-          <h1>Hi, I'm Gokul 👋</h1>
           <p>
-            I'm a web developer and{" "}
+            Gokul is a <b>Web Developer</b> & <b>Google Developer Expert (GDE)</b>{" "}
+            in India. Besides coding, I like gaming, running, football,
+            travelling and an <a href="/book">author</a>.
+          </p>
+
+          <p>He is currently working at ThoughtWorks, and previously worked at Ephicacy Lifescience Analytics.</p>
+          <div className="social">
             <a
-              href="https://developers.google.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
+              className="youtube"
+              href="https://www.youtube.com/channel/GokulKalaikoven"
               target="_blank"
             >
-              Google Developer Expert (GDE)
-            </a>{" "}
-            in India. Besides coding, I like gaming, running, football,
-            travelling and finally an <a href="/book">author</a>.
-          </p>
-          <div className="social">
+              Youtube
+            </a>
             <a
               className="twitter"
               href="https://twitter.com/gokul_i"
               target="_blank"
             >
-              <img src={Twitter} alt="Twitter" /> Twitter
+              Twitter
             </a>
             <a
               className="github"
               href="https://github.com/gokulkrishh"
               target="_blank"
             >
-              <img src={Github} alt="Github" /> Github
-            </a>
-            <a
-              className="youtube"
-              href="https://www.youtube.com/channel/UCQuGo1upeBPLH8RNVidUCVg"
-              target="_blank"
-            >
-              <img src={Youtube} alt="Github" /> Youtube
+              Github
             </a>
           </div>
         </div>
