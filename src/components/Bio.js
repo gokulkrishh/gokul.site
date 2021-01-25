@@ -24,7 +24,7 @@ export default class Bio extends React.Component {
           <div className="social">
             <a
               className="youtube"
-              href="https://www.youtube.com/channel/GokulKalaikoven"
+              href="https://www.youtube.com/c/GokulKalaikoven"
               target="_blank"
             >
               Youtube
