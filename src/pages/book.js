@@ -9,7 +9,7 @@ import bookImage from "../images/book.png";
 import samplePdf from "../images/beginners-guide-to-web-security-sample.pdf";
 import Header from "../components/Header";
 
-export default (props) => {
+const Book = (props) => {
   return (
     <div>
       <Layout>
@@ -211,3 +211,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default Book;

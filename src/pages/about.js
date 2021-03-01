@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import SEO from "../../seo";
 import bannerImg from "../components/banner.png";
 
-export default (props) => {
+const About = (props) => {
   const siteTitle = "Gokulakrishnan Kalaikovan";
   const siteDesc = `Hi, I am Gokul. I am a Web Developer and GDE for the web. Come check out how I share my learnings and knowledge.`;
   return (
@@ -38,8 +38,8 @@ export default (props) => {
             realized I became an expert in what I was doing and got nominated
             for Google Developer Expert (GDE). After two rounds of discussion
             with a Googler and an existing GDE and a few months of waiting, I
-            became a
-            {" "}<a
+            became a{" "}
+            <a
               href="https://developers.google.com/community/experts/directory/profile/profile-gokulakrishnan_kalaikovan"
               target="_blank"
             >
@@ -110,3 +110,5 @@ export default (props) => {
     </Layout>
   );
 };
+
+export default About;

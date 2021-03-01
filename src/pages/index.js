@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Bio from "../components/Bio";
 import Footer from "../components/Footer";
+import Sidebar from "../components/Sidebar";
 import SEO from "../../seo";
 import bannerImg from "../components/banner.png";
 
@@ -35,6 +36,7 @@ export default class index extends React.Component {
         <Header />
         <div className="grid">
           <Bio />
+          <Sidebar />
 
           <div className="posts">
             <h2 className="posts__title">All Posts</h2>
