@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+
+  --color-black: #000;
+  --color-slighty-black: #191919;
+  --color-white: #fff;
+  --color-grey: #c4c4c4;
+  --color-blue: #2196f3;
+
+  --font-size: 16px;
+  --font-weight: 500;
+  --line-height: 1.6;
+
+  --transition: all 0.2s linear;
+
+  --grid-width: 920px;
+}
+
+html {
+  line-height: var(--line-height);
+  text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--color-blue);
+  font-weight: var(--font-weight);
+  padding: 0 10px;
+  border-radius: 4px;
+  outline: none;
+  height: 33px;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  background-color: var(--color-slighty-black);
+  transition: var(--transition);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--black);
+  }
+}

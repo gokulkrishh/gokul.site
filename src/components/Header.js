@@ -1,38 +1,47 @@
-import React from "react";
-import { Link } from "gatsby";
-import { useRef } from "react";
+import React from 'react';
 
-import GokulPngImage from "../images/gokul.png";
+import gokulPng from '../images/gokul.png';
 
-const Header = ({ hideLinks = false }) => {
-  const themeRef = useRef(false);
+import '../styles/header.css';
+import LinkImg from './LinkImg';
+
+const Header = () => {
   return (
     <header>
       <div className="grid">
-        <h1>
-          <a href="/">
-            <img src={GokulPngImage} alt="gokul" />
-          </a>
-        </h1>
-        {!hideLinks && (
-          <ul className="menu">
+        <div className="menu">
+          <img src={gokulPng} alt="Gokulakrishnan Kalaikovan" />
+          <ul className="menu-list">
             <li>
-              <Link to="/about/" activeClassName="active">
-                About
-              </Link>
+              <a href="/about">About</a>
             </li>
             <li>
-              <Link to="/book/" activeClassName="active">
-                Book
-              </Link>
+              <a href="/book">Book</a>
             </li>
             <li>
-              <Link to="/uses/" activeClassName="active">
-                Uses
-              </Link>
+              <a href="/uses">Uses</a>
             </li>
           </ul>
-        )}
+        </div>
+        <div className="header-content">
+          <h1 className="title">Hi! I'm Gokul, a Web Developer & Google Developer Expert (GDE) from India.</h1>
+          <p>Besides coding, I like playing games, running, football, travelling and an author.</p>
+          <p>I'm currently working at ThoughtWorks, and previously worked at Ephicacy Lifescience Analytics.</p>
+          <div className="social">
+            <a className="youtube" href="https://www.youtube.com/c/GokulKalaikoven" target="_blank">
+              Youtube
+              <LinkImg />
+            </a>
+            <a className="twitter" href="https://twitter.com/gokul_i" target="_blank">
+              Twitter
+              <LinkImg />
+            </a>
+            <a className="github" href="https://github.com/gokulkrishh" target="_blank">
+              Github
+              <LinkImg />
+            </a>
+          </div>
+        </div>
       </div>
     </header>
   );

@@ -1,0 +1,5 @@
+.grid {
+  max-width: var(--grid-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
