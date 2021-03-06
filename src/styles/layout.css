@@ -1,5 +1,13 @@
 .grid {
   max-width: var(--grid-width);
   margin: 0 auto;
+}
+
+.layout,
+.grid {
   padding: 0 20px;
+}
+
+.layout h3 {
+  color: var(--color-yellow);
 }

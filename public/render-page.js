@@ -1621,7 +1621,7 @@ var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ ".
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _router = __webpack_require__(/*! @reach/router */ "./node_modules/@gatsbyjs/reach-router/es/index.js");
+var _reachRouter = __webpack_require__(/*! @gatsbyjs/reach-router */ "./node_modules/@gatsbyjs/reach-router/es/index.js");
 
 var _utils = __webpack_require__(/*! @gatsbyjs/reach-router/lib/utils */ "./node_modules/@gatsbyjs/reach-router/lib/utils.js");
 
@@ -1720,7 +1720,7 @@ var createIntersectionObserver = function createIntersectionObserver(el, cb) {
 };
 
 function GatsbyLinkLocationWrapper(props) {
-  return /*#__PURE__*/_react.default.createElement(_router.Location, null, function (_ref2) {
+  return /*#__PURE__*/_react.default.createElement(_reachRouter.Location, null, function (_ref2) {
     var location = _ref2.location;
     return /*#__PURE__*/_react.default.createElement(GatsbyLink, (0, _extends2.default)({}, props, {
       _location: location
@@ -1854,7 +1854,7 @@ var GatsbyLink = /*#__PURE__*/function (_React$Component) {
       }, rest));
     }
 
-    return /*#__PURE__*/_react.default.createElement(_router.Link, (0, _extends2.default)({
+    return /*#__PURE__*/_react.default.createElement(_reachRouter.Link, (0, _extends2.default)({
       to: prefixedTo,
       state: state,
       getProps: getProps,
@@ -2218,10 +2218,10 @@ var _scrollHandler = __webpack_require__(/*! ./scroll-handler */ "./node_modules
 
 var _react = __webpack_require__(/*! react */ "react");
 
-var _router = __webpack_require__(/*! @reach/router */ "./node_modules/@gatsbyjs/reach-router/es/index.js");
+var _reachRouter = __webpack_require__(/*! @gatsbyjs/reach-router */ "./node_modules/@gatsbyjs/reach-router/es/index.js");
 
 function useScrollRestoration(identifier) {
-  var location = (0, _router.useLocation)();
+  var location = (0, _reachRouter.useLocation)();
   var state = (0, _react.useContext)(_scrollHandler.ScrollContext);
   var ref = (0, _react.useRef)();
   (0, _react.useLayoutEffect)(function () {
@@ -2279,7 +2279,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "icon": "src/images/icon.png",
+    "icon": "/Users/gokulkrishh/Codelabs/gokul.site/src/images/icon.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
@@ -4095,7 +4095,7 @@ var _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(
 
 var _fs = _interopRequireDefault(__webpack_require__(/*! fs */ "fs"));
 
-var _pify = _interopRequireDefault(__webpack_require__(/*! pify */ "./node_modules/pify/index.js"));
+var _pify = _interopRequireDefault(__webpack_require__(/*! pify */ "./node_modules/gatsby-plugin-sitemap/node_modules/pify/index.js"));
 
 var _minimatch = _interopRequireDefault(__webpack_require__(/*! minimatch */ "./node_modules/minimatch/minimatch.js"));
 
@@ -4213,6 +4213,103 @@ function getNodes(results) {
 
   throw new Error("[gatsby-plugin-sitemap]: Plugin is unsure how to handle the results of your query, you'll need to write custom page filter and serializer in your gatsby config");
 }
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-sitemap/node_modules/pify/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-sitemap/node_modules/pify/index.js ***!
+  \***********************************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+const processFn = (fn, opts) => function () {
+  const P = opts.promiseModule;
+  const args = new Array(arguments.length);
+
+  for (let i = 0; i < arguments.length; i++) {
+    args[i] = arguments[i];
+  }
+
+  return new P((resolve, reject) => {
+    if (opts.errorFirst) {
+      args.push(function (err, result) {
+        if (opts.multiArgs) {
+          const results = new Array(arguments.length - 1);
+
+          for (let i = 1; i < arguments.length; i++) {
+            results[i - 1] = arguments[i];
+          }
+
+          if (err) {
+            results.unshift(err);
+            reject(results);
+          } else {
+            resolve(results);
+          }
+        } else if (err) {
+          reject(err);
+        } else {
+          resolve(result);
+        }
+      });
+    } else {
+      args.push(function (result) {
+        if (opts.multiArgs) {
+          const results = new Array(arguments.length - 1);
+
+          for (let i = 0; i < arguments.length; i++) {
+            results[i] = arguments[i];
+          }
+
+          resolve(results);
+        } else {
+          resolve(result);
+        }
+      });
+    }
+
+    fn.apply(this, args);
+  });
+};
+
+module.exports = (obj, opts) => {
+  opts = Object.assign({
+    exclude: [/.+(Sync|Stream)$/],
+    errorFirst: true,
+    promiseModule: Promise
+  }, opts);
+
+  const filter = key => {
+    const match = pattern => typeof pattern === 'string' ? key === pattern : pattern.test(key);
+
+    return opts.include ? opts.include.some(match) : !opts.exclude.some(match);
+  };
+
+  let ret;
+
+  if (typeof obj === 'function') {
+    ret = function () {
+      if (opts.excludeMain) {
+        return obj.apply(this, arguments);
+      }
+
+      return processFn(obj, opts).apply(this, arguments);
+    };
+  } else {
+    ret = Object.create(Object.getPrototypeOf(obj));
+  }
+
+  for (const key in obj) {
+    // eslint-disable-line guard-for-in
+    const x = obj[key];
+    ret[key] = typeof x === 'function' && filter(key) ? processFn(x, opts) : x;
+  }
+
+  return ret;
+};
 
 /***/ }),
 
@@ -9738,101 +9835,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	}
 
 	return to;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/pify/index.js":
-/*!************************************!*\
-  !*** ./node_modules/pify/index.js ***!
-  \************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-const processFn = (fn, opts) => function () {
-	const P = opts.promiseModule;
-	const args = new Array(arguments.length);
-
-	for (let i = 0; i < arguments.length; i++) {
-		args[i] = arguments[i];
-	}
-
-	return new P((resolve, reject) => {
-		if (opts.errorFirst) {
-			args.push(function (err, result) {
-				if (opts.multiArgs) {
-					const results = new Array(arguments.length - 1);
-
-					for (let i = 1; i < arguments.length; i++) {
-						results[i - 1] = arguments[i];
-					}
-
-					if (err) {
-						results.unshift(err);
-						reject(results);
-					} else {
-						resolve(results);
-					}
-				} else if (err) {
-					reject(err);
-				} else {
-					resolve(result);
-				}
-			});
-		} else {
-			args.push(function (result) {
-				if (opts.multiArgs) {
-					const results = new Array(arguments.length - 1);
-
-					for (let i = 0; i < arguments.length; i++) {
-						results[i] = arguments[i];
-					}
-
-					resolve(results);
-				} else {
-					resolve(result);
-				}
-			});
-		}
-
-		fn.apply(this, args);
-	});
-};
-
-module.exports = (obj, opts) => {
-	opts = Object.assign({
-		exclude: [/.+(Sync|Stream)$/],
-		errorFirst: true,
-		promiseModule: Promise
-	}, opts);
-
-	const filter = key => {
-		const match = pattern => typeof pattern === 'string' ? key === pattern : pattern.test(key);
-		return opts.include ? opts.include.some(match) : !opts.exclude.some(match);
-	};
-
-	let ret;
-	if (typeof obj === 'function') {
-		ret = function () {
-			if (opts.excludeMain) {
-				return obj.apply(this, arguments);
-			}
-
-			return processFn(obj, opts).apply(this, arguments);
-		};
-	} else {
-		ret = Object.create(Object.getPrototypeOf(obj));
-	}
-
-	for (const key in obj) { // eslint-disable-line guard-for-in
-		const x = obj[key];
-		ret[key] = typeof x === 'function' && filter(key) ? processFn(x, opts) : x;
-	}
-
-	return ret;
 };
 
 

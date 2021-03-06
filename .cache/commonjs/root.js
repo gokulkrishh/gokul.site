@@ -9,7 +9,7 @@ var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends")
 
 var _react = _interopRequireDefault(require("react"));
 
-var _router = require("@reach/router");
+var _reachRouter = require("@gatsbyjs/reach-router");
 
 var _gatsbyReactRouterScroll = require("gatsby-react-router-scroll");
 
@@ -33,7 +33,7 @@ var _fastRefreshOverlay = _interopRequireDefault(require("./fast-refresh-overlay
 // Resetting `basepath`/`baseuri` keeps current behaviour
 // to not introduce breaking change.
 // Remove this in v3
-const RouteHandler = props => /*#__PURE__*/_react.default.createElement(_router.BaseContext.Provider, {
+const RouteHandler = props => /*#__PURE__*/_react.default.createElement(_reachRouter.BaseContext.Provider, {
   value: {
     baseuri: `/`,
     basepath: `/`
@@ -54,7 +54,7 @@ class LocationHandler extends _react.default.Component {
       }, /*#__PURE__*/_react.default.createElement(_gatsbyReactRouterScroll.ScrollContext, {
         location: location,
         shouldUpdateScroll: _navigation.shouldUpdateScroll
-      }, /*#__PURE__*/_react.default.createElement(_router.Router, {
+      }, /*#__PURE__*/_react.default.createElement(_reachRouter.Router, {
         basepath: __BASE_PATH__,
         location: location,
         id: "gatsby-focus-wrapper"
@@ -77,7 +77,7 @@ class LocationHandler extends _react.default.Component {
 
     return /*#__PURE__*/_react.default.createElement(_navigation.RouteUpdates, {
       location: location
-    }, /*#__PURE__*/_react.default.createElement(_router.Router, {
+    }, /*#__PURE__*/_react.default.createElement(_reachRouter.Router, {
       basepath: __BASE_PATH__,
       location: location,
       id: "gatsby-focus-wrapper"
@@ -91,7 +91,7 @@ class LocationHandler extends _react.default.Component {
 
 }
 
-const Root = () => /*#__PURE__*/_react.default.createElement(_router.Location, null, locationContext => /*#__PURE__*/_react.default.createElement(LocationHandler, locationContext)); // Let site, plugins wrap the site e.g. for Redux.
+const Root = () => /*#__PURE__*/_react.default.createElement(_reachRouter.Location, null, locationContext => /*#__PURE__*/_react.default.createElement(LocationHandler, locationContext)); // Let site, plugins wrap the site e.g. for Redux.
 
 
 const rootWrappedWithWrapRootElement = (0, _apiRunnerBrowser.apiRunner)(`wrapRootElement`, {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import Footer from '../components/footer';
 import Header from '../components/header';
@@ -11,7 +12,7 @@ const IndexPage = () => {
     <div className="grid">
       <Header />
       <Layout>
-        <h2>Posts</h2>
+        <h3>Posts</h3>
       </Layout>
       <Footer />
     </div>

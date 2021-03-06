@@ -28,15 +28,15 @@ const Header = () => {
           <p>Besides coding, I like playing games, running, football, travelling and an author.</p>
           <p>I'm currently working at ThoughtWorks, and previously worked at Ephicacy Lifescience Analytics.</p>
           <div className="social">
-            <a className="youtube" href="https://www.youtube.com/c/GokulKalaikoven" target="_blank">
+            <a className="youtube" href="https://www.youtube.com/c/GokulKalaikoven" target="_blank" rel="noreferrer">
               Youtube
               <LinkImg />
             </a>
-            <a className="twitter" href="https://twitter.com/gokul_i" target="_blank">
+            <a className="twitter" href="https://twitter.com/gokul_i" target="_blank" rel="noreferrer">
               Twitter
               <LinkImg />
             </a>
-            <a className="github" href="https://github.com/gokulkrishh" target="_blank">
+            <a className="github" href="https://github.com/gokulkrishh" target="_blank" rel="noreferrer">
               Github
               <LinkImg />
             </a>

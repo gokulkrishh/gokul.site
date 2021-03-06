@@ -46,13 +46,17 @@ header img {
 }
 
 header .social {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px;
+  width: 235px;
+  margin-top: 20px;
 }
 
 header .social a {
   display: flex;
   align-items: center;
-  margin-right: 25px;
+  margin-left: -10px;
 }
 
 header svg {

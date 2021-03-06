@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        icon: `${__dirname}/src/images/icon.png`,
       },
     },
     'gatsby-plugin-mdx',
@@ -27,7 +27,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/',
+        path: `${__dirname}/src/`,
       },
       __key: 'images',
     },
@@ -35,15 +35,25 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: './src/pages/',
+        path: `${__dirname}/src/pages/`,
       },
       __key: 'pages',
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/src/blog`,
+      },
+      __key: 'blog',
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Inter\:300,400,600,700`],
       },
     },
+    `gatsby-plugin-remove-trailing-slashes`,
   ],
 };

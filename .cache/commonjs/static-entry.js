@@ -20,7 +20,7 @@ const {
   ServerLocation,
   Router,
   isRedirect
-} = require(`@reach/router`);
+} = require(`@gatsbyjs/reach-router`);
 
 const {
   merge,

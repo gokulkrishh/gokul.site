@@ -25,9 +25,9 @@ var _emitter = _interopRequireDefault(require("./emitter"));
 
 var _routeAnnouncerProps = require("./route-announcer-props");
 
-var _router = require("@reach/router");
+var _reachRouter = require("@gatsbyjs/reach-router");
 
-var _history = require("@reach/router/lib/history");
+var _history = require("@gatsbyjs/reach-router/lib/history");
 
 var _gatsbyLink = require("gatsby-link");
 
@@ -164,7 +164,7 @@ const navigate = (to, options = {}) => {
       }
     }
 
-    (0, _router.navigate)(to, options);
+    (0, _reachRouter.navigate)(to, options);
     clearTimeout(timeoutId);
   });
 };

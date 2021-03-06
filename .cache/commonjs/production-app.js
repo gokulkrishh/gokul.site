@@ -10,7 +10,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _router = require("@reach/router");
+var _reachRouter = require("@gatsbyjs/reach-router");
 
 var _gatsbyReactRouterScroll = require("gatsby-react-router-scroll");
 
@@ -57,7 +57,7 @@ window.___loader = _loader.publicLoader;
   // Remove this in v3
 
 
-  const RouteHandler = props => /*#__PURE__*/_react.default.createElement(_router.BaseContext.Provider, {
+  const RouteHandler = props => /*#__PURE__*/_react.default.createElement(_reachRouter.BaseContext.Provider, {
     value: {
       baseuri: `/`,
       basepath: `/`
@@ -71,7 +71,7 @@ window.___loader = _loader.publicLoader;
       const {
         children
       } = this.props;
-      return /*#__PURE__*/_react.default.createElement(_router.Location, null, ({
+      return /*#__PURE__*/_react.default.createElement(_reachRouter.Location, null, ({
         location
       }) => /*#__PURE__*/_react.default.createElement(_ensureResources.default, {
         location: location
@@ -103,7 +103,7 @@ window.___loader = _loader.publicLoader;
       }, /*#__PURE__*/_react.default.createElement(_gatsbyReactRouterScroll.ScrollContext, {
         location: location,
         shouldUpdateScroll: _navigation.shouldUpdateScroll
-      }, /*#__PURE__*/_react.default.createElement(_router.Router, {
+      }, /*#__PURE__*/_react.default.createElement(_reachRouter.Router, {
         basepath: __BASE_PATH__,
         location: location,
         id: "gatsby-focus-wrapper"
@@ -129,7 +129,7 @@ window.___loader = _loader.publicLoader;
   // - it's the offline plugin shell (/offline-plugin-app-shell-fallback/)
 
   if (pagePath && __BASE_PATH__ + pagePath !== browserLoc.pathname && !(loader.findMatchPath((0, _stripPrefix.default)(browserLoc.pathname, __BASE_PATH__)) || pagePath === `/404.html` || pagePath.match(/^\/404\/?$/) || pagePath.match(/^\/offline-plugin-app-shell-fallback\/?$/))) {
-    (0, _router.navigate)(__BASE_PATH__ + pagePath + browserLoc.search + browserLoc.hash, {
+    (0, _reachRouter.navigate)(__BASE_PATH__ + pagePath + browserLoc.search + browserLoc.hash, {
       replace: true
     });
   }
