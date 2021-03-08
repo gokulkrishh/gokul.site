@@ -69,4 +69,8 @@
   .blog-post-details {
     grid-template-columns: repeat(2, 170px);
   }
+
+  .all-posts {
+    grid-template-columns: repeat(1, 100%);
+  }
 }

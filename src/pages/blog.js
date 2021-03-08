@@ -28,7 +28,6 @@ const Blog = ({ data }) => {
             return (
               <a href={link} className="link" key={title}>
                 <div className="post">
-                  <LinkImg />
                   <h3>{title}</h3>
                   <time>{date}</time>
                   <p>{excerpt}</p>
