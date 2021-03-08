@@ -33,26 +33,22 @@
 }
 
 .book-header .gumroad-button {
-  margin-right: 10px;
-  color: var(--color-white) !important;
-  border: 0;
-  border-radius: 6px !important;
-  min-width: 150px !important;
+  min-width: 200px !important;
   height: 45px;
-  cursor: pointer;
-  font-weight: 600;
-  padding: 0 15px;
-  background-color: var(--color-bright-blue) !important;
-  line-height: 45px !important;
-  text-align: center;
-  background-image: none !important;
-  text-transform: capitalize;
-  background-image: none !important;
-  font-size: var(--font-size-md) !important;
-}
-
-.gumroad-button .gumroad-button-logo {
-  display: none !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.4) !important;
+  color: currentColor !important;
+  display: inline-block !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size) !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 50px !important;
+  padding: 0 15px !important;
+  text-shadow: none !important;
+  text-decoration: none !important;
+  color: var(--color-black) !important;
+  margin-right: 10px;
 }
 
 .book-header a,

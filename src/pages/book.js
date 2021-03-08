@@ -37,7 +37,7 @@ const Book = () => {
 
             <div className="header-actions">
               <a className="gumroad-button" href="https://gum.co/IrcpA">
-                Get the book for <del>$15</del> $10 (30% off)
+                Buy for <del>$15</del> $10
               </a>
               or{''}
               <a className="download" href={samplePdf} download>
