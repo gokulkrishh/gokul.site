@@ -6,6 +6,7 @@ import Menu from '../components/menu';
 import Footer from '../components/footer';
 
 import '../styles/blog-post.css';
+import Newsletter from '../components/newsletter';
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
@@ -36,6 +37,7 @@ export default function Template({ data }) {
           <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </Layout>
+      <Newsletter />
       <Footer />
     </div>
   );
