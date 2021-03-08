@@ -1,11 +1,11 @@
 .newsletter-container {
   background-color: var(--color-slighty-black);
-  max-width: 720px;
+  max-width: 690px;
   width: 100%;
   border-radius: 8px;
   color: var(--color-white);
   display: flex;
-  height: 300px;
+  height: 280px;
   padding: 15px 25px;
   margin-top: 40px;
 }
@@ -29,7 +29,7 @@
 }
 
 .newsletter-container form {
-  width: 320px;
+  width: 290px;
   display: flex;
   flex-direction: column;
 }
@@ -75,7 +75,7 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  width: 110px;
+  width: 100px;
   height: 39px;
   font-size: var(--font-size);
   text-align: center;
