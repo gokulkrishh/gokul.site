@@ -30,7 +30,6 @@ const IndexPage = ({ data }) => {
             return (
               <Link to={link} className="link" key={title}>
                 <div className="post">
-                  <LinkImg />
                   <h3>{title}</h3>
                   <time>{date}</time>
                   <p>{excerpt}</p>
@@ -40,19 +39,13 @@ const IndexPage = ({ data }) => {
           })}
         </div>
         <h2>Pet projects</h2>
-        <div className="posts">
+        <div className="posts pet-projects">
           <a href={'https://qrcodescan.in'} className="link" target="_blank" rel="noreferrer">
             <div className="post post-bg-placeholder qr-code-scanner">
               <img src={QRCodeScannerPng} alt="QR Code Scanner logo" />
               <LinkImg />
               <h3>QR Code Scanner</h3>
-              <p>
-                <span role="img" aria-label="qr code scanner">
-                  🖨
-                </span>{' '}
-                QR Code Scanner is a progressive web application. This qr code scanner is super fast and user-friendly and quite popular
-                too.
-              </p>
+              <p>QR Code Scanner is a progressive web application. This qr code scanner is super fast and user-friendly web application.</p>
             </div>
           </a>
           <a href="https://github.com/gokulkrishh/dotfiles" target="_blank" rel="noreferrer" className="link">
@@ -60,12 +53,7 @@ const IndexPage = ({ data }) => {
               <img src={DotfilesPng} alt="Dofiles logo" />
               <LinkImg />
               <h3>Dofiles</h3>
-              <p>
-                <span aria-label="dotfiles" role="img">
-                  🔩
-                </span>{' '}
-                Know what tools and plugins I use for day to day web development. Has lots shortcuts and good stuff.
-              </p>
+              <p>Know what tools and plugins I use for day to day web development. Has lots shortcuts and good stuff.</p>
             </div>
           </a>
           <a href="https://github.com/gokulkrishh/awesome-meta-and-manifest" className="link" target="_blank" rel="noreferrer">
@@ -73,12 +61,7 @@ const IndexPage = ({ data }) => {
               <img src={AwesomeSvg} alt="Awesome logo" />
               <LinkImg />
               <h3>Awesome Meta Tags & Manifest Properties</h3>
-              <p>
-                <span aria-label="collection" role="img">
-                  ⚡
-                </span>{' '}
-                Awesome collection of meta tags & manifest properties.
-              </p>
+              <p>Awesome collection of meta tags & manifest properties that you can use on your web application.</p>
             </div>
           </a>
         </div>

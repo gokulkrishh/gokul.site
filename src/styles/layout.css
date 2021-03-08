@@ -41,6 +41,14 @@
   min-height: 205px;
 }
 
+.posts .post h3:not::after {
+  display: inline-block;
+  content: '→';
+  position: relative;
+  left: 6px;
+  color: var(--color-grey);
+}
+
 .post svg {
   position: absolute;
   right: 10px;

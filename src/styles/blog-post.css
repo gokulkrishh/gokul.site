@@ -58,3 +58,9 @@
 .all-posts {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.go-to {
+  display: inline-block;
+  line-height: 20px;
+  height: 22px;
+}
