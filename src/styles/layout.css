@@ -77,3 +77,31 @@
   background-color: transparent;
   color: var(--color-yellow);
 }
+
+.post-bg-placeholder {
+  min-height: 270px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 65px;
+  background-position: 10px 10px;
+}
+
+.post-bg-placeholder h3 {
+  margin-top: 70px;
+}
+
+.qr-code-scanner {
+  background-image: url('../images/qr-code-scanner.png');
+  background-size: 52px;
+  background-position: 15px 16px;
+}
+
+.dotfiles {
+  background-image: url('../images/dotfiles.png');
+  background-size: 60px;
+}
+
+.awesome-manifest {
+  background-image: url('../images/awesome.svg');
+  background-size: 80px;
+}
