@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import Footer from '../components/footer';
-import Layout from '../components/layout';
-import Newsletter from '../components/newsletter';
-import Menu from '../components/menu';
+import Footer from "src/components/footer";
+import Layout from "src/components/layout";
+import Newsletter from "src/components/newsletter";
+import Menu from "src/components/menu";
 
-import '../styles/index.css';
+import "src/styles/index.css";
 
 const NotFoundPage = () => {
   return (
@@ -16,7 +16,7 @@ const NotFoundPage = () => {
         <h3>
           <span role="img" aria-label="Pensive emoji">
             😔
-          </span>{' '}
+          </span>{" "}
           We couldn’t find what you were looking for.
         </h3>
         <br />

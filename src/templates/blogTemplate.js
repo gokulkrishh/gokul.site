@@ -1,12 +1,12 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from '../components/layout';
-import Menu from '../components/menu';
-import Footer from '../components/footer';
+import Layout from "src/components/layout";
+import Menu from "src/components/menu";
+import Footer from "src/components/footer";
 
-import '../styles/blog-post.css';
-import Newsletter from '../components/newsletter';
+import "src/styles/blog-post.css";
+import Newsletter from "src/components/newsletter";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
@@ -31,10 +31,13 @@ export default function Template({ data }) {
             )}
             <p>
               Reading time
-              <time>{readingTime.text.replace(/read/g, '')}</time>
+              <time>{readingTime.text.replace(/read/g, "")}</time>
             </p>
           </div>
-          <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </div>
       </Layout>
       <Newsletter />

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import '../styles/layout.css';
+import "srcc/styles/layout.css";
 
 const Layout = ({ children }) => {
   return <main className="layout">{children}</main>;

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Footer from '../components/footer';
-import Header from '../components/header';
-import Layout from '../components/layout';
-import Newsletter from '../components/newsletter';
+import Footer from "src/components/footer";
+import Header from "src/components/header";
+import Layout from "src/components/layout";
+import Newsletter from "src/components/newsletter";
 
 const About = () => {
   return (
