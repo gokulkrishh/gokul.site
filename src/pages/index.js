@@ -5,7 +5,11 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import Layout from '../components/layout';
 import Newsletter from '../components/newsletter';
+
 import LinkImg from '../components/LinkImg';
+import DotfilesPng from '../images/dotfiles.png';
+import AwesomeSvg from '../images/awesome.svg';
+import QRCodeScannerPng from '../images/qr-code-scanner.png';
 
 import '../styles/index.css';
 import '../styles/libraries.css';
@@ -39,6 +43,7 @@ const IndexPage = ({ data }) => {
         <div className="posts">
           <a href={'https://qrcodescan.in'} className="link" target="_blank" rel="noreferrer">
             <div className="post post-bg-placeholder qr-code-scanner">
+              <img src={QRCodeScannerPng} />
               <LinkImg />
               <h3>QR Code Scanner</h3>
               <p>
@@ -52,6 +57,7 @@ const IndexPage = ({ data }) => {
           </a>
           <a href="https://github.com/gokulkrishh/dotfiles" target="_blank" rel="noreferrer" className="link">
             <div className="post post-bg-placeholder dotfiles">
+              <img src={DotfilesPng} />
               <LinkImg />
               <h3>Dofiles</h3>
               <p>
@@ -64,6 +70,7 @@ const IndexPage = ({ data }) => {
           </a>
           <a href="https://github.com/gokulkrishh/awesome-meta-and-manifest" className="link" target="_blank" rel="noreferrer">
             <div className="post post-bg-placeholder awesome-manifest">
+              <img src={AwesomeSvg} />
               <LinkImg />
               <h3>Awesome Meta Tags & Manifest Properties</h3>
               <p>
