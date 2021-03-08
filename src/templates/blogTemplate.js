@@ -1,12 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "src/components/layout";
-import Menu from "src/components/menu";
-import Footer from "src/components/footer";
+import Layout from "../components/layout";
+import Menu from "../components/menu";
+import Footer from "../components/footer";
 
-import "src/styles/blog-post.css";
-import Newsletter from "src/components/newsletter";
+import "../styles/blog-post.css";
+import Newsletter from "../components/newsletter";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;

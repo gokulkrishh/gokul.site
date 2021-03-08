@@ -1,14 +1,14 @@
 import React from "react";
 
-import Footer from "src/components/footer";
-import Layout from "src/components/layout";
-import Menu from "src/components/menu";
-import Newsletter from "src/components/newsletter";
+import Footer from "../components/footer";
+import Layout from "../components/layout";
+import Menu from "../components/menu";
+import Newsletter from "../components/newsletter";
 
-import samplePdf from "src/images/beginners-guide-to-web-security-sample.pdf";
-import bookImage from "src/images/book.png";
+import samplePdf from "../images/beginners-guide-to-web-security-sample.pdf";
+import bookImage from "../images/book.png";
 
-import "src/styles/book.css";
+import "../styles/book.css";
 
 const Book = () => {
   return (

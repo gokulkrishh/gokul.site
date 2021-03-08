@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import gokulPng from "src/images/gokul.png";
+import gokulPng from "../images/gokul.png";
 
-import "src/styles/menu.css";
+import "../styles/menu.css";
 
 const Menu = () => {
   return (

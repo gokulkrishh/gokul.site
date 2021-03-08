@@ -1,11 +1,11 @@
 import React from "react";
 
-import Footer from "src/components/footer";
-import Layout from "src/components/layout";
-import Newsletter from "src/components/newsletter";
-import Menu from "src/components/menu";
+import Footer from "../components/footer";
+import Layout from "../components/layout";
+import Newsletter from "../components/newsletter";
+import Menu from "../components/menu";
 
-import "src/styles/index.css";
+import "../styles/index.css";
 
 const NotFoundPage = () => {
   return (

@@ -1,18 +1,18 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import Footer from "src/components/footer";
-import Header from "src/components/header";
-import Layout from "src/components/layout";
-import Newsletter from "src/components/newsletter";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Layout from "../components/layout";
+import Newsletter from "../components/newsletter";
 
-import LinkImg from "src/components/LinkImg";
-import DotfilesPng from "src/images/dotfiles.png";
-import AwesomeSvg from "src/images/awesome.svg";
-import QRCodeScannerPng from "src/images/qr-code-scanner.png";
+import LinkImg from "../components/LinkImg";
+import DotfilesPng from "../images/dotfiles.png";
+import AwesomeSvg from "../images/awesome.svg";
+import QRCodeScannerPng from "../images/qr-code-scanner.png";
 
-import "src/styles/index.css";
-import "src/styles/libraries.css";
+import "../styles/index.css";
+import "../styles/libraries.css";
 
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data;

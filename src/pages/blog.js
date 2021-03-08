@@ -1,14 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Footer from "src/components/footer";
-import Layout from "src/components/layout";
-import Newsletter from "src/components/newsletter";
-import LinkImg from "src/components/LinkImg";
-import Menu from "src/components/menu";
+import Footer from "../components/footer";
+import Layout from "../components/layout";
+import Newsletter from "../components/newsletter";
+import LinkImg from "../components/LinkImg";
+import Menu from "../components/menu";
 
-import "src/styles/index.css";
-import "src/styles/libraries.css";
+import "../styles/index.css";
+import "../styles/libraries.css";
 
 const Blog = ({ data }) => {
   const { allMarkdownRemark } = data;

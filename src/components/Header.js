@@ -3,7 +3,7 @@ import React from "react";
 import Menu from "./menu";
 import Bio from "./bio";
 
-import "src/styles/header.css";
+import "../styles/header.css";
 
 const Header = () => {
   return (
