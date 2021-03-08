@@ -1,21 +1,21 @@
 import React from 'react';
 
 import Footer from '../components/footer';
-import Header from '../components/header';
 import Layout from '../components/layout';
+import Menu from '../components/menu';
 
 import '../styles/index.css';
 
-const IndexPage = () => {
+const Uses = () => {
   return (
     <div className="grid">
-      <Header />
+      <Menu />
       <Layout>
-        <h3>Posts</h3>
+        <h3>Uses</h3>
       </Layout>
       <Footer />
     </div>
   );
 };
 
-export default IndexPage;
+export default Uses;
