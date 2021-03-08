@@ -10,8 +10,7 @@
   --color-grey: #c4c4c4;
   --color-blue: #2196f3;
   --color-bright-blue: #1c56ff;
-  --color-yellow: #f7ac1d;
-  --color-orange: tomato;
+  --color-yellow: orange;
   --color-light-violet: #a7b9f1;
   --color-green: #cddc39;
 
@@ -68,10 +67,4 @@ time {
 
 ul {
   line-height: 2.2;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--black);
-  }
 }

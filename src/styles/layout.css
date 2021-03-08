@@ -6,6 +6,7 @@
 
 .layout h2 {
   color: var(--color-yellow);
+  margin-top: 40px;
 }
 
 .gatsby-resp-image-wrapper {
@@ -14,4 +15,53 @@
 
 .gatsby-resp-image-wrapper .gatsby-resp-image-link {
   height: inherit;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+  margin-bottom: 60px;
+  grid-gap: 30px;
+}
+
+.post {
+  padding: 15px;
+  background-color: var(--color-slighty-black);
+  border-radius: 6px;
+  position: relative;
+}
+
+.post h3 {
+  color: var(--color-yellow);
+}
+
+.post svg {
+  position: absolute;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  fill: var(--color-blue);
+}
+
+.posts a {
+  padding: 0;
+  height: auto;
+  color: var(--color-white);
+}
+
+.post h3 {
+  padding: 0;
+  margin: 0 0 5px;
+}
+
+.post p {
+  margin-bottom: 0;
+  color: var(--color-grey);
+}
+
+.post a:hover {
+  background-color: transparent;
+  color: var(--color-yellow);
 }

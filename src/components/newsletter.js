@@ -9,12 +9,12 @@ const Newsletter = () => {
   return (
     <div className="newsletter-container">
       <div className="newsletter-title">
-        <h4>
+        <h3>
           <span aria-label="newsletter icon" role="img">
             📩
           </span>
           Join my newsletter
-        </h4>
+        </h3>
         <p>Learn about Web Development, Frameworks, Javascript, Designing with me.</p>
         <p className="newsletter-spam">I promise you there won't be any spamming!.</p>
       </div>

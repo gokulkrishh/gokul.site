@@ -34,18 +34,18 @@
   flex-direction: column;
 }
 
-.newsletter-container h4,
+.newsletter-container h3,
 .newsletter-container p {
   width: inherit;
 }
 
-.newsletter-container h4 {
+.newsletter-container h3 {
   margin-bottom: 0;
   color: #fff;
   margin-top: 0px;
   font-size: var(--font-size-lg);
 }
-.newsletter-container h4 > span {
+.newsletter-container h3 > span {
   margin-right: 12px;
   display: inline-block;
   position: relative;
