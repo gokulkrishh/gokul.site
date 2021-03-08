@@ -33,11 +33,11 @@ const Book = () => {
               <li>How to prevent from web vulnerabilities</li>
               <li>How to fix the web vulnerabilities</li>
             </ul>
-            <p>At the end of this book has tools, libraries and web security checklist to getting started on the web security.</p>
+            <p>At the end of this book has tools, libraries and web security checklist to get started.</p>
 
             <div className="header-actions">
               <a className="gumroad-button" href="https://gum.co/IrcpA">
-                Buy on gumroad
+                Get the book
               </a>
               or{''}
               <a className="download" href={samplePdf} download>
@@ -50,7 +50,7 @@ const Book = () => {
         </section>
         <section className="learn-section">
           <div className="container">
-            <h3>What you'll learn</h3>
+            <h2>What you'll learn</h2>
             <ul>
               <li>
                 <b>How does the web work?</b>
@@ -101,10 +101,10 @@ const Book = () => {
         </section>
         <section className="faq-section">
           <div className="container">
-            <h3>Frequently Asked Questions</h3>
+            <h2>Frequently Asked Questions</h2>
             <div className="faq-questions">
               <div>
-                <h4>Who designed the cover?</h4>
+                <h3>Who designed the cover?</h3>
                 <p>
                   The design was done by{' '}
                   <a href="https://twitter.com/align_all" target="_blank" rel="noreferrer">
@@ -114,7 +114,7 @@ const Book = () => {
                 </p>
               </div>
               <div>
-                <h4>Can I get a student discount?</h4>
+                <h3>Can I get a student discount?</h3>
                 <p>
                   Yes, of course.{' '}
                   <a href="https://twitter.com/messages/compose?recipient_id=515540454" target="_blank" rel="noreferrer">
@@ -127,7 +127,7 @@ const Book = () => {
             </div>
             <div>
               <div>
-                <h4>I have a feedback or question?</h4>
+                <h3>I have a feedback or question?</h3>
                 <p>
                   Tweet me{' '}
                   <a href="https://twitter.com/gokul_i" target="_blank" rel="noreferrer">

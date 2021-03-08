@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => {
         <div className="posts">
           <a href={'https://qrcodescan.in'} className="link" target="_blank" rel="noreferrer">
             <div className="post post-bg-placeholder qr-code-scanner">
-              <img src={QRCodeScannerPng} />
+              <img src={QRCodeScannerPng} alt="QR Code Scanner logo" />
               <LinkImg />
               <h3>QR Code Scanner</h3>
               <p>
@@ -57,7 +57,7 @@ const IndexPage = ({ data }) => {
           </a>
           <a href="https://github.com/gokulkrishh/dotfiles" target="_blank" rel="noreferrer" className="link">
             <div className="post post-bg-placeholder dotfiles">
-              <img src={DotfilesPng} />
+              <img src={DotfilesPng} alt="Dofiles logo" />
               <LinkImg />
               <h3>Dofiles</h3>
               <p>
@@ -70,7 +70,7 @@ const IndexPage = ({ data }) => {
           </a>
           <a href="https://github.com/gokulkrishh/awesome-meta-and-manifest" className="link" target="_blank" rel="noreferrer">
             <div className="post post-bg-placeholder awesome-manifest">
-              <img src={AwesomeSvg} />
+              <img src={AwesomeSvg} alt="Awesome logo" />
               <LinkImg />
               <h3>Awesome Meta Tags & Manifest Properties</h3>
               <p>

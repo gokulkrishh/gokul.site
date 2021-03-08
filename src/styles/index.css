@@ -9,16 +9,20 @@
   --color-white: #fff;
   --color-grey: #c4c4c4;
   --color-blue: #2196f3;
-  --color-bright-blue: #1c56ff;
+  --color-bright-blue: #2152e0;
   --color-yellow: orange;
   --color-light-violet: #a7b9f1;
   --color-green: #cddc39;
+  --color-dull-yellow: #ffd392;
+  --color-maroon: #ee696b;
 
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
   --font-family-coding: 'Dank Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  --font-family-book: 'futura', sans-serif;
   --font-size: 16px;
   --font-size-lg: 20px;
+  --font-size-llg: 38px;
   --font-size-md: 18px;
   --font-size-sm: 14px;
   --font-weight: 500;

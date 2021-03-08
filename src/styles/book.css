@@ -2,11 +2,11 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 5px;
-  background-color: var(--color-grey);
+  background-color: var(--color-dull-yellow);
   border-radius: 32px;
   color: var(--color-black);
   padding: 6px 8px;
-  font-size: 11px;
+  font-size: calc(var(--font-size-sm) - 3px);
   margin-left: -5px;
   letter-spacing: 1px;
 }
@@ -17,6 +17,66 @@
 }
 
 .book-header > img {
-  max-width: 550px;
+  max-width: 500px;
   margin-right: -50px;
+}
+
+.book-header h2 {
+  font-family: var(--font-family-book);
+  text-transform: uppercase;
+  color: var(--color-maroon);
+  font-size: var(--font-size-llg);
+  line-height: 41px;
+  width: 390px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.book-header .gumroad-button {
+  margin-right: 10px;
+  color: var(--color-white) !important;
+  border: 0;
+  border-radius: 6px !important;
+  min-width: 150px !important;
+  height: 45px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0 15px;
+  background-color: var(--color-bright-blue) !important;
+  line-height: 45px !important;
+  text-align: center;
+  background-image: none !important;
+  text-transform: capitalize;
+  background-image: none !important;
+  font-size: var(--font-size-md) !important;
+}
+
+.gumroad-button .gumroad-button-logo {
+  display: none !important;
+}
+
+.book-header a,
+section a {
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.download {
+  margin-left: 10px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+.faq-questions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+p {
+  color: var(--color-grey);
 }
