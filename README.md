@@ -3,8 +3,9 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
+
 <h1 align="center">
-  Gatsby minimal starter
+  Heavily Customized Gatsby minimal starter
 </h1>
 
 ## 🚀 Quick start
