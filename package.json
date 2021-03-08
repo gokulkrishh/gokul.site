@@ -12,11 +12,14 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "copy": "cpy ./demo ./public/static --parents && cpy ./CNAME ./public --parents",
+    "deploy": "gatsby build --prefix-paths && npm run copy && gh-pages -d public -b gh-pages"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "cpy-cli": "^3.1.1",
     "gatsby": "^3.0.1",
     "gatsby-image": "^3.0.0",
     "gatsby-paginate": "^1.1.1",
@@ -37,6 +40,7 @@
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^3.0.0",
     "gatsby-transformer-sharp": "^3.0.0",
+    "gh-pages": "^3.1.0",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

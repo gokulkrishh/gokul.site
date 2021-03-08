@@ -1,0 +1,64 @@
+/* CUSTOM STYLES */
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  text-transform: initial;
+}
+
+
+.reveal h1 {
+  font-size: 2.2em;
+  margin-bottom: 50px;
+}
+
+.reveal ul li {
+  font-size: 0.8em;
+  line-height: 50px;
+}
+
+ul li b {
+  color: #42affa;
+}
+
+.m-top40 {
+  margin-top: 40px !important;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+button {
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  vertical-align: top;
+  margin-left: 10px;
+  border: 0;
+  background: #fff;
+  font-size: 20px;
+  border-radius 3px;
+}
+
+.example-img {
+  width: 30%;
+  height: 30%;
+  display: block;
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+.w-70 {
+  width: 50%;
+  margin-top: 100px;
+}
+
+.blk-small {
+  display: block !important;
+  margin-bottom: 50px !important;
+}

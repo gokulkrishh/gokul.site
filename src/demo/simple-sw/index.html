@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Service Worker Demo</title>
+    <meta name=description content="This web application will work in offline, has a splash screen add to home screen etc,.">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#212225">
+    <meta name="msapplication-TileColor" content="#212225">
+    <meta name="msapplication-TileImage" content="images/G-Logo-144.png">
+    <link rel=icon sizes="192x192" href="images/G-Logo-192.png">
+    <link rel="apple-touch-icon" href="images/G-Logo-192.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <img src="images/G-Logo-128.png" alt="Logo">
+
+    <button>Click me</button>
+  </body>
+
+  <script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      var serviceWorker = navigator.serviceWorker;
+
+      serviceWorker.register("./serviceWorker.js")
+        .then(function () {
+          console.log("Service Worker is registered.");
+        })
+        .catch(function (error) {
+          console.error("Service Worker is failed to register", error);
+        });
+    }
+    else {
+      console.error("Service Worker is failed to register");
+    }
+  </script>
+  <script src="js/main.js" charset="utf-8"></script>
+</html>

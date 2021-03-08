@@ -1,0 +1,20 @@
+<h2>Offline</h2>
+<small>Using service worker</small>
+
+<pre>
+<div class="f-right">index.html</div>
+<code data-trim>
+<script type="text/javascript">
+//If SW supports, then register it.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./sw.js') //At root of the site, sw.js file
+    .then(function () {
+      console.log('serviceWorker is registered');
+    })
+    .catch(function (error) {
+      console.log('Failed to register serviceWorker', error);
+    });
+}
+</script>
+</code></pre>
