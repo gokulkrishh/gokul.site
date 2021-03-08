@@ -30,6 +30,8 @@
   background-color: var(--color-slighty-black);
   border-radius: 6px;
   position: relative;
+  max-height: 250px;
+  min-height: 250px;
 }
 
 .post h3 {

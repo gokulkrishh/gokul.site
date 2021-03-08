@@ -1,8 +1,9 @@
 ---
-slug: '/uses'
+slug: '/blog/uses'
 date: '2021-03-06'
 updated: '2021-03-08'
 title: 'Things I use'
+relative: true
 ---
 
 ![Screenshot of terminal application](./screenshot-terminal.png)

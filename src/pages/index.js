@@ -19,10 +19,10 @@ const IndexPage = ({ data }) => {
       <Layout>
         <h2>Popular posts</h2>
         <div className="posts">
-          {posts.map(({ node }) => {
+          {posts.slice(0, 3).map(({ node }) => {
             const { frontmatter, excerpt, fields } = node;
-            const { title, date } = frontmatter;
-            const link = title === 'Things I use' ? '/uses' : `blog${fields.slug}`;
+            const { title, date, relative } = frontmatter;
+            const link = relative ? fields.slug.split('/')[2] : `blog${fields.slug}`;
             return (
               <Link to={link} className="link" key={title}>
                 <div className="post">
@@ -54,8 +54,9 @@ export const listQuery = graphql`
           }
           excerpt(pruneLength: 100)
           frontmatter {
-            date(formatString: "MMMM Do YYYY")
+            date(formatString: "DD MMM, YYYY")
             title
+            relative
           }
         }
       }

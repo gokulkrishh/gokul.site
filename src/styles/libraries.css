@@ -41,7 +41,6 @@
 }
 
 .language-text {
-  background: var(--color-grey) !important;
   color: inherit !important;
   font-weight: 600 !important;
   font-family: inherit !important;
