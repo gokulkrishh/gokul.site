@@ -5,13 +5,14 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 
 import '../styles/index.css';
+import '../styles/libraries.css';
 
 const IndexPage = () => {
   return (
     <div className="grid">
       <Header />
       <Layout>
-        <h3>Posts</h3>
+        <h2>Posts</h2>
       </Layout>
       <Footer />
     </div>

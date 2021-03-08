@@ -1,0 +1,49 @@
+.blog-post {
+  margin-top: 50px;
+}
+
+.blog-post h1 {
+  color: var(--color-yellow);
+}
+
+.blog-post-details {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 170px);
+}
+
+.blog-post-details p {
+  grid-gap: 10px;
+  display: grid;
+  font-weight: bold;
+}
+
+.blog-post-details time {
+  font-weight: normal;
+}
+
+.blog-post-content a {
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.blog-post-content a:hover,
+.blog-post-content a:active {
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+.blog-post-content p {
+  line-height: 1.8;
+}
+
+.blog-post-content h4 {
+  margin-bottom: 10px;
+}
+
+.blog-post-heading-link {
+  fill: var(--color-grey);
+}

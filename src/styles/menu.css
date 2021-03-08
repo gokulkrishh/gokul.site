@@ -24,10 +24,6 @@
   align-items: center;
 }
 
-.header-content {
-  width: 460px;
-}
-
 .menu .logo {
   padding: 0;
 }
@@ -43,7 +39,7 @@
   height: 38px;
 }
 
-.social {
+.menu .social {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 30px;
@@ -51,7 +47,7 @@
   margin-top: 20px;
 }
 
-.social a {
+.menu .social a {
   display: flex;
   align-items: center;
   margin-left: -10px;

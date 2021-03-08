@@ -3,6 +3,10 @@ header h1 {
   font-size: var(--font-size);
 }
 
+.header-content {
+  width: 460px;
+}
+
 header p {
   color: var(--color-grey);
 }

@@ -1,12 +1,13 @@
 .grid {
   max-width: var(--grid-width);
   margin: 0 auto;
-}
-
-.grid {
   padding: 0 20px;
 }
 
-.layout h3 {
+.layout h2 {
   color: var(--color-yellow);
+}
+
+.gatsby-resp-image-wrapper {
+  margin: 10px 0 20px;
 }

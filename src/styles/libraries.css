@@ -1,0 +1,70 @@
+@import './third-party/prism-dracula.css';
+
+.gatsby-highlight {
+  position: relative;
+  font-variant-ligatures: none;
+}
+
+.gatsby-highlight .line-numbers {
+  padding-left: 50px !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.gatsby-highlight .line-numbers-rows {
+  padding-left: 10px !important;
+}
+
+.gatsby-highlight::before {
+  font-size: 0.75rem;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  position: absolute;
+  right: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0px;
+  border-radius: 0px 0px 4px 4px;
+  padding: 0.25rem 0.5rem;
+  content: attr(data-language);
+  display: inline-block;
+  font-weight: bold;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+[data-language='js']::before {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  z-index: 1;
+}
+
+.language-text {
+  background: var(--color-grey) !important;
+  color: inherit !important;
+  font-weight: 600 !important;
+  font-family: inherit !important;
+  padding: 0px 6px !important;
+  display: inline-block;
+  border-radius: 3px !important;
+  text-shadow: none !important;
+  font-size: 16px !important;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--color-light-violet);
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  font-family: var(--font-family-coding);
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: var(--color-code-black);
+}
