@@ -1,0 +1,155 @@
+.newsletter-container {
+  background-color: var(--color-slighty-black);
+  max-width: 690px;
+  width: 100%;
+  border-radius: 8px;
+  color: var(--color-white);
+  display: flex;
+  height: 280px;
+  padding: 15px 25px;
+  margin-top: 40px;
+}
+
+.newsletter-title {
+  color: var(--color-grey);
+}
+
+.newsletter-confirmation {
+  margin-top: 25px;
+  color: var(--color-green);
+  display: none;
+}
+
+.newsletter-content {
+  margin-top: 20px;
+}
+
+.newsletter-container p {
+  max-width: 90%;
+}
+
+.newsletter-container form {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-container h3,
+.newsletter-container p {
+  width: inherit;
+}
+
+.newsletter-container h3 {
+  margin-bottom: 0;
+  color: #fff;
+  margin-top: 0px;
+  font-size: var(--font-size-lg);
+}
+.newsletter-container h3 > span {
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+}
+
+.newsletter-container h4 + p {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.newsletter-spam {
+  color: var(--color-white);
+  margin-top: 38px;
+}
+
+.newsletter-container input,
+.newsletter-container input[type='submit'] {
+  height: 48px;
+  padding: 0 10px;
+  font-size: var(--font-size);
+}
+
+.newsletter-container input[type='submit'] {
+  color: var(--color-white);
+  background-color: var(--color-bright-blue);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100px;
+  height: 39px;
+  font-size: var(--font-size);
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15px;
+  line-height: 39px;
+}
+
+.newsletter-container input[type='submit']:active {
+  opacity: 0.9;
+}
+
+.newsletter-container .email-address {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid;
+  outline: none;
+  font-size: var(--font-size);
+}
+
+.newsletter-container span {
+  display: block;
+  font-weight: 400;
+  margin-top: 5px;
+  color: var(--color-bright-blue);
+}
+
+@media all and (max-width: 760px) and (min-width: 640px) {
+  .newsletter-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    display: grid;
+    padding: 15px;
+  }
+
+  .newsletter-container form {
+    margin-top: -7px;
+  }
+
+  .newsletter-container .email-address {
+    align-self: flex-end;
+  }
+
+  .newsletter-container .submit-btn {
+    margin-left: 20px;
+  }
+
+  .newsletter-spam {
+    margin-top: 28px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .newsletter-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .newsletter-container form {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .newsletter-container p {
+    margin-bottom: 20px;
+  }
+
+  .newsletter-spam,
+  .newsletter-content {
+    margin-top: 0;
+  }
+
+  .newsletter-container {
+    height: auto;
+  }
+}

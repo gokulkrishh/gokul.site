@@ -1,23 +1,30 @@
-import React from "react";
-import Helmet from "react-helmet";
+import React from 'react';
 
-import Layout from "../components/Layout";
-import Header from "../components/Header";
-import Bio from "../components/Bio";
-import Footer from "../components/Footer";
+import Footer from '../components/footer';
+import Layout from '../components/layout';
+import Newsletter from '../components/newsletter';
+import Menu from '../components/menu';
 
-const NotFoundPage = () => (
-  <Layout className="not-found">
-    <Helmet>
-      <title>Gokulakrishnan Kalaikovan | 404 :(</title>
-    </Helmet>
-    <Header />
+import '../styles/index.css';
+
+const NotFoundPage = () => {
+  return (
     <div className="grid">
-      <h2>NOT FOUND :(</h2>
-      <a href="/">Go back to homepage</a>
+      <Menu />
+      <Layout>
+        <h3>Page not found</h3>
+        <h3>
+          <span role="img" aria-label="Pensive emoji">
+            😔
+          </span>{' '}
+          We couldn’t find what you were looking for.
+        </h3>
+        <br />
+      </Layout>
+      <Newsletter />
+      <Footer />
     </div>
-    <Footer />
-  </Layout>
-);
+  );
+};
 
 export default NotFoundPage;

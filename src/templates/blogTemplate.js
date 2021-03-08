@@ -1,74 +1,63 @@
-import React from "react";
-import { graphql } from "gatsby";
-import { DiscussionEmbed } from "disqus-react";
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../components/Layout";
-import Header from "../components/Header";
-import Bio from "../components/Bio";
-import Footer from "../components/Footer";
-import Newsletter from "../components/Newsletter";
-import bannerImg from "../components/banner.png";
-import SEO from "../../seo";
+import Layout from '../components/layout';
+import Menu from '../components/menu';
+import Footer from '../components/footer';
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark;
-  const disqusShortname = "gokulkrishh";
-  const disqusConfig = {
-    identifier: frontmatter.id,
-    title: frontmatter.title,
-  };
+import '../styles/blog-post.css';
+import Newsletter from '../components/newsletter';
 
+export default function Template({ data }) {
+  const { markdownRemark } = data;
+  const { frontmatter, html, fields } = markdownRemark;
+  const { readingTime } = fields;
   return (
-    <Layout>
-      <Header />
-      <SEO
-        title={frontmatter.title}
-        description={frontmatter.description || ""}
-        image={bannerImg}
-      />
-      <div className="grid">
-        <div className="blog-post-container">
-          <div className="blog-post">
-            <h1 className="title">{frontmatter.title}</h1>
-            <time>{frontmatter.date} </time>
-            {frontmatter.readtime ? (
-              <time>&middot; {frontmatter.readtime}</time>
-            ) : null}
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-
-            <Newsletter />
+    <div className="grid">
+      <Menu />
+      <Layout>
+        <div className="blog-post">
+          <h1>{frontmatter.title}</h1>
+          <div className="blog-post-details">
+            <p>
+              Published at
+              <time>{frontmatter.date}</time>
+            </p>
+            {frontmatter.updated && (
+              <p>
+                Updated at
+                <time>{frontmatter.updated}</time>
+              </p>
+            )}
+            <p>
+              Reading time
+              <time>{readingTime.text.replace(/read/g, '')}</time>
+            </p>
           </div>
-
-          <div className="discuss-container">
-            <DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            />
-          </div>
+          <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
-        <Bio />
-      </div>
+      </Layout>
+      <Newsletter />
       <Footer />
-    </Layout>
+    </div>
   );
 }
 
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
+        date(formatString: "MMM DD, YYYY")
+        updated(formatString: "MMM DD, YYYY")
+        slug
         title
-        readtime
-        description
+        relative
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
   }

@@ -1,0 +1,121 @@
+.title-tag {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+  background-color: var(--color-dull-yellow);
+  border-radius: 32px;
+  color: var(--color-black);
+  padding: 6px 8px;
+  font-size: calc(var(--font-size-sm) - 3px);
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
+.book-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.book-header > img {
+  max-width: 500px;
+  margin-right: -50px;
+}
+
+.book-header h2 {
+  font-family: var(--font-family-book);
+  text-transform: uppercase;
+  color: var(--color-maroon);
+  font-size: var(--font-size-llg);
+  line-height: 41px;
+  width: 390px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.book-header .gumroad-button {
+  min-width: 200px !important;
+  height: 45px;
+  border-radius: 4px !important;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.4) !important;
+  color: currentColor !important;
+  display: inline-block !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size) !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 50px !important;
+  padding: 0 15px !important;
+  text-shadow: none !important;
+  text-decoration: none !important;
+  color: var(--color-black) !important;
+  margin-right: 10px;
+}
+
+.book-header a,
+section a {
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.download {
+  margin-left: 10px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+.faq-questions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+p {
+  color: var(--color-grey);
+}
+
+@media all and (max-width: 960px) and (min-width: 641px) {
+  .book-header {
+    grid-template-columns: 1fr;
+  }
+
+  .book-header > img {
+    max-width: 430px;
+    order: -1;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .book-header,
+  .faq-questions {
+    grid-template-columns: 1fr;
+  }
+
+  .book-header > img {
+    max-width: 320px;
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .book-header h2 {
+    max-width: 320px;
+  }
+
+  .header-actions {
+    display: grid;
+  }
+
+  .download {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .gumroad-button {
+    max-width: 200px;
+    margin-bottom: 5px;
+  }
+}

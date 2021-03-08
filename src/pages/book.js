@@ -1,39 +1,25 @@
-import React from "react";
-import Helmet from "react-helmet";
+import React from 'react';
 
-import SEO from "../../seo";
-import Bio from "../components/Bio";
-import Newsletter from "../components/Newsletter";
-import Layout from "../components/Layout";
-import bookImage from "../images/book.png";
-import samplePdf from "../images/beginners-guide-to-web-security-sample.pdf";
-import Header from "../components/Header";
+import Footer from '../components/footer';
+import Layout from '../components/layout';
+import Menu from '../components/menu';
+import Newsletter from '../components/newsletter';
 
-const Book = (props) => {
+import samplePdf from '../images/beginners-guide-to-web-security-sample.pdf';
+import bookImage from '../images/book.png';
+
+import '../styles/book.css';
+
+const Book = () => {
   return (
-    <div>
+    <div className="grid">
+      <Menu />
       <Layout>
-        <SEO
-          title="Beginner's Guide To Web Security"
-          description="A 100+ page ebook that talks about the basics of web security, various types of web security attacks and how to avoid/fix them."
-        />
-        <Helmet
-          htmlAttributes={{
-            class: "book",
-          }}
-        >
-          <title>
-            Gokulakrishnan Kalaikovan | Book | Beginner's Guide To Web Security
-          </title>
-        </Helmet>
-        <Header />
-        <section className="header-section">
+        <section className="book-header">
           <div className="container">
             <span className="title-tag">Order Now</span>
 
-            <h2>
-              Beginner's Guide <br></br>To Web Security
-            </h2>
+            <h2>Beginner's Guide To Web Security</h2>
             <p>In this book, you will learn the following.</p>
 
             <ul>
@@ -47,16 +33,13 @@ const Book = (props) => {
               <li>How to prevent from web vulnerabilities</li>
               <li>How to fix the web vulnerabilities</li>
             </ul>
-            <p>
-              At the end of this book has tools, libraries and web security
-              checklist to getting started on the web security.
-            </p>
+            <p>At the end of this book has tools, libraries and web security checklist to get started.</p>
 
             <div className="header-actions">
               <a className="gumroad-button" href="https://gum.co/IrcpA">
-                Buy on gumroad
+                Buy for <del>$15</del> $10
               </a>
-              or{""}
+              or{''}
               <a className="download" href={samplePdf} download>
                 Download a free chapter
               </a>
@@ -67,7 +50,7 @@ const Book = (props) => {
         </section>
         <section className="learn-section">
           <div className="container">
-            <h3>What you'll learn</h3>
+            <h2>What you'll learn</h2>
             <ul>
               <li>
                 <b>How does the web work?</b>
@@ -109,105 +92,61 @@ const Book = (props) => {
               </li>
             </ul>
             <p>
-              View the full{" "}
+              View the full{' '}
               <a href={samplePdf} target="_blank" rel="noreferrer">
                 table of contents
               </a>
             </p>
           </div>
         </section>
-        <section className="author-section">
-          <div className="container">
-            <h3>About the author</h3>
-            <div className="content">
-              <Bio />
-            </div>
-          </div>
-        </section>
         <section className="faq-section">
           <div className="container">
-            <h3>Frequently Asked Questions</h3>
+            <h2>Frequently Asked Questions</h2>
             <div className="faq-questions">
               <div>
-                <h4>Who designed the cover?</h4>
+                <h3>Who designed the cover?</h3>
                 <p>
-                  The design was done by{" "}
-                  <a
-                    href="https://twitter.com/align_all"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  The design was done by{' '}
+                  <a href="https://twitter.com/align_all" target="_blank" rel="noreferrer">
                     Ranjith Ramanan
                   </a>
                   .
                 </p>
               </div>
               <div>
-                <h4>Can I get a student discount?</h4>
+                <h3>Can I get a student discount?</h3>
                 <p>
-                  Yes, of course.{" "}
-                  <a
-                    href="https://twitter.com/messages/compose?recipient_id=515540454"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  Yes, of course.{' '}
+                  <a href="https://twitter.com/messages/compose?recipient_id=515540454" target="_blank" rel="noreferrer">
                     <span />
                     DM
-                  </a>{" "}
+                  </a>{' '}
                   me in twitter.
                 </p>
               </div>
             </div>
             <div>
               <div>
-                <h4>I have a feedback or question?</h4>
+                <h3>I have a feedback or question?</h3>
                 <p>
-                  Tweet me{" "}
-                  <a
-                    href="https://twitter.com/gokul_i"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  Tweet me{' '}
+                  <a href="https://twitter.com/gokul_i" target="_blank" rel="noreferrer">
                     @gokul_i
-                  </a>{" "}
-                  or{" "}
-                  <a
-                    href="https://twitter.com/messages/compose?recipient_id=515540454"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  </a>{' '}
+                  or{' '}
+                  <a href="https://twitter.com/messages/compose?recipient_id=515540454" target="_blank" rel="noreferrer">
                     <span />
                     DM
-                  </a>{" "}
+                  </a>{' '}
                   me in twitter.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section className="author-section">
-          <div className="container">
-            <h3>Keep yourself updated</h3>
-            <br />
-            <Newsletter />
-          </div>
-        </section>
-        <footer>
-          <div className="container">
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a> &middot; Site is
-            inspired from
-            <a
-              href="http://theworldsgreatestbook.com/perfect-book-sales-page/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Perfect Book Sales
-            </a>
-          </div>
-        </footer>
       </Layout>
+      <Newsletter />
+      <Footer />
     </div>
   );
 };

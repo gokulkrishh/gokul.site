@@ -1,105 +1,92 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { Link } from "gatsby";
-import get from "lodash/get";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Newsletter from "../components/Newsletter";
-import Layout from "../components/Layout";
-import Header from "../components/Header";
-import Bio from "../components/Bio";
-import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
-import SEO from "../../seo";
-import bannerImg from "../components/banner.png";
+import Footer from '../components/footer';
+import Header from '../components/header';
+import Layout from '../components/layout';
+import Newsletter from '../components/newsletter';
 
-export default class index extends React.Component {
-  render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const siteDesc = `Hi, I am Gokul. I am a Web Developer and GDE for the web. Come check out how I share my learnings and knowledge.`;
-    const posts = get(this, "props.data.allMarkdownRemark.group");
-    const sortPostByYear = {};
-    posts.forEach((post) => {
-      const year = post.fieldValue.split("-")[0];
-      if (!sortPostByYear[year])
-        sortPostByYear[year] = [{ node: post.edges[0].node }];
-      else {
-        sortPostByYear[year].push({ node: post.edges[0].node });
-      }
-    });
+import LinkImg from '../components/LinkImg';
+import DotfilesPng from '../images/dotfiles.png';
+import AwesomeSvg from '../images/awesome.svg';
+import QRCodeScannerPng from '../images/qr-code-scanner.png';
 
-    return (
+import '../styles/index.css';
+import '../styles/libraries.css';
+
+const IndexPage = ({ data }) => {
+  const { allMarkdownRemark } = data;
+  const { edges: posts } = allMarkdownRemark;
+  return (
+    <div className="grid">
+      <Header />
       <Layout>
-        <SEO title={siteTitle} description={siteDesc} image={bannerImg} />
-        <Helmet>
-          <title>{siteTitle}</title>
-        </Helmet>
-        <Header />
-        <div className="grid">
-          <Bio />
-          <Sidebar />
-
-          <div className="posts">
-            <h2 className="posts__title">All Posts</h2>
-            {Object.keys(sortPostByYear)
-              .reverse()
-              .map((year, index) => {
-                const postsByYear = sortPostByYear[year];
-                return (
-                  <div className="post__year" key={index}>
-                    {postsByYear.reverse().map(({ node }, index) => {
-                      const title =
-                        get(node, "frontmatter.title") || node.fields.slug;
-                      const link =
-                        title === "Tools I use for web development"
-                          ? "/uses"
-                          : `blog${node.fields.slug}`;
-                      return (
-                        <div className="post" key={index}>
-                          <h4>
-                            <Link to={link}>{title}</Link>
-                          </h4>
-                          <time>
-                            {node.frontmatter.date} {year}
-                          </time>
-                          <p
-                            dangerouslySetInnerHTML={{ __html: node.excerpt }}
-                          />
-                          <Link to={link}>Continue Reading »</Link>
-                        </div>
-                      );
-                    })}
-                  </div>
-                );
-              })}
-            <Newsletter />
-          </div>
+        <h2>Popular posts</h2>
+        <div className="posts">
+          {posts.slice(0, 3).map(({ node }) => {
+            const { frontmatter, excerpt, fields } = node;
+            const { title, date, relative } = frontmatter;
+            const link = relative ? `/${fields.slug.split('/')[2]}` : `blog${fields.slug}`;
+            return (
+              <Link to={link} className="link" key={title}>
+                <div className="post">
+                  <h3>{title}</h3>
+                  <time>{date}</time>
+                  <p>{excerpt}</p>
+                </div>
+              </Link>
+            );
+          })}
         </div>
-        <Footer />
+        <h2>Pet projects</h2>
+        <div className="posts pet-projects">
+          <a href={'https://qrcodescan.in'} className="link" target="_blank" rel="noreferrer">
+            <div className="post post-bg-placeholder qr-code-scanner">
+              <img src={QRCodeScannerPng} alt="QR Code Scanner logo" />
+              <LinkImg />
+              <h3>QR Code Scanner</h3>
+              <p>QR Code Scanner is a progressive web application. This qr code scanner is super fast and user-friendly web application.</p>
+            </div>
+          </a>
+          <a href="https://github.com/gokulkrishh/dotfiles" target="_blank" rel="noreferrer" className="link">
+            <div className="post post-bg-placeholder dotfiles">
+              <img src={DotfilesPng} alt="Dofiles logo" />
+              <LinkImg />
+              <h3>Dofiles</h3>
+              <p>Know what tools and plugins I use for day to day web development. Has lots shortcuts and good stuff.</p>
+            </div>
+          </a>
+          <a href="https://github.com/gokulkrishh/awesome-meta-and-manifest" className="link" target="_blank" rel="noreferrer">
+            <div className="post post-bg-placeholder awesome-manifest">
+              <img src={AwesomeSvg} alt="Awesome logo" />
+              <LinkImg />
+              <h3>Awesome Meta Tags & Manifest Properties</h3>
+              <p>Awesome collection of meta tags & manifest properties that you can use on your web application.</p>
+            </div>
+          </a>
+        </div>
       </Layout>
-    );
-  }
-}
+      <Newsletter />
+      <Footer />
+    </div>
+  );
+};
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      group(field: frontmatter___date) {
-        fieldValue
-        edges {
-          node {
-            excerpt(pruneLength: 200)
-            fields {
-              slug
-            }
-            frontmatter {
-              date(formatString: "DD MMMM")
-              title
-            }
+export default IndexPage;
+
+export const listQuery = graphql`
+  query ListQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          excerpt(pruneLength: 100)
+          frontmatter {
+            date(formatString: "DD MMM, YYYY")
+            title
+            relative
           }
         }
       }

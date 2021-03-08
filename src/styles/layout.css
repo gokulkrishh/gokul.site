@@ -1,0 +1,145 @@
+.grid {
+  max-width: var(--grid-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.layout {
+  margin-top: 40px;
+}
+
+.layout h2 {
+  color: var(--color-yellow);
+}
+
+.gatsby-resp-image-wrapper {
+  margin: 30px 0;
+}
+
+.gatsby-resp-image-wrapper .gatsby-resp-image-link {
+  height: inherit;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  grid-gap: 30px;
+}
+
+.posts:last-child {
+  margin-bottom: 60px;
+}
+
+.post {
+  padding: 15px;
+  background-color: var(--color-slighty-black);
+  border-radius: 6px;
+  position: relative;
+  height: 205px;
+}
+
+.posts .post h3:not::after {
+  display: inline-block;
+  content: '→';
+  position: relative;
+  left: 6px;
+  color: var(--color-grey);
+}
+
+.post svg {
+  position: absolute;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  fill: var(--color-blue);
+}
+
+.posts a {
+  padding: 0;
+  height: auto;
+  color: var(--color-white);
+}
+
+.posts > a:hover {
+  opacity: 0.9;
+}
+
+.post h3 {
+  padding: 0;
+  margin: 0 0 5px;
+  padding-right: 15px;
+  color: var(--color-yellow);
+}
+
+.post p {
+  margin-bottom: 0;
+  color: var(--color-grey);
+  font-weight: 400;
+}
+
+.post a:hover {
+  background-color: transparent;
+  color: var(--color-yellow);
+}
+
+.post-bg-placeholder {
+  height: 270px;
+  display: block;
+}
+
+.post-bg-placeholder h3 {
+  margin-top: 10px;
+}
+
+.post-bg-placeholder img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e4e4e4;
+  padding: 4px;
+}
+
+@media all and (max-width: 960px) and (min-width: 761px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post {
+    height: 185px;
+  }
+
+  .pet-projects.posts .post-bg-placeholder {
+    height: 250px;
+  }
+}
+
+@media all and (max-width: 760px) and (min-width: 641px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post {
+    height: auto;
+  }
+
+  .pet-projects.posts .post-bg-placeholder {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .post {
+    height: auto;
+  }
+
+  .pet-projects.posts .post-bg-placeholder {
+    height: auto;
+  }
+}
