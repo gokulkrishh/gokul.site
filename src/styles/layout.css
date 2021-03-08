@@ -9,5 +9,9 @@
 }
 
 .gatsby-resp-image-wrapper {
-  margin: 10px 0 20px;
+  margin: 30px 0;
+}
+
+.gatsby-resp-image-wrapper .gatsby-resp-image-link {
+  height: inherit;
 }

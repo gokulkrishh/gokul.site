@@ -4,12 +4,14 @@
 
 .blog-post h1 {
   color: var(--color-yellow);
+  margin-bottom: 0;
 }
 
 .blog-post-details {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 170px);
+  margin-bottom: 40px;
 }
 
 .blog-post-details p {
