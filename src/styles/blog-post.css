@@ -64,3 +64,9 @@
   line-height: 20px;
   height: 22px;
 }
+
+@media all and (max-width: 640px) {
+  .blog-post-details {
+    grid-template-columns: repeat(2, 170px);
+  }
+}

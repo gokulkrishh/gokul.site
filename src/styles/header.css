@@ -18,3 +18,9 @@ header svg {
 header svg path {
   fill: currentColor;
 }
+
+@media all and (max-width: 640px) {
+  .header-content {
+    width: 100%;
+  }
+}

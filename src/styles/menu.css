@@ -25,12 +25,12 @@
 }
 
 .menu .logo {
-  padding: 0;
+  padding: 5px;
+  height: 50px;
 }
 
 .menu .logo:active,
 .menu .logo:hover {
-  background: transparent;
   opacity: 0.8;
 }
 
