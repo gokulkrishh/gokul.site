@@ -4,9 +4,12 @@
   padding: 0 20px;
 }
 
+.layout {
+  margin-top: 40px;
+}
+
 .layout h2 {
   color: var(--color-yellow);
-  margin-top: 40px;
 }
 
 .gatsby-resp-image-wrapper {
@@ -21,8 +24,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   grid-gap: 30px;
+}
+
+.posts:last-child {
+  margin-bottom: 60px;
 }
 
 .post {
@@ -47,6 +54,10 @@
   padding: 0;
   height: auto;
   color: var(--color-white);
+}
+
+.posts > a:hover {
+  opacity: 0.9;
 }
 
 .post h3 {

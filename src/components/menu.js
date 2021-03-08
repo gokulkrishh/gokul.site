@@ -27,11 +27,6 @@ const Menu = () => {
             Uses
           </Link>
         </li>
-        <li>
-          <Link to="/about" activeClassName="active">
-            About
-          </Link>
-        </li>
       </ul>
     </div>
   );

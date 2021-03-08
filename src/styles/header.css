@@ -1,6 +1,6 @@
 header h1 {
   margin-top: 40px;
-  font-size: var(--font-size);
+  font-size: var(--font-size-lg);
 }
 
 .header-content {

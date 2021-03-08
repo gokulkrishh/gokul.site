@@ -35,6 +35,46 @@ const IndexPage = ({ data }) => {
             );
           })}
         </div>
+        <h2>Pet Projects</h2>
+        <div className="posts">
+          <a href={'https://qrcodescan.in'} className="link" target="_blank" rel="noreferrer">
+            <div className="post">
+              <LinkImg />
+              <h3>QR Code Scanner</h3>
+              <p>
+                <span role="img" aria-label="qr code scanner">
+                  🖨
+                </span>{' '}
+                QR Code Scanner is a progressive web application. This qr code scanner is super fast and user-friendly and quite popular
+                too.
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/gokulkrishh/dotfiles" target="_blank" rel="noreferrer" className="link">
+            <div className="post">
+              <LinkImg />
+              <h3>Dofiles</h3>
+              <p>
+                <span aria-label="dotfiles" role="img">
+                  🔩
+                </span>{' '}
+                Know what tools and plugins I use for day to day web development. Has lots shortcuts and good stuff.
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/gokulkrishh/awesome-meta-and-manifest" className="link" target="_blank" rel="noreferrer">
+            <div className="post">
+              <LinkImg />
+              <h3>Awesome Meta Tags & Manifest Properties</h3>
+              <p>
+                <span aria-label="collection" role="img">
+                  ⚡
+                </span>{' '}
+                Awesome collection of meta tags & manifest properties.
+              </p>
+            </div>
+          </a>
+        </div>
       </Layout>
       <Newsletter />
       <Footer />
