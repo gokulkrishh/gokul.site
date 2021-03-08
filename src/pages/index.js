@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => {
             );
           })}
         </div>
-        <h2>Pet Projects</h2>
+        <h2>Pet projects</h2>
         <div className="posts">
           <a href={'https://qrcodescan.in'} className="link" target="_blank" rel="noreferrer">
             <div className="post post-bg-placeholder qr-code-scanner">
