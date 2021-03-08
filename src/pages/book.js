@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import Footer from '../components/footer';
-import Layout from '../components/layout';
-import Menu from '../components/menu';
-import Newsletter from '../components/newsletter';
+import Footer from "src/components/footer";
+import Layout from "src/components/layout";
+import Menu from "src/components/menu";
+import Newsletter from "src/components/newsletter";
 
-import samplePdf from '../images/beginners-guide-to-web-security-sample.pdf';
-import bookImage from '../images/book.png';
+import samplePdf from "src/images/beginners-guide-to-web-security-sample.pdf";
+import bookImage from "src/images/book.png";
 
-import '../styles/book.css';
+import "src/styles/book.css";
 
 const Book = () => {
   return (
@@ -33,13 +33,16 @@ const Book = () => {
               <li>How to prevent from web vulnerabilities</li>
               <li>How to fix the web vulnerabilities</li>
             </ul>
-            <p>At the end of this book has tools, libraries and web security checklist to get started.</p>
+            <p>
+              At the end of this book has tools, libraries and web security
+              checklist to get started.
+            </p>
 
             <div className="header-actions">
               <a className="gumroad-button" href="https://gum.co/IrcpA">
                 Buy for <del>$15</del> $10
               </a>
-              or{''}
+              or{""}
               <a className="download" href={samplePdf} download>
                 Download a free chapter
               </a>
@@ -92,7 +95,7 @@ const Book = () => {
               </li>
             </ul>
             <p>
-              View the full{' '}
+              View the full{" "}
               <a href={samplePdf} target="_blank" rel="noreferrer">
                 table of contents
               </a>
@@ -106,8 +109,12 @@ const Book = () => {
               <div>
                 <h3>Who designed the cover?</h3>
                 <p>
-                  The design was done by{' '}
-                  <a href="https://twitter.com/align_all" target="_blank" rel="noreferrer">
+                  The design was done by{" "}
+                  <a
+                    href="https://twitter.com/align_all"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Ranjith Ramanan
                   </a>
                   .
@@ -116,11 +123,15 @@ const Book = () => {
               <div>
                 <h3>Can I get a student discount?</h3>
                 <p>
-                  Yes, of course.{' '}
-                  <a href="https://twitter.com/messages/compose?recipient_id=515540454" target="_blank" rel="noreferrer">
+                  Yes, of course.{" "}
+                  <a
+                    href="https://twitter.com/messages/compose?recipient_id=515540454"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <span />
                     DM
-                  </a>{' '}
+                  </a>{" "}
                   me in twitter.
                 </p>
               </div>
@@ -129,15 +140,23 @@ const Book = () => {
               <div>
                 <h3>I have a feedback or question?</h3>
                 <p>
-                  Tweet me{' '}
-                  <a href="https://twitter.com/gokul_i" target="_blank" rel="noreferrer">
+                  Tweet me{" "}
+                  <a
+                    href="https://twitter.com/gokul_i"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     @gokul_i
-                  </a>{' '}
-                  or{' '}
-                  <a href="https://twitter.com/messages/compose?recipient_id=515540454" target="_blank" rel="noreferrer">
+                  </a>{" "}
+                  or{" "}
+                  <a
+                    href="https://twitter.com/messages/compose?recipient_id=515540454"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <span />
                     DM
-                  </a>{' '}
+                  </a>{" "}
                   me in twitter.
                 </p>
               </div>

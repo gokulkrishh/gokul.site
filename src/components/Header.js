@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Menu from './menu';
-import Bio from './bio';
+import Menu from "./menu";
+import Bio from "./bio";
 
-import '../styles/header.css';
+import "src/styles/header.css";
 
 const Header = () => {
   return (

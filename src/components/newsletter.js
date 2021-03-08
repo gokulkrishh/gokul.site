@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import '../styles/newsletter.css';
+import "src/styles/newsletter.css";
 
 const Newsletter = () => {
   const [styles, setStyles] = React.useState({});
@@ -15,8 +15,13 @@ const Newsletter = () => {
           </span>
           Join my newsletter
         </h3>
-        <p>Learn about Web Development, Frameworks, Javascript, Designing with me.</p>
-        <p className="newsletter-spam">I promise you there won't be any spamming!.</p>
+        <p>
+          Learn about Web Development, Frameworks, Javascript, Designing with
+          me.
+        </p>
+        <p className="newsletter-spam">
+          I promise you there won't be any spamming!.
+        </p>
       </div>
 
       <div className="newsletter-content">
@@ -25,9 +30,17 @@ const Newsletter = () => {
           method="post"
           target="popupwindow"
           className="embeddable-buttondown-form"
-          autoComplete={'on'}
+          autoComplete={"on"}
         >
-          <input id="bd-email" className="email-address" placeholder="Email address" required name="email" type="email" ref={ref} />
+          <input
+            id="bd-email"
+            className="email-address"
+            placeholder="Email address"
+            required
+            name="email"
+            type="email"
+            ref={ref}
+          />
           <input type="hidden" value="1" name="embed" />
           <input
             className="submit-btn"
@@ -36,13 +49,13 @@ const Newsletter = () => {
             value="Subscribe"
             onClick={() => {
               if (ref.current.checkValidity()) {
-                setStyles({ display: 'block' });
+                setStyles({ display: "block" });
               }
             }}
           />
         </form>
         <p className="newsletter-confirmation" style={styles}>
-          Your subscribtion is confirmed{' '}
+          Your subscribtion is confirmed{" "}
           <span aria-label="yass" role="img">
             🙌
           </span>
