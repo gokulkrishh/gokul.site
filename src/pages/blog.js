@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Footer from '../components/footer';
 import Layout from '../components/layout';
@@ -23,7 +23,6 @@ const Blog = ({ data }) => {
             const { frontmatter, excerpt, fields } = node;
             const { title, date, relative } = frontmatter;
             const link = relative ? fields.slug.split('/')[2] : `blog${fields.slug}`;
-            console.log(link);
             return (
               <a href={link} className="link" key={title}>
                 <div className="post">
@@ -53,7 +52,7 @@ export const postQuery = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 120)
+          excerpt(pruneLength: 180)
           frontmatter {
             date(formatString: "DD MMM, YYYY")
             title

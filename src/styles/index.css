@@ -65,6 +65,7 @@ time {
   font-size: var(--font-size-sm);
 }
 
-ul {
+ul,
+ol {
   line-height: 2.2;
 }

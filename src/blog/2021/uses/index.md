@@ -1,5 +1,5 @@
 ---
-slug: '/blog/uses'
+slug: '/uses'
 date: '2021-03-06'
 updated: '2021-03-08'
 title: 'Things I use'

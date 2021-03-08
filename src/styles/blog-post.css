@@ -40,6 +40,7 @@
 
 .blog-post-content p {
   line-height: 1.8;
+  color: var(--color-grey);
 }
 
 .blog-post-content h4 {
@@ -48,4 +49,12 @@
 
 .blog-post-heading-link {
   fill: var(--color-grey);
+}
+
+.post-image {
+  max-width: 100%;
+}
+
+.all-posts {
+  grid-template-columns: repeat(2, 1fr);
 }

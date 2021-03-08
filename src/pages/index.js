@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
           {posts.slice(0, 3).map(({ node }) => {
             const { frontmatter, excerpt, fields } = node;
             const { title, date, relative } = frontmatter;
-            const link = relative ? fields.slug.split('/')[2] : `blog${fields.slug}`;
+            const link = relative ? `/${fields.slug.split('/')[2]}` : `blog${fields.slug}`;
             return (
               <Link to={link} className="link" key={title}>
                 <div className="post">
