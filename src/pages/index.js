@@ -13,7 +13,7 @@ const IndexPage = () => {
     <div className="grid">
       <Header />
       <Layout>
-        <h2>Posts</h2>
+        <h2>Popular posts</h2>
       </Layout>
       <Newsletter />
       <Footer />

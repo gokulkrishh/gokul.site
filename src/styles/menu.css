@@ -39,7 +39,12 @@
   height: 38px;
 }
 
-.menu .social {
+.menu a.active {
+  background-color: var(--color-slighty-black);
+  font-weight: 700;
+}
+
+.social {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 30px;
@@ -47,7 +52,7 @@
   margin-top: 20px;
 }
 
-.menu .social a {
+.social a {
   display: flex;
   align-items: center;
   margin-left: -10px;

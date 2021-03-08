@@ -20,7 +20,8 @@
   --font-family-coding: 'Dank Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-size: 16px;
   --font-size-lg: 20px;
-  --font-size-md: 14px;
+  --font-size-md: 18px;
+  --font-size-sm: 14px;
   --font-weight: 500;
   --line-height: 1.6;
 
@@ -53,16 +54,16 @@ a {
   outline: none;
   height: 33px;
   text-decoration: none;
+  transition: var(--transition);
 }
 
 a:hover,
 a:focus {
   background-color: var(--color-slighty-black);
-  transition: var(--transition);
 }
 
 time {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
 }
 
 ul {
