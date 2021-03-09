@@ -23,7 +23,7 @@ const Blog = ({ data }) => {
             const { title, date, relative } = frontmatter;
             const link = relative
               ? fields.slug.split("/")[2]
-              : `blog${fields.slug}`;
+              : `/blog${fields.slug}`;
             return (
               <a href={link} className="link" key={title}>
                 <div className="post">

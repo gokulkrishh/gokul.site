@@ -5,8 +5,8 @@ import Layout from "../components/layout";
 import Menu from "../components/menu";
 import Newsletter from "../components/newsletter";
 
-import samplePdf from "../images/beginners-guide-to-web-security-sample.pdf";
-import bookImage from "../images/book.png";
+import SamplePdf from "../images/beginners-guide-to-web-security-sample.pdf";
+import BookImage from "../images/book.png";
 
 import "../styles/book.css";
 
@@ -43,13 +43,13 @@ const Book = () => {
                 Buy for <del>$15</del> $10
               </a>
               or{""}
-              <a className="download" href={samplePdf} download>
+              <a className="download" href={SamplePdf} download>
                 Download a free chapter
               </a>
             </div>
           </div>
 
-          <img src={bookImage} alt=" Beginner's guide to web security cover" />
+          <img src={BookImage} alt=" Beginner's guide to web security cover" />
         </section>
         <section className="learn-section">
           <div className="container">
@@ -96,7 +96,7 @@ const Book = () => {
             </ul>
             <p>
               View the full{" "}
-              <a href={samplePdf} target="_blank" rel="noreferrer">
+              <a href={SamplePdf} target="_blank" rel="noreferrer">
                 table of contents
               </a>
             </p>
