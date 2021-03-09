@@ -57,6 +57,22 @@
   fill: var(--color-blue);
 }
 
+.tags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.tags span {
+  background-color: var(--color-code-black);
+  padding: 5px;
+  display: inline-block;
+  font-size: 11px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
 .posts a {
   padding: 0;
   height: auto;
