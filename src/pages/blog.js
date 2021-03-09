@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import Footer from "../components/footer";
 import Layout from "../components/layout";
 import Newsletter from "../components/newsletter";
-import LinkImg from "../components/LinkImg";
 import Menu from "../components/menu";
 
 import "../styles/index.css";
