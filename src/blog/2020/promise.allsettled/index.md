@@ -1,10 +1,10 @@
 ---
-slug: '/blog/2020/promise.allSettled'
+slug: "/blog/2020/promise.allsettled"
 published: true
-date: '2020-03-17'
-title: 'Promise.allSettled'
-description: 'Promise.allSettled returns a promise when all inputs are settled that is either fulfilled or rejected.'
-tags: ['javascript', 'promises', 'es6']
+date: "2020-03-17"
+title: "Promise.allSettled"
+description: "Promise.allSettled returns a promise when all inputs are settled that is either fulfilled or rejected."
+tags: ["javascript", "promises", "es6"]
 ---
 
 <br /><img src="./promise.allsettled.png" alt="Promise.allSettled" /><br />
@@ -32,8 +32,8 @@ I am not so sure of many use-cases. But, we want to know how it works right?. In
 #### Example:
 
 ```js
-var APICall1 = fetch('https://reqres.in/api/users?page=1');
-var APICall2 = fetch('https://reqres.in/api/users?page=2');
+var APICall1 = fetch("https://reqres.in/api/users?page=1");
+var APICall2 = fetch("https://reqres.in/api/users?page=2");
 
 Promise.allSettled([APICall1, APICall2]).then((results) => {
   results.forEach((result) => {
@@ -70,7 +70,7 @@ function isIterable(value) {
     return false;
   }
 
-  return typeof value[Symbol.iterator] === 'function';
+  return typeof value[Symbol.iterator] === "function";
 }
 
 isIterable({}); // false
@@ -78,7 +78,7 @@ isIterable(1); // false
 isIterable(nul); // false
 
 isIterable([]); // true
-isIterable(''); // true
+isIterable(""); // true
 
 // String, Array, TypedArray, Map & Set are all built-in iterables
 ```
@@ -114,7 +114,7 @@ function isAllPromiseSettled(promises) {
           counter++; // Increment counter
 
           // Store status and result in same order
-          results[index] = { status: 'fulfilled', value: result };
+          results[index] = { status: "fulfilled", value: result };
 
           // If all inputs are settled, return the results
           if (counter === promises.length) {
@@ -125,7 +125,7 @@ function isAllPromiseSettled(promises) {
           counter++; // Increment counter
 
           // Store status and reason for rejection in same order
-          results[index] = { status: 'rejected', reason: err };
+          results[index] = { status: "rejected", reason: err };
 
           // If all inputs are settled, return the results
           if (counter === promises.length) {
