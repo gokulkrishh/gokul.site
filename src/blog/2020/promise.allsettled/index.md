@@ -1,5 +1,5 @@
 ---
-slug: "/blog/2020/promise.allsettled"
+slug: "/blog/2020/promise-allsettled"
 published: true
 date: "2020-03-17"
 title: "Promise.allSettled"
