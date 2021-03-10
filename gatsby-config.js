@@ -8,6 +8,7 @@ module.exports = {
       "Hi, I am Gokul. I am a Web Developer and Google Developer Expert for the web. Come check out how I share my learnings and knowledge via my site.",
     author: "@gokulkrishh",
   },
+  pathPrefix: "/",
   plugins: [
     {
       resolve: "gatsby-plugin-google-analytics",
