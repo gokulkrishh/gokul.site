@@ -20,8 +20,14 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `Gokul's Blog`,
+        short_name: `Gokul`,
+        start_url: `/`,
+        background_color: `#000`,
+        theme_color: `#1b1b1b`,
+        display: `minimal-ui`,
         icon: `${__dirname}/src/images/icon.png`,
       },
     },

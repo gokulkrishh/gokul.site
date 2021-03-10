@@ -23,7 +23,6 @@ const IndexPage = ({ data, ...props }) => {
             const { frontmatter, excerpt, fields } = node;
             const { title, date, relative } = frontmatter;
             const tags = frontmatter?.tags || [];
-            console.log(tags);
             const link = relative
               ? `/${fields.slug.split("/")[2]}`
               : `blog${fields.slug}`;
