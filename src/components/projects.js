@@ -1,9 +1,9 @@
 import React from "react";
 
-import LinkImg from "../components/LinkImg";
-import DotfilesPng from "../images/dotfiles.png";
-import AwesomeSvg from "../images/awesome.svg";
-import QRCodeScannerPng from "../images/qr-code-scanner.png";
+import LinkImg from "components/LinkImg";
+import DotfilesPng from "images/dotfiles.png";
+import AwesomeSvg from "images/awesome.svg";
+import QRCodeScannerPng from "images/qr-code-scanner.png";
 
 const Projects = () => {
   return (

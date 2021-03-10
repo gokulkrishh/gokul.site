@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/newsletter.css";
+import "styles/newsletter.css";
 
 const Newsletter = () => {
   const [styles, setStyles] = React.useState({});

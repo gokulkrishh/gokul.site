@@ -1,14 +1,14 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import Footer from "../components/footer";
-import Header from "../components/header";
-import Layout from "../components/layout";
-import Newsletter from "../components/newsletter";
-import Projects from "../components/projects";
+import Footer from "components/footer";
+import Header from "components/header";
+import Layout from "components/layout";
+import Newsletter from "components/newsletter";
+import Projects from "components/projects";
 
-import "../styles/index.css";
-import "../styles/libraries.css";
+import "styles/index.css";
+import "styles/libraries.css";
 
 const IndexPage = ({ data, ...props }) => {
   const { allMarkdownRemark } = data;
