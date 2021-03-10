@@ -4,9 +4,9 @@
   </a>
 </p>
 
-<h1 align="center">
+<h3 align="center">
   My personal website created using gatsby v3!
-</h1>
+</h3>
 
 ## Run
 
