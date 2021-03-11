@@ -22,6 +22,7 @@
 .menu-list li a {
   display: flex;
   align-items: center;
+  color: var(--color-grey);
 }
 
 .menu .logo {
@@ -41,7 +42,8 @@
 
 .menu a.active {
   background-color: var(--color-slighty-black);
-  font-weight: 700;
+  font-weight: 600;
+  color: var(--color-blue);
 }
 
 .social {
