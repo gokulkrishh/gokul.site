@@ -1,12 +1,13 @@
 import React from "react";
 
-import "styles/layout.css";
 import SEO from "./seo";
 
-const Layout = ({ children }) => {
+import "styles/layout.css";
+
+const Layout = ({ children, customSEO = false }) => {
   return (
     <main className="layout">
-      <SEO />
+      {!customSEO && <SEO />}
       {children}
     </main>
   );

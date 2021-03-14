@@ -9,7 +9,7 @@ module.exports = {
       "Hi, I am Gokul. I am a Web Developer and Google Developer Expert for the web. Come check out how I share my learnings and knowledge.",
     author: "@gokulkrishh",
     twitterUsername: "@gokul_i",
-    image: "/images/avatar.jpeg",
+    image: "/avatar.jpeg",
   },
   pathPrefix: "/",
   plugins: [
@@ -24,14 +24,14 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `Gokul's Blog`,
-        short_name: `Gokul`,
-        start_url: `/`,
-        background_color: `#000`,
-        theme_color: `#1b1b1b`,
-        display: `minimal-ui`,
+        name: "Gokul's Blog",
+        short_name: "Gokul",
+        start_url: "/",
+        background_color: "#000",
+        theme_color: "#1b1b1b",
+        display: "minimal-ui",
         icon: `${__dirname}/src/images/icon.png`,
       },
     },
@@ -92,6 +92,7 @@ module.exports = {
               maxWidth: 700,
             },
           },
+          "@weknow/gatsby-remark-twitter",
           "gatsby-remark-copy-linked-files",
           {
             resolve: "gatsby-remark-external-links",
@@ -107,7 +108,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: [`Inter\:300,400,600,700`],
+        fonts: ["Inter:300,400,600,700"],
         display: "swap",
       },
     },
@@ -123,18 +124,19 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-purgecss`,
+      resolve: "gatsby-plugin-purgecss",
       options: {
-        printRejected: true, // Print removed selectors and processed file names
-        // develop: true, // Enable while using `gatsby develop`
-        // tailwind: true, // Enable tailwindcss support
-        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-        purgeCSSOptions: {
-          // https://purgecss.com/configuration.html#options
-          // safelist: ['safelist'], // Don't remove this selector
-        },
+        printRejected: true,
+        purgeCSSOptions: {},
       },
     },
+    {
+      resolve: "gatsby-plugin-canonical-urls",
+      options: {
+        siteUrl: "https://gokul.site",
+        stripQueryString: true,
+      },
+    },
+    "gatsby-plugin-no-sourcemaps",
   ],
 };

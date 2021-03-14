@@ -4,9 +4,10 @@ import { graphql } from "gatsby";
 import Layout from "components/layout";
 import Menu from "components/menu";
 import Footer from "components/footer";
+import Newsletter from "components/newsletter";
+import SEO from "components/seo";
 
 import "styles/blog-post.css";
-import Newsletter from "components/newsletter";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
@@ -15,7 +16,12 @@ export default function Template({ data }) {
   return (
     <div className="grid">
       <Menu />
-      <Layout>
+      <Layout customSEO={true}>
+        <SEO
+          title={frontmatter.title}
+          description={frontmatter.description || ""}
+          slug={frontmatter.slug}
+        />
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
           <div className="blog-post-details">
