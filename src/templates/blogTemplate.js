@@ -13,6 +13,7 @@ export default function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html, fields } = markdownRemark;
   const { readingTime } = fields;
+  console.log(frontmatter.title);
   return (
     <div className="grid">
       <Menu />
@@ -61,6 +62,7 @@ export const query = graphql`
         updated(formatString: "MMM DD, YYYY")
         slug
         title
+        description
         relative
       }
       fields {

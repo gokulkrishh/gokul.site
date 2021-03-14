@@ -93,6 +93,19 @@ module.exports = {
             },
           },
           "@weknow/gatsby-remark-twitter",
+          {
+            resolve: `gatsby-remark-social-cards`,
+            options: {
+              meta: {
+                parts: [
+                  " - ",
+                  "Gokulakrishnan Kalaikovan",
+                  " » ",
+                  { field: "date", format: "mmmm dS yyyy" },
+                ],
+              },
+            },
+          },
           "gatsby-remark-copy-linked-files",
           {
             resolve: "gatsby-remark-external-links",
