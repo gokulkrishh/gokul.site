@@ -17,7 +17,7 @@ const Blog = ({ data }) => {
       <Menu />
       <Layout>
         <h2>All Posts</h2>
-        <div className="posts all-posts">
+        <div className="cards posts all-posts">
           {posts.map(({ node }) => {
             const { frontmatter, excerpt, fields } = node;
             const { title, date, relative } = frontmatter;
@@ -25,7 +25,7 @@ const Blog = ({ data }) => {
               ? fields.slug.split("/")[2]
               : `/blog${fields.slug}`;
             return (
-              <a href={link} className="link" key={title}>
+              <a href={link} className="card link" key={title}>
                 <div className="post">
                   <h3>{title}</h3>
                   <time>{date}</time>
