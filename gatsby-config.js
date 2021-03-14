@@ -101,7 +101,7 @@ module.exports = {
                   " - ",
                   "Gokulakrishnan Kalaikovan",
                   " » ",
-                  { field: "date", format: "mmmm dS yyyy" },
+                  { field: "date", format: "mmm dS, yyyy" },
                 ],
               },
             },

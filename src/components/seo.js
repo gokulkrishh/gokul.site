@@ -3,7 +3,15 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 function SEO(props) {
-  const { description, lang, meta, slug, title, twitterUsername } = props;
+  const {
+    description,
+    lang,
+    meta,
+    slug = "",
+    year = "",
+    title,
+    twitterUsername,
+  } = props;
 
   const { site } = useStaticQuery(
     graphql`
@@ -24,6 +32,7 @@ function SEO(props) {
 
   const metaDescription = description || site.siteMetadata.description;
   const metaTitle = title || site.siteMetadata.title;
+  const metaUrl = (slug || "").replace(/\/blog/g, "");
 
   return (
     <Helmet
@@ -68,7 +77,9 @@ function SEO(props) {
         {
           name: `twitter:image`,
           content: slug
-            ? `${site.siteMetadata.siteUrl}${slug}/twitter-card.jpg`
+            ? `${site.siteMetadata.siteUrl}${
+                metaUrl === "/uses" ? "/" + year + metaUrl : metaUrl
+              }/twitter-card.jpg`
             : site.siteMetadata.image,
         },
       ].concat(meta)}
