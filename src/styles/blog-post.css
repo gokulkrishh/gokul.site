@@ -55,10 +55,6 @@
   max-width: 100%;
 }
 
-.all-posts {
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .all-posts .card {
   padding: 15px;
 }
