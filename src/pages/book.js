@@ -17,7 +17,7 @@ const Book = () => {
       <Layout>
         <section className="book-header">
           <div className="container">
-            <span className="title-tag">Order Now</span>
+            <span className="title-tag">At 33% off</span>
 
             <h2>Beginner's Guide To Web Security</h2>
             <p>In this book, you will learn the following.</p>
