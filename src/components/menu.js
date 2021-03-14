@@ -27,6 +27,11 @@ const Menu = () => {
             Uses
           </Link>
         </li>
+        {/* <li>
+          <Link to="/dashboard" activeClassName="active">
+            Dashboard
+          </Link>
+        </li> */}
       </ul>
     </div>
   );

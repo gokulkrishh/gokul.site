@@ -1,4 +1,5 @@
-@import './third-party/prism-dracula.css';
+@import "./third-party/prism-dracula.css";
+@import "./third-party/overrides.css";
 
 .gatsby-highlight {
   position: relative;
@@ -34,7 +35,7 @@
   color: var(--color-black);
 }
 
-[data-language='js']::before {
+[data-language="js"]::before {
   background-color: var(--color-yellow);
   color: var(--color-black);
   z-index: 1;
@@ -58,12 +59,12 @@
   color: var(--color-light-violet);
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   font-family: var(--font-family-coding);
 }
 
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: var(--color-code-black);
 }

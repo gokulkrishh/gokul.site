@@ -1,0 +1,7 @@
+.gatsby-resp-image-wrapper {
+  margin: 30px 0;
+}
+
+.gatsby-resp-image-wrapper .gatsby-resp-image-link {
+  height: inherit;
+}
