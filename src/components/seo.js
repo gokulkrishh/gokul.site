@@ -5,8 +5,6 @@ import { useStaticQuery, graphql } from "gatsby";
 function SEO(props) {
   const { description, lang, meta, slug, title, twitterUsername } = props;
 
-  console.log("title --->", title);
-
   const { site } = useStaticQuery(
     graphql`
       query {

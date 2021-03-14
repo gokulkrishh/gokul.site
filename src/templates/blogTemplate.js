@@ -13,7 +13,7 @@ export default function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html, fields } = markdownRemark;
   const { readingTime } = fields;
-  console.log(frontmatter.title);
+
   return (
     <div className="grid">
       <Menu />
