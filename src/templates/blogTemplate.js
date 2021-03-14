@@ -22,6 +22,7 @@ export default function Template({ data }) {
           title={frontmatter.title}
           description={frontmatter.description || ""}
           slug={frontmatter.slug}
+          year={(frontmatter.date || "").split(", ")[1]}
         />
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>

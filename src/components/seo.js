@@ -68,7 +68,7 @@ function SEO(props) {
         {
           name: `twitter:image`,
           content: slug
-            ? `${site.siteMetadata.siteUrl}/${slug}/twitter-card.jpg`
+            ? `${site.siteMetadata.siteUrl}${slug}/twitter-card.jpg`
             : site.siteMetadata.image,
         },
       ].concat(meta)}
