@@ -3,10 +3,13 @@ const path = require("path");
 module.exports = {
   siteMetadata: {
     title: "Gokulakrishnan Kalaikovan",
+    titleTemplate: "%s · Gokulakrishnan Kalaikovan",
     siteUrl: "https://gokul.site",
     description:
-      "Hi, I am Gokul. I am a Web Developer and Google Developer Expert for the web. Come check out how I share my learnings and knowledge via my site.",
+      "Hi, I am Gokul. I am a Web Developer and Google Developer Expert for the web. Come check out how I share my learnings and knowledge.",
     author: "@gokulkrishh",
+    twitterUsername: "@gokul_i",
+    image: "/images/avatar.jpeg",
   },
   pathPrefix: "/",
   plugins: [
@@ -105,6 +108,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-fonts",
       options: {
         fonts: [`Inter\:300,400,600,700`],
+        display: "swap",
       },
     },
     "gatsby-plugin-remove-trailing-slashes",
