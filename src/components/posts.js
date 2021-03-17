@@ -9,7 +9,6 @@ const Posts = ({ edges: posts = [] }) => {
         {posts.slice(0, 3).map(({ node }) => {
           const { frontmatter, excerpt, fields } = node;
           const { title, date, relative } = frontmatter;
-          // const tags = frontmatter?.tags || [];
           const link = relative
             ? `/${fields.slug.split("/")[2]}`
             : `blog${fields.slug}`;
@@ -19,11 +18,6 @@ const Posts = ({ edges: posts = [] }) => {
                 <h3>{title}</h3>
                 <time>{date}</time>
                 <p>{excerpt}</p>
-                {/* <p className="tags">
-                    {tags.map((tag) => (
-                      <span className={tag}>{tag}</span>
-                    ))}
-                  </p> */}
               </div>
             </Link>
           );

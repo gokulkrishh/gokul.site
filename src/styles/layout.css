@@ -70,6 +70,25 @@
   color: var(--color-yellow);
 }
 
+.card .tags {
+  display: flex;
+}
+
+.card .tags span {
+  border-radius: 30px;
+  background-color: var(--color-yellow);
+  opacity: 0.9;
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  padding: 0 10px;
+}
+
+.card .tags span + span {
+  margin-left: 10px;
+}
+
 .projects .card {
   height: 255px;
 }

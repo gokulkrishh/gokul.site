@@ -6,7 +6,7 @@ module.exports = {
     titleTemplate: "%s · Gokulakrishnan Kalaikovan",
     siteUrl: "https://gokul.site",
     description:
-      "Hi, I am Gokul. I am a Web Developer and Google Developer Expert for the web. Come check out how I share my learnings and knowledge.",
+      "Hi! I'm Gokul, a Web Developer & Google Developer Expert (GDE) from India.",
     author: "@gokulkrishh",
     twitterUsername: "@gokul_i",
     image: "/avatar.jpeg",

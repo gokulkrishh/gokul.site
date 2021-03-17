@@ -34,6 +34,8 @@ function SEO(props) {
   const metaTitle = title || site.siteMetadata.title;
   const metaUrl = (slug || "").replace(/\/blog/g, "");
 
+  console.log("metaUrl ---->", slug);
+
   return (
     <Helmet
       htmlAttributes={{
@@ -60,10 +62,10 @@ function SEO(props) {
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: metaUrl === "" ? `summary` : `summary_large_image`,
         },
         {
-          name: `twitter:site`,
+          name: `twitter:creator`,
           content: twitterUsername,
         },
         {
@@ -80,7 +82,7 @@ function SEO(props) {
             ? `${site.siteMetadata.siteUrl}${
                 metaUrl === "/uses" ? "/" + year + metaUrl : metaUrl
               }/twitter-card.jpg`
-            : site.siteMetadata.image,
+            : `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
         },
       ].concat(meta)}
     />

@@ -21,6 +21,7 @@ const Blog = ({ data }) => {
           {posts.map(({ node }) => {
             const { frontmatter, excerpt, fields } = node;
             const { title, date, relative } = frontmatter;
+            const tags = frontmatter?.tags || [];
             const link = relative
               ? fields.slug.split("/")[2]
               : `/blog${fields.slug}`;
@@ -30,6 +31,13 @@ const Blog = ({ data }) => {
                   <h3>{title}</h3>
                   <time>{date}</time>
                   <p>{excerpt}</p>
+                  {/* <p className="tags">
+                    {tags.map((tag) => (
+                      <span key={title + tag} className={tag}>
+                        {tag}
+                      </span>
+                    ))}
+                  </p> */}
                 </div>
               </a>
             );
@@ -46,16 +54,19 @@ export default Blog;
 
 export const postQuery = graphql`
   query postQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date, frontmatter___tags] }
+    ) {
       edges {
         node {
           fields {
             slug
           }
-          excerpt(pruneLength: 180)
+          excerpt(pruneLength: 160)
           frontmatter {
             date(formatString: "DD MMM, YYYY")
             title
+            tags
             relative
           }
         }
