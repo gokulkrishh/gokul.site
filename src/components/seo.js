@@ -34,8 +34,6 @@ function SEO(props) {
   const metaTitle = title || site.siteMetadata.title;
   const metaUrl = (slug || "").replace(/\/blog/g, "");
 
-  console.log("metaUrl ---->", slug);
-
   return (
     <Helmet
       htmlAttributes={{
