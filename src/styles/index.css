@@ -47,6 +47,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size);
   background-color: var(--color-black);
+  font-weight: var(--font-weight);
   color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
@@ -66,6 +67,14 @@ a {
 a:hover,
 a:focus {
   background-color: var(--color-slighty-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: var(--font-weight-bold);
 }
 
 time {

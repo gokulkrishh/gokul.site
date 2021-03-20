@@ -9,11 +9,11 @@ tags: ["uses", "macOS"]
 
 ![Screenshot of terminal application](./screenshot-terminal.png)
 
-## Computer
+### Computer
 
 I'm using macOS for close to 7 years now. An Intel version for work and an [M1 chip version](https://www.apple.com/in/shop/buy-mac/macbook-pro/13-inch) for personal use. The M1 MacBook pro is absolutely a beast. Battery life is great, performance is top-notch. 4k 10mins video export takes only 5 mins in iMovie, where it took 30m in intel MacBook pro.
 
-## Coding
+### Coding
 
 #### Terminal
 
@@ -37,7 +37,7 @@ Run the below command in your terminal app to get all the list of extensions in 
 npx https://gist.github.com/gokulkrishh/9dd54a34ed93701a37811f0eb2e37822
 ```
 
-## Mac Applications
+### Mac Applications
 
 - [Itsycal](https://www.mowglii.com/itsycal/) a minimalist calendar app.
 - [Sketch](https://www.sketch.com) for designing logos, wireframes, and visual designing.
@@ -47,11 +47,11 @@ npx https://gist.github.com/gokulkrishh/9dd54a34ed93701a37811f0eb2e37822
 
 > Check out my [dribbble account](https://dribbble.com/gokulkrishh) for dribbble shots.
 
-## Dotfiles
+### Dotfiles
 
 If you want the same setup as mine in your MacBook, go ahead and install [my dotfiles](https://github.com/gokulkrishh/dotfiles).
 
-### 💅 Comes with
+#### 💅 Comes with
 
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as default terminal shell.
 - [Shortcuts & Aliases](./docs/Aliases.md)
@@ -60,11 +60,11 @@ If you want the same setup as mine in your MacBook, go ahead and install [my dot
 - [Yarn](https://yarnpkg.com/) for doing fast node modules install, as npm sucks.
 - [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z) to jump to the frequent folders without a full path.
 
-## Writing
+### Writing
 
 For writing, I use [Grammarly](https://app.grammarly.com/) to catch common and grammatical errors.
 
-## Youtube
+### Youtube
 
 - [iMovie](https://www.apple.com/in/imovie/) for editing videos.
 - [Canva](https://canva.com) for creating and editing thumbnail.

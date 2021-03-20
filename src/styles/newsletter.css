@@ -7,7 +7,7 @@
   display: flex;
   height: 280px;
   padding: 15px 25px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .newsletter-title {
@@ -63,13 +63,13 @@
 }
 
 .newsletter-container input,
-.newsletter-container input[type='submit'] {
+.newsletter-container input[type="submit"] {
   height: 48px;
   padding: 0 10px;
   font-size: var(--font-size);
 }
 
-.newsletter-container input[type='submit'] {
+.newsletter-container input[type="submit"] {
   color: var(--color-white);
   background-color: var(--color-bright-blue);
   border: none;
@@ -84,7 +84,7 @@
   line-height: 39px;
 }
 
-.newsletter-container input[type='submit']:active {
+.newsletter-container input[type="submit"]:active {
   opacity: 0.9;
 }
 

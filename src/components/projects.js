@@ -29,7 +29,7 @@ const projectList = [
 const Projects = () => {
   return (
     <div className="projects">
-      <h2>Popular side projects</h2>
+      <h2>Side projects</h2>
       <div className="cards">
         {projectList.map((project) => {
           return (

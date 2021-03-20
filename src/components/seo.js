@@ -11,6 +11,7 @@ function SEO(props) {
     year = "",
     title,
     twitterUsername,
+    className = "",
   } = props;
 
   const { site } = useStaticQuery(
@@ -36,6 +37,9 @@ function SEO(props) {
 
   return (
     <Helmet
+      bodyAttributes={{
+        class: `${className ? className : ""}`,
+      }}
       htmlAttributes={{
         lang,
       }}
