@@ -137,13 +137,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-purgecss",
-      options: {
-        printRejected: true,
-        purgeCSSOptions: {},
-      },
-    },
-    {
       resolve: "gatsby-plugin-canonical-urls",
       options: {
         siteUrl: "https://gokul.site",
