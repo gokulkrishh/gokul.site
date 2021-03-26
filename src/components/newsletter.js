@@ -15,7 +15,7 @@ const Newsletter = () => {
           </span>
           Join my newsletter
         </h3>
-        <p>Learn about Web Development, Frameworks, Javascript and Design.</p>
+        <p>Learn about Web Development, Javascript and Design with me.</p>
         <p className="newsletter-spam">Get email on every Wednesday.</p>
         <i>I promise you there won't be any spamming!.</i>
       </div>
@@ -51,7 +51,10 @@ const Newsletter = () => {
           />
         </form>
         <p className="newsletter-confirmation" style={styles}>
-          Your subscribtion is confirmed! 🙌
+          Your subscribtion is confirmed!{" "}
+          <span role="img" aria-label="yeh!">
+            🙌
+          </span>
         </p>
       </div>
     </div>
