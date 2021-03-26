@@ -5,37 +5,37 @@ import Layout from "components/layout";
 import Menu from "components/menu";
 import Youtube from "components/metrics/youtube";
 
-// const dashboardList = [
-//   {
-//     title: "Youtube Subscribers",
-//     link: "https://youtube.com/gokulkalaikoven",
-//     url: "https://socialblade.com/youtube/c/gokulkalaikoven",
-//   },
-//   {
-//     title: "Youtube Views",
-//     link: "https://youtube.com/gokulkalaikoven",
-//     url: "https://socialblade.com/youtube/c/gokulkalaikoven",
-//   },
-//   {
-//     title: "Newsletter Subscribers",
-//     link: "https://buttondown.email/gokul.site",
-//   },
-//   {
-//     title: "Github Followers",
-//     link: "https://github.com/gokulkrishh",
-//     url: "https://api.github.com/users/gokulkrishh",
-//   },
-//   {
-//     title: "Github Stars",
-//     link: "https://github.com/gokulkrishh",
-//     url: "https://api.github.com/users/gokulkrishh",
-//   },
-//   { title: "Twitter Followers", link: "https://twitter.com/gokul_i" },
-//   { title: "Gumroad sales", link: "https://gum.co/IrcpA" },
-// ];
+const dashboardList = [
+  {
+    title: "Youtube Subscribers",
+    link: "https://youtube.com/gokulkalaikoven",
+    url: "https://socialblade.com/youtube/c/gokulkalaikoven",
+  },
+  {
+    title: "Youtube Views",
+    link: "https://youtube.com/gokulkalaikoven",
+    url: "https://socialblade.com/youtube/c/gokulkalaikoven",
+  },
+  {
+    title: "Newsletter Subscribers",
+    link: "https://buttondown.email/gokul.site",
+  },
+  {
+    title: "Github Followers",
+    link: "https://github.com/gokulkrishh",
+    url: "https://api.github.com/users/gokulkrishh",
+  },
+  {
+    title: "Github Stars",
+    link: "https://github.com/gokulkrishh",
+    url: "https://api.github.com/users/gokulkrishh",
+  },
+  { title: "Twitter Followers", link: "https://twitter.com/gokul_i" },
+  { title: "Gumroad sales", link: "https://gum.co/IrcpA" },
+];
 
 const Dashboard = () => {
-  // const [data, setData] = useState(dashboardList);
+  const [data, setData] = useState(dashboardList);
 
   useEffect(() => {}, []);
 
