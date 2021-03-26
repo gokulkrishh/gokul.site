@@ -27,5 +27,4 @@
 <url> <loc>https://gokul.site/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gokul.site/blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gokul.site/book</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gokul.site/dashboard</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
