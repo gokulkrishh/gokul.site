@@ -89,12 +89,14 @@
   margin-left: 10px;
 }
 
-.projects .card {
+.projects .card,
+.videos .card {
   height: 255px;
 }
 
 .projects .card h3 {
   margin-top: 10px;
+  max-width: 100%;
 }
 
 .projects .card img {
@@ -103,6 +105,10 @@
   border-radius: 50%;
   background-color: #e4e4e4;
   padding: 4px;
+}
+
+.videos .card img {
+  height: inherit;
 }
 
 .dashboard .card {

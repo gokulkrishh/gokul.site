@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "styles/newsletter.css";
 
 const Newsletter = () => {
-  const [styles, setStyles] = React.useState({});
+  const [styles, setStyles] = useState({});
+  const [subscribers, setSubscribers] = useState("90+");
   const ref = React.createRef();
+
+  useEffect(() => {
+    const api =
+      "https://buttondown-subscribers-count.vercel.app/api/subscribers";
+    fetch(api)
+      .then((response) => response.json())
+      .then(({ total = "90+" }) => {
+        setSubscribers(`${total}+`);
+      });
+  }, []);
 
   return (
     <div className="newsletter-container">
@@ -13,9 +24,9 @@ const Newsletter = () => {
           <span aria-label="newsletter icon" role="img">
             📩
           </span>
-          Join my newsletter
+          Join {subscribers} developers
         </h3>
-        <p>Learn about Web Development, Javascript and Design with me.</p>
+        <p>Learn about Web Development, Javascript, Design and Books.</p>
         <p className="newsletter-spam">Get email on every Wednesday.</p>
         <i>I promise you there won't be any spamming!.</i>
       </div>

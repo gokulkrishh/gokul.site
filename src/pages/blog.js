@@ -21,7 +21,7 @@ const Blog = ({ data }) => {
           {posts.map(({ node }) => {
             const { frontmatter, excerpt, fields } = node;
             const { title, date, relative } = frontmatter;
-            const tags = frontmatter?.tags || [];
+            // const tags = frontmatter?.tags || [];
             const link = relative
               ? fields.slug.split("/")[2]
               : `/blog${fields.slug}`;

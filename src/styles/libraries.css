@@ -1,5 +1,5 @@
-@import "./third-party/prism-dracula.css";
 @import "./third-party/overrides.css";
+@import "./third-party/prism-dracula.css";
 
 .gatsby-highlight {
   position: relative;

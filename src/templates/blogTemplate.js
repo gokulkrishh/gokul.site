@@ -5,7 +5,7 @@ import Layout from "components/layout";
 import Menu from "components/menu";
 import Footer from "components/footer";
 import Newsletter from "components/newsletter";
-import SEO from "components/seo";
+import Seo from "components/seo";
 
 import "styles/blog-post.css";
 
@@ -18,7 +18,7 @@ export default function Template({ data }) {
     <div className="grid">
       <Menu />
       <Layout customSEO={true}>
-        <SEO
+        <Seo
           title={frontmatter.title}
           description={frontmatter.description || ""}
           slug={frontmatter.slug}

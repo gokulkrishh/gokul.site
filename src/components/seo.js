@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO(props) {
+function Seo(props) {
   const {
     description,
     lang,
@@ -91,10 +91,10 @@ function SEO(props) {
   );
 }
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 };
 
-export default SEO;
+export default Seo;
