@@ -21,23 +21,16 @@ const Blog = ({ data }) => {
           {posts.map(({ node }) => {
             const { frontmatter, excerpt, fields } = node;
             const { title, date, relative } = frontmatter;
-            // const tags = frontmatter?.tags || [];
-            const link = relative
-              ? fields.slug.split("/")[2]
-              : `/blog${fields.slug}`;
+            const { slug, readingTime } = fields;
+            const link = relative ? slug.split("/")[2] : `/blog${slug}`;
             return (
               <a href={link} className="card link" key={title}>
                 <div className="post">
                   <h3>{title}</h3>
                   <time>{date}</time>
+                  <span className="dot"> • </span>
+                  <time>{readingTime.text}</time>
                   <p>{excerpt}</p>
-                  {/* <p className="tags">
-                    {tags.map((tag) => (
-                      <span key={title + tag} className={tag}>
-                        {tag}
-                      </span>
-                    ))}
-                  </p> */}
                 </div>
               </a>
             );
@@ -61,6 +54,9 @@ export const postQuery = graphql`
         node {
           fields {
             slug
+            readingTime {
+              text
+            }
           }
           excerpt(pruneLength: 160)
           frontmatter {

@@ -38,6 +38,9 @@ export const listQuery = graphql`
         node {
           fields {
             slug
+            readingTime {
+              text
+            }
           }
           excerpt(pruneLength: 100)
           frontmatter {

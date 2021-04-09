@@ -9,14 +9,15 @@ const Posts = ({ edges: posts = [] }) => {
         {posts.slice(0, 3).map(({ node }) => {
           const { frontmatter, excerpt, fields } = node;
           const { title, date, relative } = frontmatter;
-          const link = relative
-            ? `/${fields.slug.split("/")[2]}`
-            : `blog${fields.slug}`;
+          const { slug, readingTime } = fields;
+          const link = relative ? `/${slug.split("/")[2]}` : `blog${slug}`;
           return (
             <Link to={link} className="link" key={title}>
               <div className="card">
                 <h3>{title}</h3>
                 <time>{date}</time>
+                <span className="dot"> • </span>
+                <time>{readingTime.text}</time>
                 <p>{excerpt}</p>
               </div>
             </Link>
