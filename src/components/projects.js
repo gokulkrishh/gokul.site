@@ -2,7 +2,7 @@ import React from "react";
 
 import LinkImg from "components/LinkImg";
 import DotfilesPng from "images/dotfiles.png";
-import AwesomeSvg from "images/awesome.svg";
+import CommandLineSVG from "images/command-line.svg";
 import QRCodeScannerPng from "images/qr-code-scanner.png";
 
 const projectList = [
@@ -19,10 +19,10 @@ const projectList = [
     link: "https://github.com/gokulkrishh/dotfiles",
   },
   {
-    title: "Awesome Meta Tags & Manifest Properties",
-    image: AwesomeSvg,
-    desc: `Awesome collection of meta tags & manifest properties that you can use on your web application.`,
-    link: "https://github.com/gokulkrishh/awesome-meta-and-manifest",
+    title: "set-default-browser",
+    image: CommandLineSVG,
+    desc: `Set any macOS browser as your default browser via command line.`,
+    link: "https://github.com/gokulkrishh/set-default-browser",
   },
 ];
 
