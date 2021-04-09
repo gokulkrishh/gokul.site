@@ -6,6 +6,17 @@ footer {
   margin-top: 40px;
 }
 
+footer > div {
+  display: flex;
+  align-items: center;
+}
+
+footer > div a {
+  height: inherit;
+  text-decoration: underline;
+  padding: 0;
+}
+
 footer > img {
   width: 25px;
   height: 25px;
