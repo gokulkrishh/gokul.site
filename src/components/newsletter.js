@@ -27,7 +27,7 @@ const Newsletter = () => {
           Join {subscribers} developers
         </h3>
         <p>Learn about Web Development, Javascript, Design and Books.</p>
-        <p className="newsletter-spam">Get email on every Wednesday.</p>
+        <p className="newsletter-spam">Get updates regularly.</p>
         <i>I promise you there won't be any spamming!.</i>
       </div>
 
