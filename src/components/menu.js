@@ -22,12 +22,12 @@ const Menu = () => {
             Book
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link to="/uses" activeClassName="active">
             Uses
           </Link>
-        </li> */}
-        <li>
+        </li>
+        {/* <li>
           <a
             href="https://drive.google.com/file/d/1O3RqZVf7Hnqzo6KpHaW9uV4hKeW0gcuP/view?usp=sharing"
             target="_blank"
@@ -35,7 +35,7 @@ const Menu = () => {
           >
             Resume
           </a>
-        </li>
+        </li> */}
         {/* <li>
           <Link to="/dashboard" activeClassName="active">
             Dashboard
