@@ -2,11 +2,8 @@
   "name": "gokul.site",
   "version": "1.0.0",
   "private": true,
-  "description": "gokul.site",
+  "description": "My personal website built using gatsby.js",
   "author": "gokulkrishh",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
