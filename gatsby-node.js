@@ -1,11 +1,18 @@
-const { createFilePath } = require('gatsby-source-filesystem');
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`);
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date, frontmatter___updated] }, limit: 1000) {
+      allMarkdownRemark(
+        sort: {
+          order: DESC
+          fields: [frontmatter___date, frontmatter___updated]
+        }
+        limit: 1000
+      ) {
         edges {
           node {
             frontmatter {
@@ -44,4 +51,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug,
     });
   }
+};
+
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, "src"), "node_modules"],
+    },
+  });
 };
