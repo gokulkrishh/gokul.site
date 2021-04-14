@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Footer from "components/footer";
-import Header from "components/header";
-import Layout from "components/layout";
+import Footer from "components/Footer";
+import Header from "components/Header";
+import Layout from "components/Layout";
 import Newsletter from "components/newsletter";
 import Projects from "components/projects";
 import Posts from "../components/posts";

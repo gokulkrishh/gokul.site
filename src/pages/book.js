@@ -1,7 +1,7 @@
 import React from "react";
 
-import Footer from "components/footer";
-import Layout from "components/layout";
+import Footer from "components/Footer";
+import Layout from "components/Layout";
 import Menu from "components/menu";
 import Newsletter from "components/newsletter";
 
