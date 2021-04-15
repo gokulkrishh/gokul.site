@@ -12,8 +12,8 @@ const Newsletter = () => {
       "https://buttondown-subscribers-count.vercel.app/api/subscribers";
     fetch(api)
       .then((response) => response.json())
-      .then(({ total = "90+" }) => {
-        setSubscribers(`${total}+`);
+      .then(({ total = "90" }) => {
+        setSubscribers(`${total}`);
       });
   }, []);
 
