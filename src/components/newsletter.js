@@ -24,7 +24,7 @@ const Newsletter = () => {
           <span aria-label="newsletter icon" role="img">
             📩
           </span>
-          Join {subscribers} developers
+          Join {subscribers} and growing developers
         </h3>
         <p>Learn about Web Development, Javascript, Designing and Books.</p>
         <p className="newsletter-spam">Get updates regularly from me.</p>
