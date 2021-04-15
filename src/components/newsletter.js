@@ -4,7 +4,7 @@ import "styles/newsletter.css";
 
 const Newsletter = () => {
   const [styles, setStyles] = useState({});
-  const [subscribers, setSubscribers] = useState("90+");
+  const [subscribers, setSubscribers] = useState("90");
   const ref = React.createRef();
 
   useEffect(() => {
