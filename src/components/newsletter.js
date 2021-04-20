@@ -4,7 +4,7 @@ import "styles/newsletter.css";
 
 const Newsletter = () => {
   const [styles, setStyles] = useState({});
-  const [subscribers, setSubscribers] = useState("90");
+  const [subscribers, setSubscribers] = useState("95");
   const ref = React.createRef();
 
   useEffect(() => {
@@ -12,8 +12,10 @@ const Newsletter = () => {
       "https://buttondown-subscribers-count.vercel.app/api/subscribers";
     fetch(api)
       .then((response) => response.json())
-      .then(({ total = "90" }) => {
-        setSubscribers(`${total}`);
+      .then(({ total }) => {
+        if (total) {
+          setSubscribers(`${total}`);
+        }
       });
   }, []);
 
@@ -24,7 +26,7 @@ const Newsletter = () => {
           <span aria-label="newsletter icon" role="img">
             📩
           </span>
-          Join {subscribers} and growing developers
+          Join {subscribers}+ growing developers
         </h3>
         <p>Learn about Web Development, Javascript, Designing and Books.</p>
         <p className="newsletter-spam">Get updates regularly from me.</p>
