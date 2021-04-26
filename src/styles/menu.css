@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   color: var(--color-grey);
+  text-decoration: none;
 }
 
 .menu .logo {

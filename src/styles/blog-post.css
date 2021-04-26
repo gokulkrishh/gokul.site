@@ -73,6 +73,12 @@
   top: -1px;
 }
 
+.link:hover,
+.link:active,
+.link:focus {
+  text-decoration: none;
+}
+
 @media all and (max-width: 640px) {
   .blog-post-details {
     grid-template-columns: repeat(2, 170px);

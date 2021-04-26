@@ -20,8 +20,8 @@ const IndexPage = ({ data, ...props }) => {
       <Layout>
         <Posts edges={edges} />
         <Projects />
+        <Newsletter />
       </Layout>
-      <Newsletter />
       <Footer />
     </div>
   );
