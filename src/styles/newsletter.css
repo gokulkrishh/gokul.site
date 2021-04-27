@@ -97,6 +97,10 @@
   font-size: var(--font-size);
 }
 
+.newsletter-container .email-address:focus {
+  border: 2px solid var(--color-bright-blue);
+}
+
 .newsletter-container span {
   display: block;
   font-weight: 400;

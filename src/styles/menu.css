@@ -27,6 +27,11 @@
   text-decoration: none;
 }
 
+.menu-list li a:hover,
+.menu-list li a:focus {
+  background-color: var(--color-slighty-black);
+}
+
 .menu .logo {
   padding: 5px;
   height: 50px;
